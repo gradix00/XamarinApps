@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestBDonline.View.RegisterPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Zareklamy - Rejestracja"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"
+                 HorizontalOptions="CenterAndExpand"
+                 VerticalOptions="CenterAndExpand">
+            <Entry Placeholder="Nickname"
+               HorizontalOptions="CenterAndExpand"
+               HorizontalTextAlignment="Center" 
+               x:Name="nickname"/>
+            <Entry Placeholder="Email"
+               HorizontalOptions="CenterAndExpand"
+               HorizontalTextAlignment="Center" 
+               x:Name="login"/>
+            <Entry Placeholder="Hasło"
+               HorizontalOptions="CenterAndExpand"
+               HorizontalTextAlignment="Center" 
+               x:Name="pwd1"/>
+            <Entry Placeholder="Wpisz ponownie hasło"
+               HorizontalOptions="CenterAndExpand"
+               HorizontalTextAlignment="Center" 
+               x:Name="pwd2"/>
+            <Button Text="Zarejestruj"
+                Clicked="Register"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

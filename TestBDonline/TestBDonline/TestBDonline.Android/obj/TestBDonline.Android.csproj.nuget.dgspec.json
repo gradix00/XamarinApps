@@ -1,0 +1,135 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline.Android\\TestBDonline.Android.csproj": {}
+  },
+  "projects": {
+    "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline.Android\\TestBDonline.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline.Android\\TestBDonline.Android.csproj",
+        "projectName": "TestBDonline.Android",
+        "projectPath": "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline.Android\\TestBDonline.Android.csproj",
+        "packagesPath": "C:\\Users\\50kos\\.nuget\\packages\\",
+        "outputPath": "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline.Android\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\50kos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid12.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid12.0": {
+            "projectReferences": {
+              "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj": {
+                "projectPath": "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid12.0": {
+          "dependencies": {
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.1.13, )"
+            },
+            "RawRabbit.Extensions": {
+              "target": "Package",
+              "version": "[1.10.4, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2196, )"
+            }
+          }
+        }
+      }
+    },
+    "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj",
+        "projectName": "TestBDonline",
+        "projectPath": "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj",
+        "packagesPath": "C:\\Users\\50kos\\.nuget\\packages\\",
+        "outputPath": "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\50kos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.1.13, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "RawRabbit.Extensions": {
+              "target": "Package",
+              "version": "[1.10.4, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2196, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

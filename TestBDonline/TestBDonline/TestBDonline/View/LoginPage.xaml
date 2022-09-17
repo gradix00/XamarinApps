@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestBDonline.View.LoginPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Zareklamy - Logowanie"/>
+    </ContentPage.ToolbarItems>
+    <StackLayout Orientation="Vertical"
+                 HorizontalOptions="CenterAndExpand"
+                 VerticalOptions="CenterAndExpand">
+        <Entry Placeholder="Email"
+               HorizontalOptions="CenterAndExpand"
+               HorizontalTextAlignment="Center" 
+               x:Name="login"/>
+        <Entry Placeholder="Password"
+               HorizontalOptions="CenterAndExpand"
+               HorizontalTextAlignment="Center" 
+               x:Name="pwd"/>
+        <Button Text="Zaloguj"
+                Clicked="Login"/>
+        <Button Text="Nie mam konta"
+                Clicked="OpenRegisterPage"/>
+    </StackLayout>
+
+</ContentPage>
