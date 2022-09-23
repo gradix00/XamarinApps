@@ -1,0 +1,9 @@
+Generally:
+Application without any mvvm pattern or other patterns, only prototype so far.
+
+App details:
+It consists in the fact that the user logs into the online database, unless he does not have an account, he can create one. After logging in, he can perform various actions which are saved in an online database.
+
+Database online:
+Clever-cloud.com
+Nuget MySqlConnector
