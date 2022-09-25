@@ -7427,11 +7427,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline.Android\\TestBDonline.Android.csproj",
+      "projectUniqueName": "G:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline.Android\\TestBDonline.Android.csproj",
       "projectName": "TestBDonline.Android",
-      "projectPath": "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline.Android\\TestBDonline.Android.csproj",
+      "projectPath": "G:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline.Android\\TestBDonline.Android.csproj",
       "packagesPath": "C:\\Users\\50kos\\.nuget\\packages\\",
-      "outputPath": "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline.Android\\obj\\",
+      "outputPath": "G:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -7448,8 +7448,8 @@
       "frameworks": {
         "monoandroid12.0": {
           "projectReferences": {
-            "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj": {
-              "projectPath": "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj"
+            "G:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj": {
+              "projectPath": "G:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj"
             }
           }
         }

@@ -7,12 +7,12 @@
         <StackLayout VerticalOptions="CenterAndExpand"
                      HorizontalOptions="CenterAndExpand">
             <Button Text="Utwórz post"
-                    WidthRequest="100"/>
+                    HorizontalOptions="CenterAndExpand"/>
             <Button Text="Utwórz nagrode"
-                    WidthRequest="100"/>
+                    HorizontalOptions="CenterAndExpand"/>
             <Button Text="Zarządzaj użytkownikami"
-                    WidthRequest="100"
-                    Clicked=""/>
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="OpenPageUsersManagement"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

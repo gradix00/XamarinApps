@@ -6155,11 +6155,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj",
+      "projectUniqueName": "G:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj",
       "projectName": "TestBDonline",
-      "projectPath": "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj",
+      "projectPath": "G:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj",
       "packagesPath": "C:\\Users\\50kos\\.nuget\\packages\\",
-      "outputPath": "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline\\obj\\",
+      "outputPath": "G:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\50kos\\AppData\\Roaming\\NuGet\\NuGet.Config",

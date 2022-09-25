@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+iErL9wotqGl+Lx9RjqLWhI1mDL1pz6WCCKR/jyrn2ijXeViYNYWAjGgexLOsMD403HAm3vfzmcs2ijueAJ/Xg==",
+  "dgSpecHash": "/md4FRvNmOSHN0arqqXC283/KNkijWy+b7w1P6yg8/45Pyy+VOcXWenZscA2lpqfv4aRhBw3SuGClsTKM0sZgg==",
   "success": true,
-  "projectFilePath": "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj",
+  "projectFilePath": "G:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\50kos\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\50kos\\.nuget\\packages\\microsoft.extensions.configuration\\2.0.0\\microsoft.extensions.configuration.2.0.0.nupkg.sha512",

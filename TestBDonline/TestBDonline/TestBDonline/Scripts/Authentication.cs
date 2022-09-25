@@ -19,17 +19,11 @@ namespace TestBDonline.Scripts
         public string Password { get; set; }
         public UserData UserData { get; set; }
 
-        private bool CheckAcces()
+        private bool CheckAcces(MySqlConnection con)
         {
-            var conn = new MySqlConnection(connAddr);
-            conn.Open();
-
-            bool res = false;
-            if (conn.State == System.Data.ConnectionState.Open)
-                res = true;
-
-            conn.Close();
-            return res;
+            if (con.State == System.Data.ConnectionState.Open)
+                return true;
+            return false;
         }
 
         public bool InitiateLogin(string email, string password)
@@ -40,7 +34,7 @@ namespace TestBDonline.Scripts
             var conn = new MySqlConnection(connAddr);
             conn.Open();
 
-            if (conn.State == System.Data.ConnectionState.Open)
+            if (CheckAcces(conn))
             {
                 MySqlCommand cmd = new MySqlCommand($"SELECT * FROM Users WHERE email='{Email}' AND password='{Password}'", conn);
                 MySqlDataReader read = cmd.ExecuteReader();
@@ -48,7 +42,7 @@ namespace TestBDonline.Scripts
                 int numberOfRecord = 0;
                 while (read.Read())
                 {
-                    GetInfoUser(read["Id"].ToString(), read["Nickname"].ToString(), read["Email"].ToString(), read["Points"].ToString(), read["Status"].ToString());
+                    GetInfoUser(read["Id"].ToString(), read["Nickname"].ToString(), read["Email"].ToString(), read["Points"].ToString(), read["Status"].ToString(), read["RequirePwdReset"].ToString());
                     numberOfRecord++;
                 }
          
@@ -70,7 +64,7 @@ namespace TestBDonline.Scripts
             var conn = new MySqlConnection(connAddr);
             conn.Open();
 
-            if(conn.State == System.Data.ConnectionState.Open)
+            if(CheckAcces(conn))
             {
                 MySqlCommand cmd = new MySqlCommand($"SELECT nickname, email FROM Users WHERE email='{email}' OR nickname='{nick}'", conn);
                 int numberOfRecord = 0;
@@ -85,11 +79,10 @@ namespace TestBDonline.Scripts
 
                     conn.Open();
                     cmd = new MySqlCommand($"INSERT INTO Users(nickname, email, password, points) VALUES(@nickname, @email, @password, @points)", conn);
-                    cmd.Parameters.AddWithValue("@nickname", $"{nick}");
-                    cmd.Parameters.AddWithValue("@email", $"{email}");
-                    cmd.Parameters.AddWithValue("@password", $"{password}");
-                    cmd.Parameters.AddWithValue("@points", $"0");
-                    Console.WriteLine("command: "+cmd.CommandText);
+                    cmd.Parameters.AddWithValue("@nickname", nick);
+                    cmd.Parameters.AddWithValue("@email", email);
+                    cmd.Parameters.AddWithValue("@password", password);
+                    cmd.Parameters.AddWithValue("@points", "0");
                     cmd.ExecuteNonQuery();
                     conn.Close();
                     return true;
@@ -104,10 +97,10 @@ namespace TestBDonline.Scripts
             var conn = new MySqlConnection(connAddr);
             conn.Open();
 
-            List<UserData> retList = null;
-            if(conn.State == System.Data.ConnectionState.Open)
+            List<UserData> retList = new List<UserData>();
+            if(CheckAcces(conn))
             {
-                MySqlCommand cmd = new MySqlCommand("SELECT id, nickname, email, points FROM Users");
+                MySqlCommand cmd = new MySqlCommand("SELECT id, nickname, email, points, status, RequirePwdReset FROM Users", conn);
                 MySqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
@@ -116,30 +109,56 @@ namespace TestBDonline.Scripts
                         ID = int.Parse(reader["id"].ToString()),
                         Nickname = reader["nickname"].ToString(),
                         Email = reader["email"].ToString(),
-                        Points = int.Parse(reader["points"].ToString())
-                    });
+                        Points = int.Parse(reader["points"].ToString()),
+                        Status = new Dictionary.GetStatus().status[reader["status"].ToString()],
+                        RequirePasswordReset = bool.Parse(reader["RequirePwdReset"].ToString())
+                    });               
                 conn.Close();
             }
             return retList;
         }
 
-        private UserData GetInfoUser(string id, string nick, string email, string points, string status)
+        public UserData GetUserDataByID(int id)
         {
-            Status stat = Status.user;
-            if (status == "Banned")
-                stat = Status.banned;
-            else if (status == "Admin")
-                stat = Status.admin;
-            else
-                stat = Status.user;
+            List<UserData> getList = GetListAllUsers();
+            foreach(UserData user in getList)
+            {
+                if(id == user.ID)
+                    return user;
+            }
+            return new UserData();
+        }
 
+        public bool UpdateUserDataBy(UserData data)
+        {
+            var conn = new MySqlConnection(connAddr);
+            conn.Open();
+
+            if (CheckAcces(conn))
+            {
+                MySqlCommand cmd = new MySqlCommand($"UPDATE Users SET email = @email, points=@points, status=@status, RequirePwdReset=@requireReset WHERE id={data.ID}", conn);
+                cmd.Parameters.AddWithValue("@email", data.Email);
+                cmd.Parameters.AddWithValue("@points", data.Points);
+                cmd.Parameters.AddWithValue("@status", data.Status);
+                cmd.Parameters.AddWithValue("@requireReset", data.RequirePasswordReset);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            else
+                return false;
+            return true;
+        }
+
+        private UserData GetInfoUser(string id, string nick, string email, string points, string status, string rpr)
+        {
             UserData = new UserData()
             {
                 ID = int.Parse(id),
                 Nickname = nick,
                 Email = email,
                 Points = int.Parse(points),
-                Status = stat
+                Status = new Dictionary.GetStatus().status[status],
+                RequirePasswordReset = bool.Parse(rpr.ToString())
             };
             return UserData;
         }

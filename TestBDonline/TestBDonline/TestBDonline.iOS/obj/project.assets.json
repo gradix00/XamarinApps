@@ -7529,11 +7529,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline.iOS\\TestBDonline.iOS.csproj",
+      "projectUniqueName": "G:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline.iOS\\TestBDonline.iOS.csproj",
       "projectName": "TestBDonline.iOS",
-      "projectPath": "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline.iOS\\TestBDonline.iOS.csproj",
+      "projectPath": "G:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline.iOS\\TestBDonline.iOS.csproj",
       "packagesPath": "C:\\Users\\50kos\\.nuget\\packages\\",
-      "outputPath": "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline.iOS\\obj\\",
+      "outputPath": "G:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -7550,8 +7550,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj": {
-              "projectPath": "G:\\Aplikacje Xamarin\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj"
+            "G:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj": {
+              "projectPath": "G:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj"
             }
           }
         }

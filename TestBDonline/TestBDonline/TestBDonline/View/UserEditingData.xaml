@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestBDonline.View.UserEditingData">
+    <ContentPage.Content>
+        <ScrollView HorizontalOptions="CenterAndExpand">
+            <StackLayout>
+                <Label x:Name="id"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="CenterAndExpand"
+                       FontSize="20"/>
+                <Entry x:Name="email"
+                       Placeholder="Edytuj email"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="CenterAndExpand"/>
+                <Entry x:Name="points"
+                       Placeholder="Edytuj liczbę punktów"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="CenterAndExpand"/>
+                <Picker SelectedIndex="0"
+                        x:Name="picker">
+                </Picker>
+                <Label Text="Wymagaj reset hasła przy następnym logowaniu"/>
+                <Switch IsToggled="False"
+                        HorizontalOptions="CenterAndExpand"
+                        x:Name="toggle"/>
+                <Button Text="Zastosuj"
+                        VerticalOptions="EndAndExpand"
+                        HorizontalOptions="CenterAndExpand"
+                        Clicked="Apply"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

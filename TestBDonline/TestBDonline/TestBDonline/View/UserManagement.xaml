@@ -5,17 +5,31 @@
              xmlns:local="clr-namespace:TestBDonline.View">
     <ContentPage.Content>
         <StackLayout>
-            <ListView VerticalOptions="FillAndExpand"
+            <ListView VerticalOptions="StartAndExpand"
                       HorizontalOptions="FillAndExpand"
-                      x:Name="list">
+                      ItemsSource="{Binding UserData}"
+                      IsPullToRefreshEnabled="True"
+                      SelectedItem="{Binding UserCell}"
+                      ItemSelected="SelectedItem"
+                      Refreshing="RefresUsersList"
+                      x:Name="list" RefreshControlColor="CornflowerBlue">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <local:UserCell UserID="{Binding ID}"
-                            UserNickname="{Binding Nickname}"
-                            Points="{Binding Points}"/>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding ID}"/>
+                                <Label Text="{Binding Nickname}"/>
+                                <Label Text="{Binding Points}"/>
+                            </StackLayout>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Button VerticalOptions="EndAndExpand"
+                    Text="Zarządzaj"
+                    Clicked="ManageUser"
+                    IsEnabled="False"
+                    x:Name="btn"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

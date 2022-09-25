@@ -13,5 +13,6 @@
         public string Email { get; set; }
         public int Points { get; set; }
         public Status Status { get; set; }
+        public bool RequirePasswordReset { get; set; }
     }
 }
