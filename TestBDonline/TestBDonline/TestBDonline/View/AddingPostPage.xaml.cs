@@ -36,8 +36,8 @@ namespace TestBDonline.View
                     Data.CreateNewLog(new Scripts.Structs.EventData
                     {
                         Autor = Data.UserData.Nickname,
-                        Details = $"Create post Name: {post.Title}, Description: {post.Description}",
-                        Date = DateTime.Now
+                        Details = $"Opublikowano {post.Title}, Description: {post.Description}",
+                        Date = DateTime.UtcNow
                     });
                 }
                 else

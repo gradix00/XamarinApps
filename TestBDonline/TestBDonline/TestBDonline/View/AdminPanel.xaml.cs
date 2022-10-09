@@ -22,7 +22,6 @@ namespace TestBDonline.View
 
         private void OpenPageEventsLog(object sender, EventArgs e)
         {
-            DisplayAlert("nick", data.UserData.Nickname, "ok");
             Navigation.PushAsync(new EventsLog());
         }
 

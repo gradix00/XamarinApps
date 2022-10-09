@@ -21,6 +21,7 @@
                    HorizontalOptions="CenterAndExpand"
                    HorizontalTextAlignment="Center" 
                    x:Name="login"
+                       Keyboard="Email"
                        Margin="30, 0, 30, 0"/>
                 <Entry Placeholder="Hasło"
                    HorizontalOptions="CenterAndExpand"

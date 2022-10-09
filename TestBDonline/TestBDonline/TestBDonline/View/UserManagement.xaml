@@ -3,8 +3,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestBDonline.View.UserManagement"
              xmlns:local="clr-namespace:TestBDonline.View">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Zarządzanie użytkownikami"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="25"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="75"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="id"
+                       FontSize="15"
+                       FontAttributes="Bold"
+                       TextTransform="Uppercase"
+                       Grid.Column="0"/>
+                <Label Text="nickname"
+                       FontSize="15"
+                       FontAttributes="Bold"
+                       TextTransform="Uppercase"
+                       Grid.Column="1"/>
+                <Label Text="punkty"
+                       FontSize="15"
+                       FontAttributes="Bold"
+                       TextTransform="Uppercase"
+                       Grid.Column="2"/>
+            </Grid>
             <ListView VerticalOptions="StartAndExpand"
                       HorizontalOptions="FillAndExpand"
                       ItemsSource="{Binding UserData}"
@@ -16,11 +41,20 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding ID}"/>
-                                <Label Text="{Binding Nickname}"/>
-                                <Label Text="{Binding Points}"/>
-                            </StackLayout>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="75"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Text="{Binding ID}"
+                                       FontAttributes="Bold"
+                                       Grid.Column="0"/>
+                                <Label Text="{Binding Nickname}"
+                                       Grid.Column="1"/>
+                                <Label Text="{Binding Points}"
+                                       Grid.Column="2"/>
+                            </Grid>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
