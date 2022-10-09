@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestBDonline.View.AddingPostPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="CenterAndExpand">
+            <Entry Placeholder="Title"
+                   x:Name="title"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="30, 0, 30, 0"/>
+            <Entry Placeholder="Description"
+                   x:Name="description"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="30, 0, 30, 0"/>
+            <Entry Placeholder="Url image"
+                   x:Name="url"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="30, 0, 30, 0"/>
+            <Button Text="Publish post"
+                    Clicked="CreatePost"
+                    HorizontalOptions="CenterAndExpand"
+                    Margin="30, 0, 30, 0"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -575,12 +575,22 @@ map_modules:
 	.long	0x0	@ java_name_width
 	.long	0x0	@ java_map
 
+	.byte	0xda, 0xb5, 0x78, 0x69, 0x90, 0x8a, 0x22, 0x40, 0x9e, 0x4, 0x0, 0xd2, 0xca, 0xc9, 0x9e, 0x6	@ module_uuid: 6978b5da-8a90-4022-9e04-00d2cac99e06
+	.long	0x1	@ entry_count
+	.long	0x0	@ duplicate_count
+	.long	.L.module51_managed_to_java	@ map
+	.long	0	@ duplicate_map
+	.long	map_aname.51	@ assembly_name: TestBDonline.Android
+	.long	0x0	@ image
+	.long	0x0	@ java_name_width
+	.long	0x0	@ java_map
+
 	.byte	0xdb, 0x6c, 0xa0, 0x69, 0x8c, 0xf7, 0x88, 0x4a, 0xa5, 0x7a, 0xa2, 0xfc, 0x10, 0xfc, 0xff, 0xc0	@ module_uuid: 69a06cdb-f78c-4a88-a57a-a2fc10fcffc0
 	.long	0x2	@ entry_count
 	.long	0x1	@ duplicate_count
-	.long	.L.module51_managed_to_java	@ map
-	.long	.L.module51_managed_to_java_duplicates	@ duplicate_map
-	.long	map_aname.51	@ assembly_name: Xamarin.AndroidX.Print
+	.long	.L.module52_managed_to_java	@ map
+	.long	.L.module52_managed_to_java_duplicates	@ duplicate_map
+	.long	map_aname.52	@ assembly_name: Xamarin.AndroidX.Print
 	.long	0x0	@ image
 	.long	0x0	@ java_name_width
 	.long	0x0	@ java_map
@@ -588,9 +598,9 @@ map_modules:
 	.byte	0xe1, 0x64, 0x4c, 0x4f, 0x7c, 0x7a, 0xd4, 0x41, 0x8d, 0xbf, 0x6e, 0x4f, 0x89, 0x22, 0x24, 0xbf	@ module_uuid: 4f4c64e1-7a7c-41d4-8dbf-6e4f892224bf
 	.long	0x44	@ entry_count
 	.long	0x1e	@ duplicate_count
-	.long	.L.module52_managed_to_java	@ map
-	.long	.L.module52_managed_to_java_duplicates	@ duplicate_map
-	.long	map_aname.52	@ assembly_name: Xamarin.AndroidX.Browser
+	.long	.L.module53_managed_to_java	@ map
+	.long	.L.module53_managed_to_java_duplicates	@ duplicate_map
+	.long	map_aname.53	@ assembly_name: Xamarin.AndroidX.Browser
 	.long	0x0	@ image
 	.long	0x0	@ java_name_width
 	.long	0x0	@ java_map
@@ -598,19 +608,9 @@ map_modules:
 	.byte	0xe4, 0x80, 0x4d, 0xba, 0x59, 0x45, 0x52, 0x4a, 0x9c, 0xbc, 0x44, 0x28, 0x6a, 0x78, 0xae, 0xdb	@ module_uuid: ba4d80e4-4559-4a52-9cbc-44286a78aedb
 	.long	0x5	@ entry_count
 	.long	0x3	@ duplicate_count
-	.long	.L.module53_managed_to_java	@ map
-	.long	.L.module53_managed_to_java_duplicates	@ duplicate_map
-	.long	map_aname.53	@ assembly_name: Xamarin.AndroidX.Lifecycle.LiveData.Core
-	.long	0x0	@ image
-	.long	0x0	@ java_name_width
-	.long	0x0	@ java_map
-
-	.byte	0xe7, 0x4f, 0xe4, 0xac, 0x6e, 0x4, 0x1e, 0x47, 0x96, 0x87, 0x7f, 0x44, 0x91, 0xab, 0x1d, 0x38	@ module_uuid: ace44fe7-046e-471e-9687-7f4491ab1d38
-	.long	0x1	@ entry_count
-	.long	0x0	@ duplicate_count
 	.long	.L.module54_managed_to_java	@ map
-	.long	0	@ duplicate_map
-	.long	map_aname.54	@ assembly_name: TestBDonline.Android
+	.long	.L.module54_managed_to_java_duplicates	@ duplicate_map
+	.long	map_aname.54	@ assembly_name: Xamarin.AndroidX.Lifecycle.LiveData.Core
 	.long	0x0	@ image
 	.long	0x0	@ java_name_width
 	.long	0x0	@ java_map
@@ -16456,91 +16456,91 @@ map_java:
 	.zero	99	@ byteCount == 24; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"android/support/customtabs/ICustomTabsCallback"	@ java_name
 	.zero	77	@ byteCount == 46; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000026	@ type_token_id
 	.ascii	"android/support/customtabs/ICustomTabsCallback$Default"	@ java_name
 	.zero	69	@ byteCount == 54; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000027	@ type_token_id
 	.ascii	"android/support/customtabs/ICustomTabsCallback$Stub"	@ java_name
 	.zero	72	@ byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"android/support/customtabs/ICustomTabsService"	@ java_name
 	.zero	78	@ byteCount == 45; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x200002b	@ type_token_id
 	.ascii	"android/support/customtabs/ICustomTabsService$Default"	@ java_name
 	.zero	70	@ byteCount == 53; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x200002c	@ type_token_id
 	.ascii	"android/support/customtabs/ICustomTabsService$Stub"	@ java_name
 	.zero	73	@ byteCount == 50; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"android/support/customtabs/IPostMessageService"	@ java_name
 	.zero	77	@ byteCount == 46; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000030	@ type_token_id
 	.ascii	"android/support/customtabs/IPostMessageService$Default"	@ java_name
 	.zero	69	@ byteCount == 54; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000031	@ type_token_id
 	.ascii	"android/support/customtabs/IPostMessageService$Stub"	@ java_name
 	.zero	72	@ byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"android/support/customtabs/trusted/ITrustedWebActivityCallback"	@ java_name
 	.zero	61	@ byteCount == 62; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x200001c	@ type_token_id
 	.ascii	"android/support/customtabs/trusted/ITrustedWebActivityCallback$Default"	@ java_name
 	.zero	53	@ byteCount == 70; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x200001d	@ type_token_id
 	.ascii	"android/support/customtabs/trusted/ITrustedWebActivityCallback$Stub"	@ java_name
 	.zero	56	@ byteCount == 67; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"android/support/customtabs/trusted/ITrustedWebActivityService"	@ java_name
 	.zero	62	@ byteCount == 61; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000021	@ type_token_id
 	.ascii	"android/support/customtabs/trusted/ITrustedWebActivityService$Default"	@ java_name
 	.zero	54	@ byteCount == 69; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000022	@ type_token_id
 	.ascii	"android/support/customtabs/trusted/ITrustedWebActivityService$Stub"	@ java_name
 	.zero	57	@ byteCount == 66; fixedWidth == 123; returned size == 123
@@ -24928,307 +24928,307 @@ map_java:
 	.zero	44	@ byteCount == 79; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x200004d	@ type_token_id
 	.ascii	"androidx/browser/browseractions/BrowserActionItem"	@ java_name
 	.zero	74	@ byteCount == 49; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x200004e	@ type_token_id
 	.ascii	"androidx/browser/browseractions/BrowserActionsFallbackMenuView"	@ java_name
 	.zero	61	@ byteCount == 62; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x200004f	@ type_token_id
 	.ascii	"androidx/browser/browseractions/BrowserActionsIntent"	@ java_name
 	.zero	71	@ byteCount == 52; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/browser/browseractions/BrowserActionsIntent$BrowserActionsItemId"	@ java_name
 	.zero	50	@ byteCount == 73; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/browser/browseractions/BrowserActionsIntent$BrowserActionsUrlType"	@ java_name
 	.zero	49	@ byteCount == 74; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000073	@ type_token_id
 	.ascii	"androidx/browser/browseractions/BrowserActionsIntent$Builder"	@ java_name
 	.zero	63	@ byteCount == 60; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000050	@ type_token_id
 	.ascii	"androidx/browser/browseractions/BrowserServiceFileProvider"	@ java_name
 	.zero	65	@ byteCount == 58; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000056	@ type_token_id
 	.ascii	"androidx/browser/customtabs/CustomTabColorSchemeParams"	@ java_name
 	.zero	69	@ byteCount == 54; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x200007c	@ type_token_id
 	.ascii	"androidx/browser/customtabs/CustomTabColorSchemeParams$Builder"	@ java_name
 	.zero	61	@ byteCount == 62; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000057	@ type_token_id
 	.ascii	"androidx/browser/customtabs/CustomTabsCallback"	@ java_name
 	.zero	77	@ byteCount == 46; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000051	@ type_token_id
 	.ascii	"androidx/browser/customtabs/CustomTabsClient"	@ java_name
 	.zero	79	@ byteCount == 44; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000076	@ type_token_id
 	.ascii	"androidx/browser/customtabs/CustomTabsClient_CustomTabsCallbackImpl"	@ java_name
 	.zero	56	@ byteCount == 67; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000058	@ type_token_id
 	.ascii	"androidx/browser/customtabs/CustomTabsIntent"	@ java_name
 	.zero	79	@ byteCount == 44; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x200007d	@ type_token_id
 	.ascii	"androidx/browser/customtabs/CustomTabsIntent$Builder"	@ java_name
 	.zero	71	@ byteCount == 52; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/browser/customtabs/CustomTabsIntent$ColorScheme"	@ java_name
 	.zero	67	@ byteCount == 56; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/browser/customtabs/CustomTabsIntent$ShareState"	@ java_name
 	.zero	68	@ byteCount == 55; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000059	@ type_token_id
 	.ascii	"androidx/browser/customtabs/CustomTabsService"	@ java_name
 	.zero	78	@ byteCount == 45; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/browser/customtabs/CustomTabsService$FilePurpose"	@ java_name
 	.zero	66	@ byteCount == 57; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/browser/customtabs/CustomTabsService$Relation"	@ java_name
 	.zero	69	@ byteCount == 54; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/browser/customtabs/CustomTabsService$Result"	@ java_name
 	.zero	71	@ byteCount == 52; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x200005b	@ type_token_id
 	.ascii	"androidx/browser/customtabs/CustomTabsServiceConnection"	@ java_name
 	.zero	68	@ byteCount == 55; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x200005d	@ type_token_id
 	.ascii	"androidx/browser/customtabs/CustomTabsSession"	@ java_name
 	.zero	78	@ byteCount == 45; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000088	@ type_token_id
 	.ascii	"androidx/browser/customtabs/CustomTabsSession$PendingSession"	@ java_name
 	.zero	63	@ byteCount == 60; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x200005e	@ type_token_id
 	.ascii	"androidx/browser/customtabs/CustomTabsSessionToken"	@ java_name
 	.zero	73	@ byteCount == 50; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/browser/customtabs/PostMessageBackend"	@ java_name
 	.zero	77	@ byteCount == 46; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000061	@ type_token_id
 	.ascii	"androidx/browser/customtabs/PostMessageService"	@ java_name
 	.zero	77	@ byteCount == 46; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000062	@ type_token_id
 	.ascii	"androidx/browser/customtabs/PostMessageServiceConnection"	@ java_name
 	.zero	67	@ byteCount == 56; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000064	@ type_token_id
 	.ascii	"androidx/browser/customtabs/TrustedWebUtils"	@ java_name
 	.zero	80	@ byteCount == 43; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x200003d	@ type_token_id
 	.ascii	"androidx/browser/trusted/NotificationApiHelperForM"	@ java_name
 	.zero	73	@ byteCount == 50; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x200003e	@ type_token_id
 	.ascii	"androidx/browser/trusted/ScreenOrientation"	@ java_name
 	.zero	81	@ byteCount == 42; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/browser/trusted/ScreenOrientation$LockType"	@ java_name
 	.zero	72	@ byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x200003f	@ type_token_id
 	.ascii	"androidx/browser/trusted/Token"	@ java_name
 	.zero	93	@ byteCount == 30; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/browser/trusted/TokenStore"	@ java_name
 	.zero	88	@ byteCount == 35; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000040	@ type_token_id
 	.ascii	"androidx/browser/trusted/TrustedWebActivityCallback"	@ java_name
 	.zero	72	@ byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000042	@ type_token_id
 	.ascii	"androidx/browser/trusted/TrustedWebActivityCallbackRemote"	@ java_name
 	.zero	66	@ byteCount == 57; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000039	@ type_token_id
 	.ascii	"androidx/browser/trusted/TrustedWebActivityDisplayMode"	@ java_name
 	.zero	69	@ byteCount == 54; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000037	@ type_token_id
 	.ascii	"androidx/browser/trusted/TrustedWebActivityDisplayMode$DefaultMode"	@ java_name
 	.zero	57	@ byteCount == 66; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000038	@ type_token_id
 	.ascii	"androidx/browser/trusted/TrustedWebActivityDisplayMode$ImmersiveMode"	@ java_name
 	.zero	55	@ byteCount == 68; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000043	@ type_token_id
 	.ascii	"androidx/browser/trusted/TrustedWebActivityIntent"	@ java_name
 	.zero	74	@ byteCount == 49; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000044	@ type_token_id
 	.ascii	"androidx/browser/trusted/TrustedWebActivityIntentBuilder"	@ java_name
 	.zero	67	@ byteCount == 56; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000045	@ type_token_id
 	.ascii	"androidx/browser/trusted/TrustedWebActivityService"	@ java_name
 	.zero	73	@ byteCount == 50; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000047	@ type_token_id
 	.ascii	"androidx/browser/trusted/TrustedWebActivityServiceConnection"	@ java_name
 	.zero	63	@ byteCount == 60; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000048	@ type_token_id
 	.ascii	"androidx/browser/trusted/TrustedWebActivityServiceConnectionPool"	@ java_name
 	.zero	59	@ byteCount == 64; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x200004b	@ type_token_id
 	.ascii	"androidx/browser/trusted/sharing/ShareData"	@ java_name
 	.zero	81	@ byteCount == 42; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x200004c	@ type_token_id
 	.ascii	"androidx/browser/trusted/sharing/ShareTarget"	@ java_name
 	.zero	79	@ byteCount == 44; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/browser/trusted/sharing/ShareTarget$EncodingType"	@ java_name
 	.zero	66	@ byteCount == 57; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x200006b	@ type_token_id
 	.ascii	"androidx/browser/trusted/sharing/ShareTarget$FileFormField"	@ java_name
 	.zero	65	@ byteCount == 58; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x200006c	@ type_token_id
 	.ascii	"androidx/browser/trusted/sharing/ShareTarget$Params"	@ java_name
 	.zero	72	@ byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/browser/trusted/sharing/ShareTarget$RequestMethod"	@ java_name
 	.zero	65	@ byteCount == 58; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000049	@ type_token_id
 	.ascii	"androidx/browser/trusted/splashscreens/SplashScreenParamKey"	@ java_name
 	.zero	64	@ byteCount == 59; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x200004a	@ type_token_id
 	.ascii	"androidx/browser/trusted/splashscreens/SplashScreenVersion"	@ java_name
 	.zero	65	@ byteCount == 58; fixedWidth == 123; returned size == 123
@@ -29062,19 +29062,19 @@ map_java:
 	.zero	93	@ byteCount == 30; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x35	@ module_index
+	.long	0x36	@ module_index
 	.long	0x200000a	@ type_token_id
 	.ascii	"androidx/lifecycle/LiveData"	@ java_name
 	.zero	96	@ byteCount == 27; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x35	@ module_index
+	.long	0x36	@ module_index
 	.long	0x200000d	@ type_token_id
 	.ascii	"androidx/lifecycle/LiveData$LifecycleBoundObserver"	@ java_name
 	.zero	73	@ byteCount == 50; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x35	@ module_index
+	.long	0x36	@ module_index
 	.long	0x200000e	@ type_token_id
 	.ascii	"androidx/lifecycle/LiveData$ObserverWrapper"	@ java_name
 	.zero	80	@ byteCount == 43; fixedWidth == 123; returned size == 123
@@ -29092,13 +29092,13 @@ map_java:
 	.zero	87	@ byteCount == 36; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x35	@ module_index
+	.long	0x36	@ module_index
 	.long	0x200000c	@ type_token_id
 	.ascii	"androidx/lifecycle/MutableLiveData"	@ java_name
 	.zero	89	@ byteCount == 34; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x35	@ module_index
+	.long	0x36	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/lifecycle/Observer"	@ java_name
 	.zero	96	@ byteCount == 27; fixedWidth == 123; returned size == 123
@@ -29980,13 +29980,13 @@ map_java:
 	.zero	75	@ byteCount == 48; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x33	@ module_index
+	.long	0x34	@ module_index
 	.long	0x2000004	@ type_token_id
 	.ascii	"androidx/print/PrintHelper"	@ java_name
 	.zero	97	@ byteCount == 26; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x33	@ module_index
+	.long	0x34	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/print/PrintHelper$OnPrintFinishCallback"	@ java_name
 	.zero	75	@ byteCount == 48; fixedWidth == 123; returned size == 123
@@ -32980,13 +32980,13 @@ map_java:
 	.zero	73	@ byteCount == 50; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000054	@ type_token_id
 	.ascii	"crc64396a3fe5f8138e3f/CustomTabsServiceConnectionImpl"	@ java_name
 	.zero	70	@ byteCount == 53; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x34	@ module_index
+	.long	0x35	@ module_index
 	.long	0x2000055	@ type_token_id
 	.ascii	"crc64396a3fe5f8138e3f/KeepAliveService"	@ java_name
 	.zero	85	@ byteCount == 38; fixedWidth == 123; returned size == 123
@@ -34138,7 +34138,7 @@ map_java:
 	.zero	69	@ byteCount == 54; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x36	@ module_index
+	.long	0x33	@ module_index
 	.long	0x2000002	@ type_token_id
 	.ascii	"crc6470afcb29ec47820b/MainActivity"	@ java_name
 	.zero	89	@ byteCount == 34; fixedWidth == 123; returned size == 123

@@ -257,23 +257,23 @@ map_aname.50:
 
 	.type	map_aname.51, @object
 map_aname.51:
-	.asciz	"Xamarin.AndroidX.Print"
-	.size	map_aname.51, 23
+	.asciz	"TestBDonline.Android"
+	.size	map_aname.51, 21
 
 	.type	map_aname.52, @object
 map_aname.52:
-	.asciz	"Xamarin.AndroidX.Browser"
-	.size	map_aname.52, 25
+	.asciz	"Xamarin.AndroidX.Print"
+	.size	map_aname.52, 23
 
 	.type	map_aname.53, @object
 map_aname.53:
-	.asciz	"Xamarin.AndroidX.Lifecycle.LiveData.Core"
-	.size	map_aname.53, 41
+	.asciz	"Xamarin.AndroidX.Browser"
+	.size	map_aname.53, 25
 
 	.type	map_aname.54, @object
 map_aname.54:
-	.asciz	"TestBDonline.Android"
-	.size	map_aname.54, 21
+	.asciz	"Xamarin.AndroidX.Lifecycle.LiveData.Core"
+	.size	map_aname.54, 41
 
 	.type	map_aname.55, @object
 map_aname.55:

@@ -16,9 +16,7 @@ namespace TestBDonline.View
             }
             else
             {
-                main.Children.Add(new News());
-                main.Children.Add(new Account(data));
-
+                main.Children.Add(new News(data));
                 if (data.UserData.Status == Scripts.Structs.Status.admin)
                     main.Children.Add(new AdminPanel(data));
             }

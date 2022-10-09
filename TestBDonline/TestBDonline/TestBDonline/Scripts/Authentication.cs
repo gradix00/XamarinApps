@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Net;
+using System;
 using MySqlConnector;
 using TestBDonline.Scripts.Structs;
 using System.Collections.Generic;
@@ -21,8 +22,19 @@ namespace TestBDonline.Scripts
 
         private bool CheckAcces(MySqlConnection con)
         {
-            if (con.State == System.Data.ConnectionState.Open)
-                return true;
+            try
+            {
+                using (var client = new WebClient())
+                using (var stream = client.OpenRead("http://www.google.com"))
+                {
+                    if (con.State == System.Data.ConnectionState.Open)
+                        return true;
+                }
+            }
+            catch
+            {
+                con.Close();                        
+            }
             return false;
         }
 
@@ -42,7 +54,7 @@ namespace TestBDonline.Scripts
                 int numberOfRecord = 0;
                 while (read.Read())
                 {
-                    GetInfoUser(read["Id"].ToString(), read["Nickname"].ToString(), read["Email"].ToString(), read["Points"].ToString(), read["Status"].ToString(), read["RequirePwdReset"].ToString());
+                    UserData = GetInfoUser(read["Id"].ToString(), read["Nickname"].ToString(), read["Email"].ToString(), read["Points"].ToString(), read["Status"].ToString(), read["RequirePwdReset"].ToString());
                     numberOfRecord++;
                 }
          
@@ -118,6 +130,63 @@ namespace TestBDonline.Scripts
             return retList;
         }
 
+        public List<PostData> GetListAllPosts()
+        {
+            var conn = new MySqlConnection(connAddr);
+            conn.Open();
+
+            var retList = new List<PostData>();
+            if (CheckAcces(conn))
+            {
+                MySqlCommand cmd = new MySqlCommand("SELECT * FROM Posts", conn);
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    retList.Add(new PostData
+                    {
+                        Autor = reader["autor"].ToString(),
+                        Date = Convert.ToDateTime(reader["date"].ToString()),
+                        Title = reader["title"].ToString(),
+                        Description = reader["description"].ToString(),
+                        UrlImage = reader["UrlImage"].ToString(),
+                        Likes = int.Parse(reader["likes"].ToString())
+                    });
+                }
+            }
+            conn.Close();
+            return retList;
+        }
+
+        public List<EventData> GetListAllEventLog()
+        {
+            var conn = new MySqlConnection(connAddr);
+            conn.Open();
+
+            var retList = new List<EventData>();
+            if (CheckAcces(conn))
+            {
+                MySqlCommand cmd = new MySqlCommand("SELECT * FROM EventLog", conn);
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    retList.Add(new EventData
+                    {
+                        ID = int.Parse(reader["ID"].ToString()),
+                        Autor = reader["Autor"].ToString(),
+                        Details = reader["Details"].ToString(),
+                        Date = Convert.ToDateTime(reader["Date"].ToString())
+                    });
+                }
+            }
+            conn.Close();
+
+            foreach(var item in retList)
+                Console.WriteLine(item.Details);
+            return retList;
+        }
+
         public UserData GetUserDataByID(int id)
         {
             List<UserData> getList = GetListAllUsers();
@@ -127,6 +196,47 @@ namespace TestBDonline.Scripts
                     return user;
             }
             return new UserData();
+        }
+
+        public bool CreatePost(PostData data)
+        {
+            var conn = new MySqlConnection(connAddr);
+            conn.Open();
+
+            if (CheckAcces(conn))
+            {
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO Posts(autor, date, title, description, UrlImage, likes) VALUES(@autor, @date, @title, @description, @url, @likes)", conn);
+                cmd.Parameters.AddWithValue("@autor", data.Autor);
+                cmd.Parameters.AddWithValue("@date", data.Date);
+                cmd.Parameters.AddWithValue("@title", data.Title);
+                cmd.Parameters.AddWithValue("@description", data.Description);
+                cmd.Parameters.AddWithValue("@url", data.UrlImage);
+                cmd.Parameters.AddWithValue("@likes", "0");
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                return true;
+            }
+            conn.Close();
+            return false;
+        }
+
+        public bool CreateNewLog(EventData data)
+        {
+            var conn = new MySqlConnection(connAddr);
+            conn.Open();
+
+            if (CheckAcces(conn))
+            {
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO EventLog(autor, details, date) VALUES(@autor, @details, @date)", conn);
+                cmd.Parameters.AddWithValue("@autor", data.Autor);
+                cmd.Parameters.AddWithValue("@details", data.Details);
+                cmd.Parameters.AddWithValue("@date", data.Date);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                return true;
+            }
+            conn.Close();
+            return false;
         }
 
         public bool UpdateUserDataBy(UserData data)

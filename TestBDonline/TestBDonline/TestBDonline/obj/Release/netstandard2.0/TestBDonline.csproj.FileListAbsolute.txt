@@ -20,3 +20,28 @@ G:\Aplikacje Xamarin\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstand
 G:\Aplikacje Xamarin\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\View\AdminPanel.xaml.g.cs
 G:\Aplikacje Xamarin\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\View\BannedInfo.xaml.g.cs
 G:\Aplikacje Xamarin\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\View\UserManagement.xaml.g.cs
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\bin\Release\netstandard2.0\TestBDonline.deps.json
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\bin\Release\netstandard2.0\TestBDonline.dll
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\bin\Release\netstandard2.0\TestBDonline.pdb
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\TestBDonline.csproj.AssemblyReference.cache
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\TestBDonline.GeneratedMSBuildEditorConfig.editorconfig
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\App.xaml.g.cs
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\View\Account.xaml.g.cs
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\View\AdminPanel.xaml.g.cs
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\View\BannedInfo.xaml.g.cs
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\View\LoginPage.xaml.g.cs
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\View\Main.xaml.g.cs
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\View\News.xaml.g.cs
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\View\RegisterPage.xaml.g.cs
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\View\UserEditingData.xaml.g.cs
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\View\UserManagement.xaml.g.cs
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\TestBDonline.AssemblyInfoInputs.cache
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\TestBDonline.AssemblyInfo.cs
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\TestBDonline.csproj.CoreCompileInputs.cache
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\XamlC.stamp
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\TestBDonline.dll
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\refint\TestBDonline.dll
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\TestBDonline.pdb
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\ref\TestBDonline.dll
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\View\AddingPostPage.xaml.g.cs
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\View\EventsLog.xaml.g.cs

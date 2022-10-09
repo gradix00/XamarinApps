@@ -324,7 +324,7 @@
 
 	.type	.L.compressed_assembly_data.81, @object
 	.local	.L.compressed_assembly_data.81
-	.comm	.L.compressed_assembly_data.81, 19968, 16
+	.comm	.L.compressed_assembly_data.81, 46592, 16
 
 	.type	.L.compressed_assembly_data.82, @object
 	.local	.L.compressed_assembly_data.82

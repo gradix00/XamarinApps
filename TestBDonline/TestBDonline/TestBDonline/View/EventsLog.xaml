@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestBDonline.View.EventsLog">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView VerticalOptions="StartAndExpand"
+                      HorizontalOptions="FillAndExpand"
+                      ItemsSource="{Binding EventCell}"
+                      IsPullToRefreshEnabled="True"
+                      Refreshing="RefresPostsList"
+                      x:Name="list" RefreshControlColor="CornflowerBlue">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal"
+                                         HorizontalOptions="FillAndExpand">
+                                <Label Text="{Binding ID}"
+                                       FontAttributes="Bold"/>
+                                <Label Text="{Binding Autor}"
+                                       FontAttributes="Bold"/>
+                                <Label Text="{Binding Details}"/>
+                                <Label Text="{Binding Date}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -2,11 +2,29 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestBDonline.View.News">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="https://toppng.com/uploads/preview/black-and-white-stockportable-network-account-icon-11553436383dwuayhjyvo.png"
+                     Clicked="OpenPageAccount"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Tu będą wyświetlane news w aplikacji :P"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <RefreshView Refreshing="LoadNews"
+                     x:Name="refreshView">
+            <ScrollView HorizontalOptions="FillAndExpand"
+                      VerticalOptions="FillAndExpand">
+                <StackLayout VerticalOptions="StartAndExpand"
+                             HorizontalOptions="FillAndExpand"
+                             x:Name="page">
+
+                    <StackLayout>
+                        <Label Text="Title"/>
+                        <Label Text="Description"/>
+                        <Image Source="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"/>
+                        <Label Text="Likes"/>
+                        <Button Text="przycisk"/>
+                    </StackLayout>
+                    
+                </StackLayout>
+            </ScrollView>
+        </RefreshView>
     </ContentPage.Content>
 </ContentPage>

@@ -4,23 +4,40 @@
              x:Class="TestBDonline.View.LoginPage">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Zareklamy - Logowanie"/>
+        <ToolbarItem Text="eWads - Logowanie"/>
     </ContentPage.ToolbarItems>
-    <StackLayout Orientation="Vertical"
-                 HorizontalOptions="CenterAndExpand"
-                 VerticalOptions="CenterAndExpand">
-        <Entry Placeholder="Email"
-               HorizontalOptions="CenterAndExpand"
-               HorizontalTextAlignment="Center" 
-               x:Name="login"/>
-        <Entry Placeholder="Password"
-               HorizontalOptions="CenterAndExpand"
-               HorizontalTextAlignment="Center" 
-               x:Name="pwd"/>
-        <Button Text="Zaloguj"
-                Clicked="Login"/>
-        <Button Text="Nie mam konta"
-                Clicked="OpenRegisterPage"/>
-    </StackLayout>
+    <AbsoluteLayout>
+        <StackLayout Orientation="Vertical"
+                     HorizontalOptions="CenterAndExpand"
+                     VerticalOptions="CenterAndExpand"
+                     AbsoluteLayout.LayoutFlags="All"
+                     AbsoluteLayout.LayoutBounds="0,0,1,1"
+                     x:Name="layout">
+            <Entry Placeholder="Email"
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center" 
+                   x:Name="login"
+                   Margin="30, 0, 30, 0"/>
+            <Entry Placeholder="Password"
+                   IsPassword="True"
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center" 
+                   x:Name="pwd"
+                   Margin="30, 0, 30, 0"/>
+            <Button Text="Zaloguj"
+                    Clicked="Login"
+                    Margin="30, 0, 30, 0"/>
+            <Button Text="Nie mam konta"
+                    Clicked="OpenRegisterPage"
+                    Margin="30, 0, 30, 0"/>
+        </StackLayout>
+        <StackLayout AbsoluteLayout.LayoutFlags="All"
+                     AbsoluteLayout.LayoutBounds="0,0,1,1"
+                     VerticalOptions="CenterAndExpand">
+            <ActivityIndicator x:Name="indicator"
+                               Color="CornflowerBlue"
+                               AbsoluteLayout.LayoutFlags="SizeProportional,PositionProportional"/>
+        </StackLayout>
+    </AbsoluteLayout>
 
 </ContentPage>

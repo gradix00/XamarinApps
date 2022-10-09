@@ -15,6 +15,17 @@ namespace TestBDonline.View
             this.data = data;
         }
 
+        private void OpenPageAddingPost(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AddingPostPage(data));
+        }
+
+        private void OpenPageEventsLog(object sender, EventArgs e)
+        {
+            DisplayAlert("nick", data.UserData.Nickname, "ok");
+            Navigation.PushAsync(new EventsLog());
+        }
+
         private void OpenPageUsersManagement(object sender, EventArgs e)
         {
             Navigation.PushAsync(new UserManagement(data));

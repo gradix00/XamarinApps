@@ -7,9 +7,13 @@
         <StackLayout VerticalOptions="CenterAndExpand"
                      HorizontalOptions="CenterAndExpand">
             <Button Text="Utwórz post"
-                    HorizontalOptions="CenterAndExpand"/>
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="OpenPageAddingPost"/>
             <Button Text="Utwórz nagrode"
                     HorizontalOptions="CenterAndExpand"/>
+            <Button Text="Dziennik zdarzeń (Beta)"
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="OpenPageEventsLog"/>
             <Button Text="Zarządzaj użytkownikami"
                     HorizontalOptions="CenterAndExpand"
                     Clicked="OpenPageUsersManagement"/>
