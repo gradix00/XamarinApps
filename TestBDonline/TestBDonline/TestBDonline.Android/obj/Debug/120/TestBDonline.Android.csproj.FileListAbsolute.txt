@@ -1358,7 +1358,6 @@ G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline.Android\obj\De
 G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline.Android\obj\Debug\120\stamp\_GenerateJavaStubs.stamp
 G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline.Android\obj\Debug\120\stamp\_GeneratePackageManagerJava.stamp
 G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline.Android\obj\Debug\120\stamp\_ResolveLibraryProjectImports.stamp
-G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline.Android\obj\Debug\120\res\mipmap-anydpi-v26\ewads_icon.xml
 G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline.Android\obj\Debug\120\res\mipmap-hdpi\ewads_icon.png
 G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline.Android\obj\Debug\120\res\mipmap-mdpi\ewads_icon.png
 G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline.Android\obj\Debug\120\res\mipmap-xhdpi\ewads_icon.png

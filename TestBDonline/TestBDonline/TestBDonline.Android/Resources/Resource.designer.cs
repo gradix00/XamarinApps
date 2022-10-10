@@ -18784,7 +18784,7 @@ namespace TestBDonline.Droid
 			public const int eWads_icon = 2131492864;
 			
 			// aapt resource value: 0x7F0C0001
-			public const int launcher_foreground = 2131492865;
+			public const int icon = 2131492865;
 			
 			static Mipmap()
 			{

@@ -157,108 +157,108 @@ map_aname.30:
 
 	.type	map_aname.31, %object
 map_aname.31:
-	.asciz	"Xamarin.AndroidX.Fragment"
-	.size	map_aname.31, 26
+	.asciz	"TestBDonline.Android"
+	.size	map_aname.31, 21
 
 	.type	map_aname.32, %object
 map_aname.32:
-	.asciz	"Xamarin.AndroidX.RecyclerView"
-	.size	map_aname.32, 30
+	.asciz	"Xamarin.AndroidX.Fragment"
+	.size	map_aname.32, 26
 
 	.type	map_aname.33, %object
 map_aname.33:
-	.asciz	"Xamarin.AndroidX.ViewPager2"
-	.size	map_aname.33, 28
+	.asciz	"Xamarin.AndroidX.RecyclerView"
+	.size	map_aname.33, 30
 
 	.type	map_aname.34, %object
 map_aname.34:
-	.asciz	"FormsViewGroup"
-	.size	map_aname.34, 15
+	.asciz	"Xamarin.AndroidX.ViewPager2"
+	.size	map_aname.34, 28
 
 	.type	map_aname.35, %object
 map_aname.35:
-	.asciz	"Xamarin.AndroidX.AsyncLayoutInflater"
-	.size	map_aname.35, 37
+	.asciz	"FormsViewGroup"
+	.size	map_aname.35, 15
 
 	.type	map_aname.36, %object
 map_aname.36:
-	.asciz	"Xamarin.AndroidX.Media"
-	.size	map_aname.36, 23
+	.asciz	"Xamarin.AndroidX.AsyncLayoutInflater"
+	.size	map_aname.36, 37
 
 	.type	map_aname.37, %object
 map_aname.37:
-	.asciz	"Xamarin.AndroidX.Legacy.Support.Core.UI"
-	.size	map_aname.37, 40
+	.asciz	"Xamarin.AndroidX.Media"
+	.size	map_aname.37, 23
 
 	.type	map_aname.38, %object
 map_aname.38:
-	.asciz	"Xamarin.Essentials"
-	.size	map_aname.38, 19
+	.asciz	"Xamarin.AndroidX.Legacy.Support.Core.UI"
+	.size	map_aname.38, 40
 
 	.type	map_aname.39, %object
 map_aname.39:
-	.asciz	"Xamarin.AndroidX.ConstraintLayout.Core"
-	.size	map_aname.39, 39
+	.asciz	"Xamarin.Essentials"
+	.size	map_aname.39, 19
 
 	.type	map_aname.40, %object
 map_aname.40:
-	.asciz	"Xamarin.AndroidX.DynamicAnimation"
-	.size	map_aname.40, 34
+	.asciz	"Xamarin.AndroidX.ConstraintLayout.Core"
+	.size	map_aname.40, 39
 
 	.type	map_aname.41, %object
 map_aname.41:
-	.asciz	"Mono.Android"
-	.size	map_aname.41, 13
+	.asciz	"Xamarin.AndroidX.DynamicAnimation"
+	.size	map_aname.41, 34
 
 	.type	map_aname.42, %object
 map_aname.42:
-	.asciz	"Xamarin.Google.Android.Material"
-	.size	map_aname.42, 32
+	.asciz	"Mono.Android"
+	.size	map_aname.42, 13
 
 	.type	map_aname.43, %object
 map_aname.43:
-	.asciz	"Xamarin.AndroidX.LocalBroadcastManager"
-	.size	map_aname.43, 39
+	.asciz	"Xamarin.Google.Android.Material"
+	.size	map_aname.43, 32
 
 	.type	map_aname.44, %object
 map_aname.44:
-	.asciz	"Xamarin.AndroidX.Lifecycle.ViewModel"
-	.size	map_aname.44, 37
+	.asciz	"Xamarin.AndroidX.LocalBroadcastManager"
+	.size	map_aname.44, 39
 
 	.type	map_aname.45, %object
 map_aname.45:
-	.asciz	"Xamarin.AndroidX.CursorAdapter"
-	.size	map_aname.45, 31
+	.asciz	"Xamarin.AndroidX.Lifecycle.ViewModel"
+	.size	map_aname.45, 37
 
 	.type	map_aname.46, %object
 map_aname.46:
-	.asciz	"Xamarin.AndroidX.DocumentFile"
-	.size	map_aname.46, 30
+	.asciz	"Xamarin.AndroidX.CursorAdapter"
+	.size	map_aname.46, 31
 
 	.type	map_aname.47, %object
 map_aname.47:
-	.asciz	"Xamarin.AndroidX.SavedState"
-	.size	map_aname.47, 28
+	.asciz	"Xamarin.AndroidX.DocumentFile"
+	.size	map_aname.47, 30
 
 	.type	map_aname.48, %object
 map_aname.48:
-	.asciz	"Xamarin.AndroidX.ViewPager"
-	.size	map_aname.48, 27
+	.asciz	"Xamarin.AndroidX.SavedState"
+	.size	map_aname.48, 28
 
 	.type	map_aname.49, %object
 map_aname.49:
-	.asciz	"Xamarin.AndroidX.ConstraintLayout"
-	.size	map_aname.49, 34
+	.asciz	"Xamarin.AndroidX.ViewPager"
+	.size	map_aname.49, 27
 
 	.type	map_aname.50, %object
 map_aname.50:
-	.asciz	"Xamarin.Google.Guava.ListenableFuture"
-	.size	map_aname.50, 38
+	.asciz	"Xamarin.AndroidX.ConstraintLayout"
+	.size	map_aname.50, 34
 
 	.type	map_aname.51, %object
 map_aname.51:
-	.asciz	"TestBDonline.Android"
-	.size	map_aname.51, 21
+	.asciz	"Xamarin.Google.Guava.ListenableFuture"
+	.size	map_aname.51, 38
 
 	.type	map_aname.52, %object
 map_aname.52:
