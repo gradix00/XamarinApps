@@ -93,7 +93,7 @@ namespace TestBDonline.View
             };
             Button btn = new Button
             {
-                Text = "polub"
+                Text = "link"
             };
 
             layout.Children.Add(title);

@@ -21,8 +21,8 @@
                    HorizontalOptions="CenterAndExpand"
                    HorizontalTextAlignment="Center" 
                    x:Name="login"
-                       Keyboard="Email"
-                       Margin="30, 0, 30, 0"/>
+                       Margin="30, 0, 30, 0"
+                       Keyboard="Email"/>
                 <Entry Placeholder="Hasło"
                    HorizontalOptions="CenterAndExpand"
                    HorizontalTextAlignment="Center" 
@@ -37,12 +37,6 @@
                     Clicked="Register"
                         Margin="30, 0, 30, 0"/>
             </StackLayout>
-        <StackLayout AbsoluteLayout.LayoutFlags="All"
-                     AbsoluteLayout.LayoutBounds="0,0,1,1"
-                     VerticalOptions="CenterAndExpand">
-            <ActivityIndicator x:Name="indicator"
-                               Color="CornflowerBlue"
-                               AbsoluteLayout.LayoutFlags="SizeProportional,PositionProportional"/>
-        </StackLayout>
+        
     </AbsoluteLayout>
 </ContentPage>

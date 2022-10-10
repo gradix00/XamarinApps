@@ -16,9 +16,9 @@
             <Entry Placeholder="Email"
                    HorizontalOptions="CenterAndExpand"
                    HorizontalTextAlignment="Center" 
-                   Keyboard="Email"
                    x:Name="login"
-                   Margin="30, 0, 30, 0"/>
+                   Margin="30, 0, 30, 0"
+                   Keyboard="Email"/>
             <Entry Placeholder="Password"
                    IsPassword="True"
                    HorizontalOptions="CenterAndExpand"

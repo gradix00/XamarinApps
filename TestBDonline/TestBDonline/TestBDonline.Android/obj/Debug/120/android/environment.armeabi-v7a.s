@@ -1947,7 +1947,7 @@ application_config:
 
 	.type	.L.autostr.6, %object
 .L.autostr.6:
-	.asciz	"ffc87729-5024-413e-ac40-2514f059de8f"
+	.asciz	"2a3c70f4-b0b0-47f9-b077-ed39662a0b18"
 	.size	.L.autostr.6, 37
 
 	.type	.L.autostr.7, %object
@@ -2122,8 +2122,8 @@ application_config:
 
 	.type	.L.autostr.41, %object
 .L.autostr.41:
-	.asciz	"com.companyname.testbdonline"
-	.size	.L.autostr.41, 29
+	.asciz	"com.adiomigames.ewads"
+	.size	.L.autostr.41, 22
 
 
 	.ident	"Xamarin.Android remotes/origin/d17-2 @ 4e061b739747f624ccb03c98940d8900548a98ad"

@@ -24,7 +24,7 @@ namespace TestBDonline.View
 		private void Register(object sender, EventArgs e)
         {
 			layout.IsEnabled = false;
-			indicator.IsRunning = true;
+			//indicator.IsRunning = true;
 		    System.Threading.Tasks.Task.Delay(750);
 
 			if (pwd1.Text == pwd2.Text)
@@ -38,7 +38,7 @@ namespace TestBDonline.View
 					{ 
 						Autor = nickname.Text,
 						Details = $"Utworzono nowe konto! Email: {login.Text}",
-						Date = DateTime.UtcNow
+						Date = DateTime.Now						
 					});
 					this.Navigation.RemovePage(this);
 				}
@@ -49,7 +49,7 @@ namespace TestBDonline.View
 				DisplayAlert("Różne hasła!", "Popraw hasła, gdyż są różne", "Ok");
 
 			layout.IsEnabled = true;
-			indicator.IsRunning = false;
+			//indicator.IsRunning = false;
         }
 	}
 }

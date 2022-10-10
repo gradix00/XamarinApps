@@ -11,15 +11,19 @@
                      HorizontalOptions="CenterAndExpand">
             <Button Text="Utwórz post"
                     HorizontalOptions="CenterAndExpand"
-                    Clicked="OpenPageAddingPost"/>
+                    Clicked="OpenPageAddingPost"
+                    WidthRequest="230"/>
             <Button Text="Utwórz nagrode"
-                    HorizontalOptions="CenterAndExpand"/>
+                    HorizontalOptions="CenterAndExpand"
+                    WidthRequest="230"/>
             <Button Text="Dziennik zdarzeń (Beta)"
                     HorizontalOptions="CenterAndExpand"
-                    Clicked="OpenPageEventsLog"/>
+                    Clicked="OpenPageEventsLog"
+                    WidthRequest="230"/>
             <Button Text="Zarządzaj użytkownikami"
                     HorizontalOptions="CenterAndExpand"
-                    Clicked="OpenPageUsersManagement"/>
+                    Clicked="OpenPageUsersManagement"
+                    WidthRequest="230"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -15,17 +15,14 @@
                     <ColumnDefinition Width="75"/>
                 </Grid.ColumnDefinitions>
                 <Label Text="id"
-                       FontSize="15"
                        FontAttributes="Bold"
                        TextTransform="Uppercase"
                        Grid.Column="0"/>
-                <Label Text="nickname"
-                       FontSize="15"
+                <Label Text="Nick"
                        FontAttributes="Bold"
                        TextTransform="Uppercase"
                        Grid.Column="1"/>
-                <Label Text="punkty"
-                       FontSize="15"
+                <Label Text="Punkty"
                        FontAttributes="Bold"
                        TextTransform="Uppercase"
                        Grid.Column="2"/>
