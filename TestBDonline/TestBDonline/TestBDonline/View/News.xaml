@@ -11,20 +11,12 @@
         <RefreshView Refreshing="LoadNews"
                      x:Name="refreshView">
             <ScrollView HorizontalOptions="FillAndExpand"
-                      VerticalOptions="FillAndExpand">
+                      VerticalOptions="FillAndExpand"
+                        BackgroundColor="CornflowerBlue">
                 <StackLayout VerticalOptions="StartAndExpand"
                              HorizontalOptions="FillAndExpand"
-                             x:Name="page">
-
-                    <StackLayout>
-                        <Label Text="Title"/>
-                        <Label Text="Description"/>
-                        <Image Source="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"/>
-                        <Label Text="Likes"/>
-                        <Button Text="przycisk"/>
-                    </StackLayout>
-                    
-                </StackLayout>
+                             BackgroundColor="CornflowerBlue"
+                             x:Name="page"/>
             </ScrollView>
         </RefreshView>
     </ContentPage.Content>

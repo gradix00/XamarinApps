@@ -14,6 +14,7 @@ namespace TestBDonline.View
         {
             InitializeComponent();
             Data = data;
+            user.Text = $"Dodajesz post jako {data.UserData.Nickname} ({data.UserData.ID})";
         }
 
         private void CreatePost(object sender, EventArgs e)
@@ -36,8 +37,8 @@ namespace TestBDonline.View
                     Data.CreateNewLog(new Scripts.Structs.EventData
                     {
                         Autor = Data.UserData.Nickname,
-                        Details = $"Create post Name: {post.Title}, Description: {post.Description}",
-                        Date = DateTime.Now
+                        Details = $"Opublikowano post; Tytuł: {post.Title}; Opis: {post.Description}",
+                        Date = DateTime.UtcNow
                     });
                 }
                 else

@@ -2,25 +2,44 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestBDonline.View.AddingPostPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Publikacja postu"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand"
-                     HorizontalOptions="CenterAndExpand">
-            <Entry Placeholder="Title"
+        <StackLayout VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand"
+                     BackgroundColor="DimGray">
+            <Editor Placeholder="Title"
+                    PlaceholderColor="White"
+                    TextColor="White"
                    x:Name="title"
-                   HorizontalOptions="CenterAndExpand"
+                   AutoSize="TextChanges"
+                   MaxLength="100"
                    Margin="30, 0, 30, 0"/>
-            <Entry Placeholder="Description"
+            <Editor Placeholder="Description"
+                    PlaceholderColor="White"
+                    TextColor="White"
                    x:Name="description"
-                   HorizontalOptions="CenterAndExpand"
+                   AutoSize="TextChanges"
+                   MaxLength="600"
                    Margin="30, 0, 30, 0"/>
-            <Entry Placeholder="Url image"
+            <Editor Placeholder="Url image"
+                    PlaceholderColor="White"
+                    TextColor="White"
                    x:Name="url"
-                   HorizontalOptions="CenterAndExpand"
+                   AutoSize="TextChanges"
+                   MaxLength="120"
                    Margin="30, 0, 30, 0"/>
+            <Label Text="user id"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   FontSize="16"
+                   HorizontalOptions="CenterAndExpand"
+                   x:Name="user"/>
             <Button Text="Publish post"
                     Clicked="CreatePost"
-                    HorizontalOptions="CenterAndExpand"
-                    Margin="30, 0, 30, 0"/>
+                    VerticalOptions="EndAndExpand"
+                    BackgroundColor="LightGoldenrodYellow"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -6,32 +6,38 @@
         <ToolbarItem Text="Edycja użytkownika"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <ScrollView HorizontalOptions="CenterAndExpand">
-            <StackLayout>
-                <Label x:Name="id"
+        <StackLayout BackgroundColor="DimGray">
+            <Label x:Name="id"
+                   Text="ID"
                        VerticalOptions="StartAndExpand"
                        HorizontalOptions="CenterAndExpand"
+                   TextColor="White"
                        FontSize="20"/>
-                <Entry x:Name="email"
+            <Entry x:Name="email"
+                   TextColor="White"
+                   PlaceholderColor="White"
                        Placeholder="Edytuj email"
-                       VerticalOptions="StartAndExpand"
-                       HorizontalOptions="CenterAndExpand"/>
-                <Entry x:Name="points"
+                       VerticalOptions="StartAndExpand"/>
+            <Entry x:Name="points"
+                   TextColor="White"
+                   PlaceholderColor="White"
                        Placeholder="Edytuj liczbę punktów"
-                       VerticalOptions="StartAndExpand"
-                       HorizontalOptions="CenterAndExpand"/>
-                <Picker SelectedIndex="0"
+                       VerticalOptions="StartAndExpand"/>
+            <Picker SelectedIndex="0"
+                    TextColor="White"
+                    Title="Status"
+                    TitleColor="White"
                         x:Name="picker">
-                </Picker>
-                <Label Text="Wymagaj reset hasła przy następnym logowaniu"/>
-                <Switch IsToggled="False"
+            </Picker>
+            <Label Text="Wymagaj reset hasła przy następnym logowaniu"
+                   TextColor="White"/>
+            <Switch IsToggled="False"
                         HorizontalOptions="CenterAndExpand"
                         x:Name="toggle"/>
-                <Button Text="Zastosuj"
+            <Button Text="Zastosuj"
                         VerticalOptions="EndAndExpand"
-                        HorizontalOptions="CenterAndExpand"
+                        BackgroundColor="LightGoldenrodYellow"
                         Clicked="Apply"/>
-            </StackLayout>
-        </ScrollView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

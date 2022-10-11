@@ -38,7 +38,7 @@ namespace TestBDonline.View
 					{ 
 						Autor = nickname.Text,
 						Details = $"Utworzono nowe konto! Email: {login.Text}",
-						Date = DateTime.Now						
+						Date = DateTime.UtcNow
 					});
 					this.Navigation.RemovePage(this);
 				}

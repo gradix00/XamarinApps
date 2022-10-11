@@ -7,23 +7,34 @@
         <ToolbarItem Text="Panel admina"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand"
-                     HorizontalOptions="CenterAndExpand">
-            <Button Text="Utwórz post"
-                    HorizontalOptions="CenterAndExpand"
-                    Clicked="OpenPageAddingPost"
-                    WidthRequest="230"/>
-            <Button Text="Utwórz nagrode"
-                    HorizontalOptions="CenterAndExpand"
-                    WidthRequest="230"/>
-            <Button Text="Dziennik zdarzeń (Beta)"
-                    HorizontalOptions="CenterAndExpand"
-                    Clicked="OpenPageEventsLog"
-                    WidthRequest="230"/>
-            <Button Text="Zarządzaj użytkownikami"
-                    HorizontalOptions="CenterAndExpand"
-                    Clicked="OpenPageUsersManagement"
-                    WidthRequest="230"/>
+        <StackLayout VerticalOptions="FillAndExpand"
+                     BackgroundColor="DimGray">
+            <Frame VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   BorderColor="LightGoldenrodYellow"
+                   BackgroundColor="CornflowerBlue">
+                <StackLayout>
+                    <Button Text="Utwórz post"
+                        HorizontalOptions="CenterAndExpand"
+                        Clicked="OpenPageAddingPost"
+                        WidthRequest="230"
+                            BackgroundColor="LightGoldenrodYellow"/>
+                    <Button Text="Utwórz nagrode"
+                        HorizontalOptions="CenterAndExpand"
+                        WidthRequest="230"
+                            BackgroundColor="LightGoldenrodYellow"/>
+                    <Button Text="Dziennik zdarzeń (Beta)"
+                        HorizontalOptions="CenterAndExpand"
+                        Clicked="OpenPageEventsLog"
+                        WidthRequest="230"
+                            BackgroundColor="LightGoldenrodYellow"/>
+                    <Button Text="Zarządzaj użytkownikami"
+                        HorizontalOptions="CenterAndExpand"
+                        Clicked="OpenPageUsersManagement"
+                        WidthRequest="230"
+                            BackgroundColor="LightGoldenrodYellow"/>
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
