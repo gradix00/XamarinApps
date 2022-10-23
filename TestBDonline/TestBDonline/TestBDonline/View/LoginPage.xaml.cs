@@ -14,20 +14,31 @@ namespace TestBDonline.View
             float width = (float)DeviceDisplay.MainDisplayInfo.Width/2;
             login.WidthRequest = width;
             pwd.WidthRequest = width;
+
+            if (GeneralSettings.DataSave)
+            {
+                login.Text = GeneralSettings.LastEmail;
+                pwd.Text = GeneralSettings.LastPassword;
+                rememberData.IsChecked = true;
+            }
         }
 
         private void Login(object sender, EventArgs e)
         {
-            indicator.IsRunning = true;
-            layout.IsEnabled = false;
             string log = login.Text;
             string pass = pwd.Text;
-            Task.Delay(750); 
+
+            if (rememberData.IsChecked)
+            {
+                //save login and pwd
+                GeneralSettings.LastEmail = log;
+                GeneralSettings.LastPassword = pass;
+                GeneralSettings.DataSave = true;
+            }
 
             var authentication = new Authentication();
             if (authentication.InitiateLogin(log, pass))
             {
-                DisplayAlert("Zalogowano!", $"Witaj {authentication.UserData.Nickname}! Jak ci mija dzień?", "Ok");
                 Navigation.PushAsync(new Main(authentication));
 
                 authentication.CreateNewLog(new Scripts.Structs.EventData
@@ -36,13 +47,10 @@ namespace TestBDonline.View
                     Details = $"Zalogowano się na konto. Email: {login.Text}",
                     Date = DateTime.UtcNow
                 });
-                this.Navigation.RemovePage(this);
+                this.Navigation.RemovePage(this);    
             }
             else
                 DisplayAlert("Nie można się zalogować!", "Przyczyny:\n-Login lub hasło jest poprawne\n-Brak połączenia z internetem\n-Nasz serwer bazy nie działa :(", "Ok");
-           
-            indicator.IsRunning = false;
-            layout.IsEnabled = true;
         }
 
         private void OpenRegisterPage(object sender, EventArgs e)

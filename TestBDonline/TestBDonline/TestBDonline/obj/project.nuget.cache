@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/md4FRvNmOSHN0arqqXC283/KNkijWy+b7w1P6yg8/45Pyy+VOcXWenZscA2lpqfv4aRhBw3SuGClsTKM0sZgg==",
+  "dgSpecHash": "Q/jo7Ro8Nciz9usjnt+OU13CVEgSyAv2dltOr68zlQ6MeFSaMcFPPm1OfWfmFYu4jumfIZNeXYnJx9IFBRB/oQ==",
   "success": true,
   "projectFilePath": "G:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj",
   "expectedPackageFiles": [
@@ -107,6 +107,7 @@
     "C:\\Users\\50kos\\.nuget\\packages\\system.threading.timer\\4.0.1\\system.threading.timer.4.0.1.nupkg.sha512",
     "C:\\Users\\50kos\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\50kos\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\50kos\\.nuget\\packages\\xam.plugins.settings\\3.1.1\\xam.plugins.settings.3.1.1.nupkg.sha512",
     "C:\\Users\\50kos\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\50kos\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
   ],

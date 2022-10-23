@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Dk3q7mGSnlt8VRozdVjVvl+l7SgbnUnoivRuHaE0BLHWGBXyIXZfWWU4bIrd8lappkIxJSXO7q7/GP5MTBSqew==",
+  "dgSpecHash": "rHWbl9d4TmZdIz8iDZD0L/7lBXLQ0QLga86iJ0fbQF8KPLXMy3hSn0I5pwupvxQkFth0mFdodUBW8gzMq+Sa8Q==",
   "success": true,
   "projectFilePath": "G:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline.Android\\TestBDonline.Android.csproj",
   "expectedPackageFiles": [
@@ -76,6 +76,7 @@
     "C:\\Users\\50kos\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\50kos\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\50kos\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\50kos\\.nuget\\packages\\xam.plugins.settings\\3.1.1\\xam.plugins.settings.3.1.1.nupkg.sha512",
     "C:\\Users\\50kos\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
     "C:\\Users\\50kos\\.nuget\\packages\\xamarin.androidx.annotation\\1.2.0.1\\xamarin.androidx.annotation.1.2.0.1.nupkg.sha512",
     "C:\\Users\\50kos\\.nuget\\packages\\xamarin.androidx.annotation.experimental\\1.1.0.1\\xamarin.androidx.annotation.experimental.1.1.0.1.nupkg.sha512",

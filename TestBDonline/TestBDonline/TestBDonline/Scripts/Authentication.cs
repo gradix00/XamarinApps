@@ -3,6 +3,7 @@ using System;
 using MySqlConnector;
 using TestBDonline.Scripts.Structs;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace TestBDonline.Scripts
 {
@@ -33,7 +34,7 @@ namespace TestBDonline.Scripts
             }
             catch
             {
-                con.Close();                        
+                con.CloseAsync();                        
             }
             return false;
         }
@@ -54,7 +55,7 @@ namespace TestBDonline.Scripts
                 int numberOfRecord = 0;
                 while (read.Read())
                 {
-                    UserData = GetInfoUser(read["Id"].ToString(), read["Nickname"].ToString(), read["Email"].ToString(), read["Points"].ToString(), read["Status"].ToString(), read["RequirePwdReset"].ToString());
+                    UserData = GetInfoUser(read["Id"].ToString(), read["Nickname"].ToString(), read["Email"].ToString(), read["Points"].ToString(), read["Status"].ToString(), read["Gender"].ToString(), read["RequirePwdReset"].ToString());
                     numberOfRecord++;
                 }
          
@@ -130,7 +131,7 @@ namespace TestBDonline.Scripts
             return retList;
         }
 
-        public List<PostData> GetListAllPosts()
+        public List<PostData> GetListAllPosts(bool isRandom = false)
         {
             var conn = new MySqlConnection(connAddr);
             conn.Open();
@@ -138,7 +139,14 @@ namespace TestBDonline.Scripts
             var retList = new List<PostData>();
             if (CheckAcces(conn))
             {
-                MySqlCommand cmd = new MySqlCommand("SELECT * FROM Posts", conn);
+                string txtCmd = null;
+
+                if (isRandom)
+                    txtCmd = "SELECT * FROM Posts ORDER BY RAND() LIMIT 4";
+                else
+                    txtCmd = "SELECT * FROM Posts";
+
+                MySqlCommand cmd = new MySqlCommand(txtCmd, conn);
                 MySqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
@@ -158,15 +166,41 @@ namespace TestBDonline.Scripts
             return retList;
         }
 
-        public List<EventData> GetListAllEventLog()
+        public List<MessageData> GetAllMessagesData()
         {
             var conn = new MySqlConnection(connAddr);
             conn.Open();
 
+            var retList = new List<MessageData>();
+            if (CheckAcces(conn))
+            {
+                MySqlCommand cmd = new MySqlCommand("SELECT * FROM GlobalChat ORDER BY date ASC LIMIT 10", conn);
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    retList.Add(new MessageData
+                    {
+                        ID = int.Parse(reader["id"].ToString()),
+                        Autor = reader["autor"].ToString(),
+                        Message = reader["message"].ToString(),
+                        Date = Convert.ToDateTime(reader["date"].ToString())
+                    });
+                }
+            }
+            conn.Close();
+            return retList;
+        }
+
+        public List<EventData> GetListAllEventLog(int numberRecords = 10)
+        {
+            var conn = new MySqlConnection(connAddr);
+            conn.OpenAsync();
+
             var retList = new List<EventData>();
             if (CheckAcces(conn))
             {
-                MySqlCommand cmd = new MySqlCommand("SELECT * FROM EventLog", conn);
+                MySqlCommand cmd = new MySqlCommand($"SELECT * FROM EventLog ORDER BY id DESC LIMIT {numberRecords}", conn);
                 MySqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
@@ -180,7 +214,7 @@ namespace TestBDonline.Scripts
                     });
                 }
             }
-            conn.Close();
+            conn.CloseAsync();
 
             foreach(var item in retList)
                 Console.WriteLine(item.Details);
@@ -196,6 +230,25 @@ namespace TestBDonline.Scripts
                     return user;
             }
             return new UserData();
+        }
+
+        public bool CreateNewMessageGlobalChat(MessageData data)
+        {
+            var conn = new MySqlConnection(connAddr);
+            conn.Open();
+
+            if (CheckAcces(conn))
+            {
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO GlobalChat(autor, message, date) VALUES(@autor, @message, @date)", conn);
+                cmd.Parameters.AddWithValue("@autor", data.Autor);
+                cmd.Parameters.AddWithValue("@message", data.Message);
+                cmd.Parameters.AddWithValue("@date", data.Date);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                return true;
+            }
+            conn.Close();
+            return false;
         }
 
         public bool CreatePost(PostData data)
@@ -239,17 +292,18 @@ namespace TestBDonline.Scripts
             return false;
         }
 
-        public bool UpdateUserDataBy(UserData data)
+        public bool UpdateUserData(UserData data)
         {
             var conn = new MySqlConnection(connAddr);
             conn.Open();
 
             if (CheckAcces(conn))
             {
+                Console.WriteLine("loll");
                 MySqlCommand cmd = new MySqlCommand($"UPDATE Users SET email = @email, points=@points, status=@status, RequirePwdReset=@requireReset WHERE id={data.ID}", conn);
                 cmd.Parameters.AddWithValue("@email", data.Email);
                 cmd.Parameters.AddWithValue("@points", data.Points);
-                cmd.Parameters.AddWithValue("@status", data.Status);
+                cmd.Parameters.AddWithValue("@status", data.Status.ToString());
                 cmd.Parameters.AddWithValue("@requireReset", data.RequirePasswordReset);
                 cmd.ExecuteNonQuery();
                 conn.Close();
@@ -259,7 +313,7 @@ namespace TestBDonline.Scripts
             return true;
         }
 
-        private UserData GetInfoUser(string id, string nick, string email, string points, string status, string rpr)
+        private UserData GetInfoUser(string id, string nick, string email, string points, string status, string gender, string rpr)
         {
             UserData = new UserData()
             {
@@ -268,6 +322,7 @@ namespace TestBDonline.Scripts
                 Email = email,
                 Points = int.Parse(points),
                 Status = new Dictionary.GetStatus().status[status],
+                Gender = new Dictionary.GetStatus().gender[gender],
                 RequirePasswordReset = bool.Parse(rpr.ToString())
             };
             return UserData;

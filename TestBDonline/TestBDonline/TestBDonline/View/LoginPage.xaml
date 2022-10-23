@@ -6,39 +6,74 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="eWads - Logowanie"/>
     </ContentPage.ToolbarItems>
-    <AbsoluteLayout>
-        <StackLayout Orientation="Vertical"
-                     HorizontalOptions="CenterAndExpand"
-                     VerticalOptions="CenterAndExpand"
-                     AbsoluteLayout.LayoutFlags="All"
-                     AbsoluteLayout.LayoutBounds="0,0,1,1"
-                     x:Name="layout">
-            <Entry Placeholder="Email"
-                   HorizontalOptions="CenterAndExpand"
-                   HorizontalTextAlignment="Center" 
-                   x:Name="login"
-                   Margin="30, 0, 30, 0"
-                   Keyboard="Email"/>
-            <Entry Placeholder="Password"
-                   IsPassword="True"
-                   HorizontalOptions="CenterAndExpand"
-                   HorizontalTextAlignment="Center" 
-                   x:Name="pwd"
-                   Margin="30, 0, 30, 0"/>
-            <Button Text="Zaloguj"
-                    Clicked="Login"
-                    Margin="30, 0, 30, 0"/>
-            <Button Text="Nie mam konta"
-                    Clicked="OpenRegisterPage"
-                    Margin="30, 0, 30, 0"/>
-        </StackLayout>
-        <StackLayout AbsoluteLayout.LayoutFlags="All"
-                     AbsoluteLayout.LayoutBounds="0,0,1,1"
-                     VerticalOptions="CenterAndExpand">
-            <ActivityIndicator x:Name="indicator"
-                               Color="CornflowerBlue"
-                               AbsoluteLayout.LayoutFlags="SizeProportional,PositionProportional"/>
-        </StackLayout>
-    </AbsoluteLayout>
+    <Grid x:Name="bg"
+        BackgroundColor="DimGray">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="400"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="350"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
 
+        <Image Source="https://youthincmag.com/wp-content/uploads/2018/07/business-without-degree.jpg"
+                   Aspect="AspectFill"
+               Grid.ColumnSpan="3"
+               Grid.RowSpan="3"/>
+
+        <Label Text="eWads"
+               TextColor="DarkSlateBlue"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               FontAttributes="Bold"
+               FontSize="50"
+               TextDecorations="Underline"
+               Grid.Column="1"/>
+        <Frame BackgroundColor="CornflowerBlue"
+               Grid.Row="1"
+               Grid.Column="1"
+               BorderColor="LightGoldenrodYellow">
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Entry Placeholder="Email"
+                           HorizontalOptions="CenterAndExpand"
+                           HorizontalTextAlignment="Center" 
+                           x:Name="login"
+                           Margin="30, 0, 30, 0"
+                           Keyboard="Email"
+                           PlaceholderColor="White"
+                               TextColor="White"/>
+                <Entry Placeholder="Password"
+                           IsPassword="True"
+                           HorizontalOptions="CenterAndExpand"
+                           HorizontalTextAlignment="Center" 
+                           x:Name="pwd"
+                           Margin="30, 0, 30, 0"
+                           PlaceholderColor="White"
+                               TextColor="White"/>
+                <Button Text="Zaloguj"
+                                Clicked="Login"
+                                Margin="30, 0, 30, 0"
+                                BackgroundColor="LightGoldenrodYellow"
+                                TextColor="DimGray"/>
+                <Button Text="Nie mam konta"
+                            Clicked="OpenRegisterPage"
+                            Margin="30, 0, 30, 0"
+                            BackgroundColor="LightGoldenrodYellow"
+                            TextColor="DimGray"/>
+                <StackLayout Orientation="Horizontal"
+                                 HorizontalOptions="CenterAndExpand">
+                    <Label Text="Zapamiętaj dane"
+                               VerticalOptions="CenterAndExpand"
+                               TextColor="White"
+                               FontAttributes="Bold"/>
+                    <CheckBox IsChecked="False"
+                                  Color="LightGoldenrodYellow"
+                                  x:Name="rememberData"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </Grid>
 </ContentPage>

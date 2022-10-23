@@ -31,13 +31,14 @@
             </Picker>
             <Label Text="Wymagaj reset hasła przy następnym logowaniu"
                    TextColor="White"/>
-            <Switch IsToggled="False"
+            <CheckBox IsChecked="False"
                         HorizontalOptions="CenterAndExpand"
                         x:Name="toggle"/>
             <Button Text="Zastosuj"
                         VerticalOptions="EndAndExpand"
                         BackgroundColor="LightGoldenrodYellow"
-                        Clicked="Apply"/>
+                        Clicked="Apply"
+                    TextColor="DimGray"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

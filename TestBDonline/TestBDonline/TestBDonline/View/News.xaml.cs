@@ -25,28 +25,38 @@ namespace TestBDonline.View
             Navigation.PushAsync(new Account(Data));
         }
 
+        private void OpenPageGlobalChat(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new GlobalChat(Data));
+        }
+
         private async void LoadNews(object sender, EventArgs e)
         {
             await System.Threading.Tasks.Task.Delay(750);
-
-            var postsList = Data.GetListAllPosts();
+            var postsList = Data.GetListAllPosts(true);
             page.Children.Clear();
 
-            List<Layout> tempList = new List<Layout>();
+            List<Frame> tempList = new List<Frame>();
             foreach(var post in postsList)
             {
-                var layout = CreatePost(post);
-                tempList.Add(layout);
+                var frame = CreatePost(post);
+                tempList.Add(frame);
             }
             tempList.Reverse();
-            
-            foreach(var layout in tempList)
+
+            foreach (var layout in tempList)
                 page.Children.Add(layout);
             refreshView.IsRefreshing = false;
         }
 
-        private StackLayout CreatePost(PostData data)
+        private Frame CreatePost(PostData data)
         {
+            Frame frame = new Frame
+            {
+                BorderColor = Color.LightGoldenrodYellow,
+                BackgroundColor = Color.CornflowerBlue,
+                Margin = new Thickness(0, 7, 0, 7)
+            };
             StackLayout layout = new StackLayout
             {
                 HeightRequest = 400
@@ -56,51 +66,46 @@ namespace TestBDonline.View
                 Text = data.Title,
                 VerticalOptions = LayoutOptions.StartAndExpand,
                 HorizontalTextAlignment = TextAlignment.Center,
-                FontAttributes = FontAttributes.Bold
+                FontAttributes = FontAttributes.Bold,
+                TextColor = Color.White
             };
+            layout.Children.Add(title);
+
             Label description = new Label
             {
                 Text = data.Description,
                 VerticalOptions = LayoutOptions.StartAndExpand,
-                HorizontalTextAlignment = TextAlignment.Center
+                HorizontalTextAlignment = TextAlignment.Center,
+                TextColor = Color.White
             };
 
-            if (data.UrlImage != "")
+            ImageSource src;
+            try
             {
-                Image img = new Image
-                {
-                    Source = data.UrlImage,
-                    VerticalOptions = LayoutOptions.StartAndExpand
-                };
-                layout.Children.Add(img);
+                src = ImageSource.FromUri(new Uri(data.UrlImage));
             }
-            else
+            catch (Exception)
             {
-                Label altImg = new Label
-                {
-                    Text = "No photo",
-                    VerticalOptions = LayoutOptions.StartAndExpand,
-                    HorizontalTextAlignment = TextAlignment.Center
-                };
-                layout.Children.Add(altImg);
+                src = "https://adishop.az/images/product_empty.png";
             }
-
-            Label likes = new Label
+            Image img = new Image
             {
-                Text = "Likes " + data.Likes.ToString(),
-                VerticalOptions = LayoutOptions.StartAndExpand,
-                HorizontalTextAlignment = TextAlignment.Center
+                Source = src,
+                VerticalOptions = LayoutOptions.StartAndExpand
             };
+            layout.Children.Add(img);
+
             Button btn = new Button
             {
-                Text = "Polub"
+                Text = $"Polub ({data.Likes})",
+                BackgroundColor = Color.LightGoldenrodYellow,
+                TextColor = Color.DimGray
             };
 
-            layout.Children.Add(title);
-            layout.Children.Add(description);         
-            layout.Children.Add(likes);
+            frame.Content = layout;
+            layout.Children.Add(description);
             layout.Children.Add(btn);
-            return layout;
+            return frame;
         }
     }
 }

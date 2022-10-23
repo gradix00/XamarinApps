@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestBDonline.View.GlobalChat">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Czat globalny"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand">
+            <ScrollView>
+                <StackLayout Orientation="Vertical"
+                             VerticalOptions="FillAndExpand"
+                             HorizontalOptions="FillAndExpand"
+                             x:Name ="page"/>
+            </ScrollView>
+            <StackLayout Orientation="Horizontal"
+                         VerticalOptions="EndAndExpand">
+                <Editor Placeholder="napisz wiadomość"
+                        HorizontalOptions="FillAndExpand"
+                        x:Name="entry"
+                        PropertyChanged="EntryIsNotEmpty"/>
+                <Button Text="wyślij"
+                        HorizontalOptions="EndAndExpand"
+                        Clicked="SentMessage"
+                        IsEnabled="False"
+                        x:Name="btn"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

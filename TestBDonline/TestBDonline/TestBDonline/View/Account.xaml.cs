@@ -10,8 +10,8 @@ namespace TestBDonline.View
         public Account(Authentication data)
         {
             InitializeComponent();
-            Title = "Konto";
-            txt.Text = $"Twój nick: {data.UserData.Nickname}\nTwoje punkty: {data.UserData.Points}";
+            nick.Text = $"{data.UserData.Nickname}";
+            pts.Text = $"Twoje punkty\n{data.UserData.Points}";
         }
     }
 }

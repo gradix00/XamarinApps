@@ -15,6 +15,8 @@ public class MonoPackageManager_Resources {
 		"Microsoft.Extensions.Primitives.dll",
 		"MySqlConnector.dll",
 		"Newtonsoft.Json.dll",
+		"Plugin.Settings.Abstractions.dll",
+		"Plugin.Settings.dll",
 		"RabbitMQ.Client.dll",
 		"RawRabbit.dll",
 		"RawRabbit.Extensions.dll",

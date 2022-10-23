@@ -18,21 +18,33 @@
                         HorizontalOptions="CenterAndExpand"
                         Clicked="OpenPageAddingPost"
                         WidthRequest="230"
-                            BackgroundColor="LightGoldenrodYellow"/>
-                    <Button Text="Utwórz nagrode"
+                            BackgroundColor="LightGoldenrodYellow"
+                            TextColor="DimGray"/>
+                    <Button Text="Utwórz nagrode (niedostępne)"
                         HorizontalOptions="CenterAndExpand"
                         WidthRequest="230"
-                            BackgroundColor="LightGoldenrodYellow"/>
-                    <Button Text="Dziennik zdarzeń (Beta)"
+                            BackgroundColor="LightGoldenrodYellow"
+                            TextColor="DimGray"
+                            IsEnabled="False"/>
+                    <Button Text="Dziennik zdarzeń"
                         HorizontalOptions="CenterAndExpand"
                         Clicked="OpenPageEventsLog"
                         WidthRequest="230"
-                            BackgroundColor="LightGoldenrodYellow"/>
+                            BackgroundColor="LightGoldenrodYellow"
+                            TextColor="DimGray"/>
                     <Button Text="Zarządzaj użytkownikami"
                         HorizontalOptions="CenterAndExpand"
                         Clicked="OpenPageUsersManagement"
                         WidthRequest="230"
-                            BackgroundColor="LightGoldenrodYellow"/>
+                            BackgroundColor="LightGoldenrodYellow"
+                            TextColor="DimGray"/>
+                    <Button Text="Zarządzaj postami (niedostępne)"
+                        HorizontalOptions="CenterAndExpand"
+                        
+                        WidthRequest="230"
+                            BackgroundColor="LightGoldenrodYellow"
+                            TextColor="DimGray"
+                            IsEnabled="False"/>
                 </StackLayout>
             </Frame>
         </StackLayout>

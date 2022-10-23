@@ -765,7 +765,17 @@ assembly_store_bundled_assemblies:
 	.xword	0x0	// config_data
 	.xword	0x0	// descriptor
 
-	.size	assembly_store_bundled_assemblies, 4576
+	.xword	0x0	// image_data
+	.xword	0x0	// debug_info_data
+	.xword	0x0	// config_data
+	.xword	0x0	// descriptor
+
+	.xword	0x0	// image_data
+	.xword	0x0	// debug_info_data
+	.xword	0x0	// config_data
+	.xword	0x0	// descriptor
+
+	.size	assembly_store_bundled_assemblies, 4640
 	// Assembly store data
 
 	.type	assembly_stores, @object
@@ -937,7 +947,7 @@ application_config:
 	.word	0x3	// package_naming_policy
 	.word	0xc	// environment_variable_count
 	.word	0x0	// system_property_count
-	.word	0x8f	// number_of_assemblies_in_apk
+	.word	0x91	// number_of_assemblies_in_apk
 	.word	0x0	// bundled_assembly_name_width
 	.word	0x2	// number_of_assembly_store_files
 	.word	0x14	// number_of_dso_cache_entries
@@ -980,7 +990,7 @@ application_config:
 
 	.type	.L.autostr.6, @object
 .L.autostr.6:
-	.asciz	"db5ff554-8bfd-4bf4-b882-33f1a84b53e2"
+	.asciz	"765159bf-4b63-41ff-843d-3ac633c8cf37"
 	.size	.L.autostr.6, 37
 
 	.type	.L.autostr.7, @object

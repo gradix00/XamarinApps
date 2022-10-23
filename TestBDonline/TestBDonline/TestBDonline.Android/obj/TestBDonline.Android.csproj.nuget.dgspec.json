@@ -46,6 +46,10 @@
               "target": "Package",
               "version": "[1.10.4, )"
             },
+            "Xam.Plugins.Settings": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.7.0, )"
@@ -107,6 +111,10 @@
             "RawRabbit.Extensions": {
               "target": "Package",
               "version": "[1.10.4, )"
+            },
+            "Xam.Plugins.Settings": {
+              "target": "Package",
+              "version": "[3.1.1, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",

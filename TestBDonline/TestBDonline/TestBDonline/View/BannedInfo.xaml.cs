@@ -16,5 +16,10 @@ namespace TestBDonline.View
         {
             InitializeComponent();
         }
+
+        private void CloseApp(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.GetCurrentProcess().Kill();
+        }
     }
 }

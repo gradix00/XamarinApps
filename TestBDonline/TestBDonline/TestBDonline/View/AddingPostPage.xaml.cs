@@ -17,6 +17,11 @@ namespace TestBDonline.View
             user.Text = $"Dodajesz post jako {data.UserData.Nickname} ({data.UserData.ID})";
         }
 
+        private void LoadImage(object sender, EventArgs e)
+        {
+            img.Source = url.Text;
+        }
+
         private void CreatePost(object sender, EventArgs e)
         {
             if (FieldsTextAreFill())
@@ -51,7 +56,7 @@ namespace TestBDonline.View
 
         private bool FieldsTextAreFill()
         {
-            if (title.Text == "" || description.Text == "" || url.Text == "")
+            if (title.Text == null || description.Text == null || url.Text == null)
                 return false;
             return true;
         }

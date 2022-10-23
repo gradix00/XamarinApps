@@ -2,12 +2,43 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestBDonline.View.Account">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Konto eWads"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text=""
-                x:Name="txt"
-                VerticalOptions="CenterAndExpand" 
+        <Grid BackgroundColor="CornflowerBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition/>
+                <RowDefinition Height="150"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Frame Grid.Column="1"
+                   BackgroundColor="LightGoldenrodYellow">
+                <Label Text="Twój nickname"
+                       HorizontalOptions="CenterAndExpand"
+                       x:Name="nick"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="DimGray"/>
+            </Frame>
+            <Frame Grid.Column="1"
+                   Grid.Row="2"
+                   BackgroundColor="LightCoral">
+                <Label Text="Twoje punkty"
+                       FontSize="30"
+                       TextColor="White"
+                x:Name="pts"
+                       HorizontalTextAlignment="Center"
                 HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+            </Frame>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

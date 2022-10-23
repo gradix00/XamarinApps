@@ -2,11 +2,44 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestBDonline.View.BannedInfo">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Informacja"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Jesteś zbanowany :( Napisz do nas, może cię odbanujemy ;)"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid BackgroundColor="DimGray">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="200"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="350"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Frame BackgroundColor="CornflowerBlue"
+                   BorderColor="LightGoldenrodYellow"
+                   Grid.Row="1"
+                   Grid.Column="1">
+                <StackLayout>
+                    <Label Text="Twoje konto ma blokade permamentną do odwołania&#x0a;&#x0a;Jeśli to pomyłka napisz do supportu" 
+                        VerticalOptions="CenterAndExpand" 
+                        HorizontalOptions="CenterAndExpand"
+                           HorizontalTextAlignment="Center"
+                        TextColor="LightGoldenrodYellow"
+                           FontAttributes="Bold"
+                           FontSize="15"
+                           TextTransform="Uppercase"/>
+                    <Button Text="Wyjdź z aplikacji"
+                                Clicked="CloseApp"
+                                Margin="30, 0, 30, 0"
+                                BackgroundColor="LightGoldenrodYellow"
+                                TextColor="DimGray"
+                        Grid.Row="2"
+                        Grid.Column="1"/>
+                </StackLayout>
+            </Frame>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -68,7 +68,8 @@
                     Clicked="ManageUser"
                     IsEnabled="False"
                     x:Name="btn"
-                    BackgroundColor="LightGoldenrodYellow"/>
+                    BackgroundColor="LightGoldenrodYellow"
+                    TextColor="DimGray"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -45,3 +45,4 @@ G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\ne
 G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\ref\TestBDonline.dll
 G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\View\AddingPostPage.xaml.g.cs
 G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\View\EventsLog.xaml.g.cs
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Release\netstandard2.0\View\GlobalChat.xaml.g.cs

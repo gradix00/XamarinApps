@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TFsL7Lg3p6lVd7tb6n/8RTljXwBjjZ1jz67UYTFDAwh9gROidRO6yVNniVSYoLx4CIfXmxR2i4Qv+vdDeHvEVg==",
+  "dgSpecHash": "OFwl9e88zLHxcTECLWAvDr1Y4fitUjqtyX/qMlfOs5NKghJJa5Gsbre0kpzo3zNDvGqVfsgO0+MLlLI4Rl+49w==",
   "success": true,
   "projectFilePath": "G:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline.iOS\\TestBDonline.iOS.csproj",
   "expectedPackageFiles": [
@@ -76,6 +76,7 @@
     "C:\\Users\\50kos\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\50kos\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\50kos\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\50kos\\.nuget\\packages\\xam.plugins.settings\\3.1.1\\xam.plugins.settings.3.1.1.nupkg.sha512",
     "C:\\Users\\50kos\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\50kos\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
   ],

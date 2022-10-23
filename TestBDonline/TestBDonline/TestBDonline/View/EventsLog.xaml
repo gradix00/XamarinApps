@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestBDonline.View.EventsLog">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Dziennik zdarzeń"/>
+        <ToolbarItem x:Name="rec"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout BackgroundColor="DimGray">
@@ -72,6 +72,12 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Button VerticalOptions="EndAndExpand"
+                    Text="Załaduj wcześniejsze logi"
+                    Clicked="LoadMore"
+                    x:Name="btn"
+                    BackgroundColor="LightGoldenrodYellow"
+                    TextColor="DimGray"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

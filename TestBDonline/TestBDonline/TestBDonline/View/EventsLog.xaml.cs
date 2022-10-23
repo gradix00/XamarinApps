@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Threading.Tasks;
 using System.Collections.ObjectModel;
 using TestBDonline.Scripts;
 using TestBDonline.View.CustomViewCell;
@@ -12,17 +12,18 @@ namespace TestBDonline.View
     public partial class EventsLog : ContentPage
     {   
         private Authentication Data = new Authentication();
+        private int records = 10;
 
         public EventsLog()
         {
             InitializeComponent();
-            LoadLogs(Data);
+            LoadLogs(Data);         
         }
 
         private void LoadLogs(Authentication data)
         {                      
             ObservableCollection<EventCell> eventCells = new ObservableCollection<EventCell>();
-            var tempList = data.GetListAllEventLog();
+            var tempList = data.GetListAllEventLog(records);
 
             foreach (var log in tempList)
             {
@@ -36,6 +37,19 @@ namespace TestBDonline.View
             }
             list.ItemsSource = eventCells;
             list.IsRefreshing = false;
+            rec.Text = $"Dziennik zdarzeń ({tempList.Count})";
+
+            if (records > tempList.Count)
+            {
+                records = tempList.Count;
+                DisplayAlert("Informacja", "Załadowano już wszystkie zdarzenia!", "Ok");
+            }
+        }
+
+        private void LoadMore(object sender, EventArgs e)
+        {
+            records += 10;
+            LoadLogs(Data);
         }
 
         private async void RefresPostsList(object sender, EventArgs e)
