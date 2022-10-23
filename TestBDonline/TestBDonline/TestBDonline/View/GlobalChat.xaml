@@ -6,25 +6,30 @@
         <ToolbarItem Text="Czat globalny"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout VerticalOptions="FillAndExpand"
-                     HorizontalOptions="FillAndExpand">
-            <ScrollView>
-                <StackLayout Orientation="Vertical"
-                             VerticalOptions="FillAndExpand"
-                             HorizontalOptions="FillAndExpand"
-                             x:Name ="page"/>
-            </ScrollView>
+        <StackLayout BackgroundColor="SlateGray">
+            <RefreshView Refreshing="Refresh"
+                         x:Name="refresh">
+                <ScrollView>
+                    <StackLayout Orientation="Vertical"
+                                     VerticalOptions="FillAndExpand"
+                                     HorizontalOptions="FillAndExpand"
+                                     x:Name ="page"/>
+                </ScrollView>
+            </RefreshView>
             <StackLayout Orientation="Horizontal"
-                         VerticalOptions="EndAndExpand">
+                                 VerticalOptions="EndAndExpand">
                 <Editor Placeholder="napisz wiadomość"
-                        HorizontalOptions="FillAndExpand"
-                        x:Name="entry"
-                        PropertyChanged="EntryIsNotEmpty"/>
-                <Button Text="wyślij"
-                        HorizontalOptions="EndAndExpand"
-                        Clicked="SentMessage"
-                        IsEnabled="False"
-                        x:Name="btn"/>
+                                HorizontalOptions="FillAndExpand"
+                                x:Name="entry"
+                                PropertyChanged="EntryIsNotEmpty"/>
+                <Button VerticalOptions="EndAndExpand"
+                            Text="wyślij"
+                            HorizontalOptions="End"
+                            Clicked="SentMessage"
+                            IsEnabled="False"
+                            x:Name="btn"
+                            BackgroundColor="LightGoldenrodYellow"
+                            TextColor="DimGray"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

@@ -28,15 +28,21 @@ namespace TestBDonline.View
 
         private void SentMessage(object sender, EventArgs e)
         {
-            if (!Data.CreateNewMessageGlobalChat(new MessageData
+            if (entry.Text != null)
             {
-                Autor = Data.UserData.Nickname,
-                Message = entry.Text,
-                Date = DateTime.UtcNow
-            })){
-                DisplayAlert("Błąd wysyłania", "Nie udało się wysłać wiadomości :<", "Ok");
+                if (!Data.CreateNewMessageGlobalChat(new MessageData
+                {
+                    Autor = Data.UserData.Nickname,
+                    Message = entry.Text,
+                    Date = DateTime.UtcNow
+                }))
+                {
+                    DisplayAlert("Błąd wysyłania", "Nie udało się wysłać wiadomości :<", "Ok");
+                }
+                LoadMessage(Data);
             }
-            LoadMessage(Data);
+            else
+                DisplayAlert("Błąd!", "Musisz wpisać coś do pola tekstowego", "Ok");
             btn.IsEnabled = false;
             entry.Text = null;
         }
@@ -49,6 +55,13 @@ namespace TestBDonline.View
                 btn.IsEnabled = false;
         }
 
+        private void Refresh(object sender, EventArgs e)
+        {
+            System.Threading.Tasks.Task.Delay(750);
+            LoadMessage(Data);
+            refresh.IsRefreshing = false;
+        }
+
         private void LoadMessage(Authentication data)
         {
             if (page.Children.Count > 0)
@@ -59,7 +72,8 @@ namespace TestBDonline.View
             {
                 var lb = new Label
                 {
-                    Text = $"{message.Date.Month} {new GetStatus().Months[message.Date.Month]} | {message.Date.Hour}:{message.Date.Minute}"
+                    Text = $"{message.Date.Month} {new GetStatus().Months[message.Date.Month]} | {message.Date.Hour}:{message.Date.Minute}",
+                    TextColor = Color.White
                 };
                 page.Children.Add(lb);
 
