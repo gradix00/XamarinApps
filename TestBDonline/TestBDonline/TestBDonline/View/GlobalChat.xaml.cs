@@ -71,7 +71,7 @@ namespace TestBDonline.View
             var tempList = data.GetAllMessagesData(msg);
             tempList.Reverse();
 
-            if (tempList.Count >= msg)
+            if (msg > tempList.Count)
             {
                 msg = tempList.Count;
                 DisplayAlert("Informacja", "Nie ma już więcej wiadomości!", "Ok");
@@ -81,6 +81,7 @@ namespace TestBDonline.View
                 var btnLoad = new Button
                 {
                     Text = "Załaduj więcej",
+                    BackgroundColor = Color.LightGoldenrodYellow,
                     TextColor = Color.DimGray,
                     HorizontalOptions = LayoutOptions.CenterAndExpand
                 };
