@@ -17,6 +17,7 @@ namespace TestBDonline.View
         }
 
 		private Authentication Data;
+        private int msg = 10;
         private DateTime lastDate = DateTime.UtcNow;
 
 		public GlobalChat(Authentication data)
@@ -67,7 +68,25 @@ namespace TestBDonline.View
             if (page.Children.Count > 0)
                 page.Children.Clear();
 
-            var tempList = data.GetAllMessagesData();
+            var tempList = data.GetAllMessagesData(msg);
+            tempList.Reverse();
+
+            if (tempList.Count >= msg)
+            {
+                msg = tempList.Count;
+                DisplayAlert("Informacja", "Nie ma już więcej wiadomości!", "Ok");
+            }
+            else
+            {
+                var btnLoad = new Button
+                {
+                    Text = "Załaduj więcej",
+                    TextColor = Color.DimGray,
+                    HorizontalOptions = LayoutOptions.CenterAndExpand
+                };
+                btnLoad.Clicked += LoadMore;
+                page.Children.Add(btnLoad);
+            }
             foreach (var message in tempList)
             {
                 var lb = new Label
@@ -84,6 +103,12 @@ namespace TestBDonline.View
 
                 page.Children.Add(CreateMessage(message, align));
             }
+        }
+
+        private void LoadMore(object sender, EventArgs e)
+        {
+            msg += 5;
+            LoadMessage(Data);
         }
 
         private Frame CreateMessage(MessageData data, Align align)

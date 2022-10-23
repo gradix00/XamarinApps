@@ -7,138 +7,138 @@ map_aname.0:
 
 	.type	map_aname.1, @object
 map_aname.1:
-	.asciz	"TestBDonline.Android"
-	.size	map_aname.1, 21
+	.asciz	"Xamarin.AndroidX.Annotation.Experimental"
+	.size	map_aname.1, 41
 
 	.type	map_aname.2, @object
 map_aname.2:
-	.asciz	"Xamarin.AndroidX.Annotation.Experimental"
-	.size	map_aname.2, 41
+	.asciz	"Xamarin.AndroidX.AppCompat.AppCompatResources"
+	.size	map_aname.2, 46
 
 	.type	map_aname.3, @object
 map_aname.3:
-	.asciz	"Xamarin.AndroidX.AppCompat.AppCompatResources"
-	.size	map_aname.3, 46
+	.asciz	"Xamarin.AndroidX.Lifecycle.ViewModelSavedState"
+	.size	map_aname.3, 47
 
 	.type	map_aname.4, @object
 map_aname.4:
-	.asciz	"Xamarin.AndroidX.Lifecycle.ViewModelSavedState"
-	.size	map_aname.4, 47
+	.asciz	"Xamarin.AndroidX.VectorDrawable"
+	.size	map_aname.4, 32
 
 	.type	map_aname.5, @object
 map_aname.5:
-	.asciz	"Xamarin.AndroidX.VectorDrawable"
-	.size	map_aname.5, 32
+	.asciz	"Xamarin.AndroidX.Annotation"
+	.size	map_aname.5, 28
 
 	.type	map_aname.6, @object
 map_aname.6:
-	.asciz	"Xamarin.AndroidX.Annotation"
+	.asciz	"Xamarin.AndroidX.Transition"
 	.size	map_aname.6, 28
 
 	.type	map_aname.7, @object
 map_aname.7:
-	.asciz	"Xamarin.AndroidX.Transition"
-	.size	map_aname.7, 28
+	.asciz	"Xamarin.AndroidX.Lifecycle.Runtime"
+	.size	map_aname.7, 35
 
 	.type	map_aname.8, @object
 map_aname.8:
-	.asciz	"Xamarin.AndroidX.Lifecycle.Runtime"
-	.size	map_aname.8, 35
+	.asciz	"Xamarin.AndroidX.Navigation.UI"
+	.size	map_aname.8, 31
 
 	.type	map_aname.9, @object
 map_aname.9:
-	.asciz	"Xamarin.AndroidX.Navigation.UI"
-	.size	map_aname.9, 31
+	.asciz	"Xamarin.AndroidX.Interpolator"
+	.size	map_aname.9, 30
 
 	.type	map_aname.10, @object
 map_aname.10:
-	.asciz	"Xamarin.AndroidX.Interpolator"
-	.size	map_aname.10, 30
+	.asciz	"Xamarin.AndroidX.Navigation.Common"
+	.size	map_aname.10, 35
 
 	.type	map_aname.11, @object
 map_aname.11:
-	.asciz	"Xamarin.AndroidX.Navigation.Common"
+	.asciz	"Xamarin.AndroidX.Arch.Core.Runtime"
 	.size	map_aname.11, 35
 
 	.type	map_aname.12, @object
 map_aname.12:
-	.asciz	"Xamarin.AndroidX.Arch.Core.Runtime"
-	.size	map_aname.12, 35
+	.asciz	"Xamarin.AndroidX.AppCompat"
+	.size	map_aname.12, 27
 
 	.type	map_aname.13, @object
 map_aname.13:
-	.asciz	"Xamarin.AndroidX.AppCompat"
-	.size	map_aname.13, 27
+	.asciz	"Xamarin.AndroidX.Legacy.Support.Core.Utils"
+	.size	map_aname.13, 43
 
 	.type	map_aname.14, @object
 map_aname.14:
-	.asciz	"Xamarin.AndroidX.Legacy.Support.Core.Utils"
-	.size	map_aname.14, 43
+	.asciz	"Xamarin.AndroidX.VersionedParcelable"
+	.size	map_aname.14, 37
 
 	.type	map_aname.15, @object
 map_aname.15:
-	.asciz	"Xamarin.AndroidX.VersionedParcelable"
-	.size	map_aname.15, 37
+	.asciz	"Xamarin.AndroidX.CustomView"
+	.size	map_aname.15, 28
 
 	.type	map_aname.16, @object
 map_aname.16:
-	.asciz	"Xamarin.AndroidX.CustomView"
-	.size	map_aname.16, 28
+	.asciz	"Xamarin.AndroidX.Loader"
+	.size	map_aname.16, 24
 
 	.type	map_aname.17, @object
 map_aname.17:
-	.asciz	"Xamarin.AndroidX.Loader"
-	.size	map_aname.17, 24
+	.asciz	"Xamarin.AndroidX.Navigation.Runtime"
+	.size	map_aname.17, 36
 
 	.type	map_aname.18, @object
 map_aname.18:
-	.asciz	"Xamarin.AndroidX.Navigation.Runtime"
-	.size	map_aname.18, 36
+	.asciz	"Xamarin.AndroidX.Tracing.Tracing"
+	.size	map_aname.18, 33
 
 	.type	map_aname.19, @object
 map_aname.19:
-	.asciz	"Xamarin.AndroidX.Tracing.Tracing"
-	.size	map_aname.19, 33
+	.asciz	"Xamarin.AndroidX.CoordinatorLayout"
+	.size	map_aname.19, 35
 
 	.type	map_aname.20, @object
 map_aname.20:
-	.asciz	"Xamarin.AndroidX.CoordinatorLayout"
-	.size	map_aname.20, 35
+	.asciz	"Xamarin.AndroidX.Core"
+	.size	map_aname.20, 22
 
 	.type	map_aname.21, @object
 map_aname.21:
-	.asciz	"Xamarin.AndroidX.Core"
-	.size	map_aname.21, 22
+	.asciz	"Xamarin.AndroidX.Lifecycle.Common"
+	.size	map_aname.21, 34
 
 	.type	map_aname.22, @object
 map_aname.22:
-	.asciz	"Xamarin.AndroidX.Lifecycle.Common"
-	.size	map_aname.22, 34
+	.asciz	"Xamarin.AndroidX.SwipeRefreshLayout"
+	.size	map_aname.22, 36
 
 	.type	map_aname.23, @object
 map_aname.23:
-	.asciz	"Xamarin.AndroidX.SwipeRefreshLayout"
-	.size	map_aname.23, 36
+	.asciz	"Xamarin.AndroidX.SlidingPaneLayout"
+	.size	map_aname.23, 35
 
 	.type	map_aname.24, @object
 map_aname.24:
-	.asciz	"Xamarin.AndroidX.SlidingPaneLayout"
-	.size	map_aname.24, 35
+	.asciz	"Xamarin.AndroidX.CardView"
+	.size	map_aname.24, 26
 
 	.type	map_aname.25, @object
 map_aname.25:
-	.asciz	"Xamarin.AndroidX.CardView"
-	.size	map_aname.25, 26
+	.asciz	"Xamarin.AndroidX.Preference"
+	.size	map_aname.25, 28
 
 	.type	map_aname.26, @object
 map_aname.26:
-	.asciz	"Xamarin.AndroidX.Preference"
-	.size	map_aname.26, 28
+	.asciz	"Xamarin.AndroidX.Lifecycle.LiveData"
+	.size	map_aname.26, 36
 
 	.type	map_aname.27, @object
 map_aname.27:
-	.asciz	"Xamarin.AndroidX.Lifecycle.LiveData"
-	.size	map_aname.27, 36
+	.asciz	"TestBDonline.Android"
+	.size	map_aname.27, 21
 
 	.type	map_aname.28, @object
 map_aname.28:

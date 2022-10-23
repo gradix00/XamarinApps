@@ -166,7 +166,7 @@ namespace TestBDonline.Scripts
             return retList;
         }
 
-        public List<MessageData> GetAllMessagesData()
+        public List<MessageData> GetAllMessagesData(int limit = 10)
         {
             var conn = new MySqlConnection(connAddr);
             conn.Open();
@@ -174,7 +174,7 @@ namespace TestBDonline.Scripts
             var retList = new List<MessageData>();
             if (CheckAcces(conn))
             {
-                MySqlCommand cmd = new MySqlCommand("SELECT * FROM GlobalChat ORDER BY date ASC LIMIT 10", conn);
+                MySqlCommand cmd = new MySqlCommand($"SELECT * FROM GlobalChat ORDER BY date DESC LIMIT {limit}", conn);
                 MySqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
