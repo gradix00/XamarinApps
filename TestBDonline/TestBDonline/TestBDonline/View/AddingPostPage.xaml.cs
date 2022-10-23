@@ -24,34 +24,39 @@ namespace TestBDonline.View
 
         private void CreatePost(object sender, EventArgs e)
         {
-            if (FieldsTextAreFill())
+            if (Data.UserData.Status == Scripts.Structs.Status.admin)
             {
-                var post = new Scripts.Structs.PostData
+                if (FieldsTextAreFill())
                 {
-                    Autor = Data.UserData.Nickname,
-                    Date = DateTime.Now,
-                    Title = title.Text,
-                    Description = description.Text,
-                    UrlImage = url.Text
-                };
-
-                if (Data.CreatePost(post))
-                {
-                    DisplayAlert("Opublikowano post!", $"Dane postu:\nTytuł: {post.Title}\nOpis: {post.Description}\nUrl: {post.UrlImage}", "Ok");
-
-                    Data.CreateNewLog(new Scripts.Structs.EventData
+                    var post = new Scripts.Structs.PostData
                     {
                         Autor = Data.UserData.Nickname,
-                        Details = $"Opublikowano post; Tytuł: {post.Title}; Opis: {post.Description}",
-                        Date = DateTime.UtcNow
-                    });
+                        Date = DateTime.Now,
+                        Title = title.Text,
+                        Description = description.Text,
+                        UrlImage = url.Text
+                    };
+
+                    if (Data.CreatePost(post))
+                    {
+                        DisplayAlert("Opublikowano post!", $"Dane postu:\nTytuł: {post.Title}\nOpis: {post.Description}\nUrl: {post.UrlImage}", "Ok");
+
+                        Data.CreateNewLog(new Scripts.Structs.EventData
+                        {
+                            Autor = Data.UserData.Nickname,
+                            Details = $"Opublikowano post; Tytuł: {post.Title}; Opis: {post.Description}",
+                            Date = DateTime.Now
+                        });
+                    }
+                    else
+                        DisplayAlert("Błąd tworzenia posta", "Być może nasza baza nie działa albo nie masz połączenia z internetem :<", "Ok");
+                    Navigation.RemovePage(this);
                 }
                 else
-                    DisplayAlert("Błąd tworzenia posta", "Być może nasza baza nie działa albo nie masz połączenia z internetem :<", "Ok");
-                Navigation.RemovePage(this);
+                    DisplayAlert("Pola są puste!", "Wypełnij pola, aby utworzyć post", "Ok");
             }
             else
-                DisplayAlert("Pola są puste!", "Wypełnij pola, aby utworzyć post", "Ok");
+                DisplayAlert("Błąd!", "Być może straciłeś uprawnienia admina, zaloguj się jeszcze raz do systemu", "Ok");
         }
 
         private bool FieldsTextAreFill()

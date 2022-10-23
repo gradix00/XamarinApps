@@ -29,5 +29,47 @@ namespace TestBDonline.View
         {
             Navigation.PushAsync(new UserManagement(data));
         }
+
+        private async void ClearGlobalChat(object sender, EventArgs e)
+        {
+            var res = await DisplayPromptAsync("Informacja", "Czy napewno chcesz wyczyścić globalny czat? Jeśli tak wpisz 'potwierdzam'", "Potwierdź", "Anuluj");
+
+            if (res == "potwierdzam")
+            {
+                if (data.TruncateTable("GlobalChat"))
+                {
+                    DisplayAlert("Informacja", "Wyczyszczono cały globalny czat!", "Ok");
+                    data.CreateNewLog(new Scripts.Structs.EventData
+                    {
+                        Autor = data.UserData.Nickname,
+                        Date = DateTime.Now,
+                        Details = $"Usunięto historie globalnego czatu"
+                    });
+                }
+                else
+                    DisplayAlert("Informacja", "Nie udało się wyczyścić globalnego czatu", "Ok");
+            }
+        }
+
+        private async void ClearEventLog(object sender, EventArgs e)
+        {
+            var res = await DisplayPromptAsync("Informacja", "Czy napewno chcesz wyczyścić dziennik zdarzeń? Jeśli tak wpisz 'potwierdzam'", "Potwierdź", "Anuluj");
+
+            if (res == "potwierdzam")
+            {
+                if (data.TruncateTable("EventLog"))
+                {
+                    DisplayAlert("Informacja", "Wyczyszczono dziennik zdarzeń!", "Ok");
+                    data.CreateNewLog(new Scripts.Structs.EventData
+                    {
+                        Autor = data.UserData.Nickname,
+                        Date = DateTime.Now,
+                        Details = $"Usunięto historie dziennika zdarzeń"
+                    });
+                }
+                else
+                    DisplayAlert("Informacja", "Nie udało się wyczyścić dzienniku zdarzeń", "Ok");
+            }
+        }
     }
 }

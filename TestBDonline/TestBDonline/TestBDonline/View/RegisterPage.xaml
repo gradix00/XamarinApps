@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestBDonline.View.RegisterPage">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="eWads - Rejestracja"/>
+        <ToolbarItem Text="e-Wads - Rejestracja"/>
     </ContentPage.ToolbarItems>
     <Grid BackgroundColor="DimGray">
         <Grid.RowDefinitions>
@@ -22,7 +22,7 @@
                Grid.ColumnSpan="3"
                Grid.RowSpan="3"/>
 
-        <Label Text="eWads"
+        <Label Text="e-Wads"
                TextColor="LightGoldenrodYellow"
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="CenterAndExpand"

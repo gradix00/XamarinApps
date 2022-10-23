@@ -35,7 +35,7 @@ namespace TestBDonline.View
                 {
                     Autor = Data.UserData.Nickname,
                     Message = entry.Text,
-                    Date = DateTime.UtcNow
+                    Date = DateTime.Now
                 }))
                 {
                     DisplayAlert("Błąd wysyłania", "Nie udało się wysłać wiadomości :<", "Ok");
@@ -92,7 +92,7 @@ namespace TestBDonline.View
             {
                 var lb = new Label
                 {
-                    Text = $"{message.Date.Month} {new GetStatus().Months[message.Date.Month]} | {message.Date.Hour}:{message.Date.Minute}",
+                    Text = $"{message.Date.Day} {new GetStatus().Months[message.Date.Month]} | {message.Date.Hour}:{message.Date.Minute}",
                     TextColor = Color.White
                 };
                 page.Children.Add(lb);

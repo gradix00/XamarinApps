@@ -11,11 +11,13 @@ namespace TestBDonline.View
     public partial class UserEditingData : ContentPage
     {
         private UserData UserData { get; set; }
+        private Authentication Data { get; set; }
 
-        public UserEditingData(UserData data)
+        public UserEditingData(Authentication data, UserData userEdited)
         {
             InitializeComponent();
-            UserData = data;
+            UserData = userEdited;
+            Data = data;
             BindingContext = this;
 
             picker.ItemsSource = new List<string>()
@@ -29,28 +31,65 @@ namespace TestBDonline.View
 
         private void Apply(object sender, EventArgs e)
         {
-            var auth = new Authentication();
-
-            if (int.TryParse(points.Text, out int pt))
+            if (Data.UserData.Status == Status.admin)
             {
-                UserData temp = new UserData
+                if (int.TryParse(points.Text, out int pt))
                 {
-                    Nickname = UserData.Nickname,
-                    Email = email.Text,
-                    Points = pt,
-                    ID = UserData.ID,
-                    Status = (Status)picker.SelectedIndex,
-                    Gender = UserData.Gender,
-                    RequirePasswordReset = toggle.IsChecked
-                };
+                    UserData temp = new UserData
+                    {
+                        Nickname = UserData.Nickname,
+                        Email = email.Text,
+                        Points = pt,
+                        ID = UserData.ID,
+                        Status = (Status)picker.SelectedIndex,
+                        Gender = UserData.Gender,
+                        RequirePasswordReset = toggle.IsChecked
+                    };
 
 
-                if (!auth.UpdateUserData(temp))
-                    DisplayAlert("Błąd!", "Nie można zmienić danych użytkownika", "Ok");
-                Navigation.RemovePage(this);
+                    if (!Data.UpdateUserData(temp))
+                        DisplayAlert("Błąd!", "Nie można zmienić danych użytkownika", "Ok");
+                    else
+                        Data.CreateNewLog(new EventData
+                        {
+                            Autor = Data.UserData.Nickname,
+                            Date = DateTime.Now,
+                            Details = $"Zmieniono dane użytkownika {UserData.Nickname}"                         
+                        });
+                    Navigation.RemovePage(this);
+                }
+                else
+                    DisplayAlert("Błąd!", "Źle wprowadzone dane!", "Ok");
             }
             else
-                DisplayAlert("Błąd!", "Źle wprowadzone dane!", "Ok");
+                DisplayAlert("Błąd!", "Być może straciłeś uprawnienia admina, zaloguj się jeszcze raz do systemu", "Ok");
+        }
+
+        private async void DeleteAccount(object sender, EventArgs e)
+        {
+            var res = await DisplayPromptAsync("Informacja", $"Czy napewno chcesz usunąć konto użytkownika '{UserData.Nickname}({UserData.ID})'? Jeśli tak wpisz 'potwierdzam'", "Potwierdź", "Anuluj");
+
+            if (Data.UserData.Status == Status.admin)
+            {
+                if (res == "potwierdzam")
+                {
+                    if (Data.DeleteAccount(UserData.ID))
+                    {
+                        DisplayAlert("Informacja!", $"Usunięto użytkownika '{UserData.Nickname}'", "Ok");
+                        Data.CreateNewLog(new EventData
+                        {
+                            Autor = Data.UserData.Nickname,
+                            Date = DateTime.Now,
+                            Details = $"Usunął użytkownika {UserData.Nickname}"
+                        });
+                        Navigation.RemovePage(this);
+                    }
+                    else
+                        DisplayAlert("Błąd!", $"Nie udało się usunąć użytkownika", "Ok");
+                }             
+            }
+            else
+                DisplayAlert("Błąd!", "Być może straciłeś uprawnienia admina, zaloguj się jeszcze raz do systemu", "Ok");
         }
 
         private void LoadUserDataUI()

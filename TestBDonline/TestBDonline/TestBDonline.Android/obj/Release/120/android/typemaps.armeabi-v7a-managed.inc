@@ -2298,16 +2298,6 @@
 	.type	.L.module16_managed_to_java, %object
 	.p2align	2
 .L.module16_managed_to_java:
-	.long	0x2000002	@ type_token_id
-	.long	0x15ce	@ java_map_index
-
-	.size	.L.module16_managed_to_java, 8
-
-	.section	.rodata.module17_managed_to_java, "a", %progbits
-
-	.type	.L.module17_managed_to_java, %object
-	.p2align	2
-.L.module17_managed_to_java:
 	.long	0x2000011	@ type_token_id
 	.long	0x1296	@ java_map_index
 
@@ -2338,13 +2328,13 @@
 	.long	0x2000020	@ type_token_id
 	.long	0x1295	@ java_map_index
 
-	.size	.L.module17_managed_to_java, 80
+	.size	.L.module16_managed_to_java, 80
 
-	.section	.rodata.module17_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module16_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module17_managed_to_java_duplicates, %object
+	.type	.L.module16_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module17_managed_to_java_duplicates:
+.L.module16_managed_to_java_duplicates:
 	.long	0x2000012	@ type_token_id
 	.long	0x1296	@ java_map_index
 
@@ -2360,13 +2350,13 @@
 	.long	0x2000021	@ type_token_id
 	.long	0x1295	@ java_map_index
 
-	.size	.L.module17_managed_to_java_duplicates, 40
+	.size	.L.module16_managed_to_java_duplicates, 40
 
-	.section	.rodata.module18_managed_to_java, "a", %progbits
+	.section	.rodata.module17_managed_to_java, "a", %progbits
 
-	.type	.L.module18_managed_to_java, %object
+	.type	.L.module17_managed_to_java, %object
 	.p2align	2
-.L.module18_managed_to_java:
+.L.module17_managed_to_java:
 	.long	0x2000010	@ type_token_id
 	.long	0x12b9	@ java_map_index
 
@@ -2406,36 +2396,36 @@
 	.long	0x2000021	@ type_token_id
 	.long	0x12bc	@ java_map_index
 
-	.size	.L.module18_managed_to_java, 104
+	.size	.L.module17_managed_to_java, 104
 
-	.section	.rodata.module18_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module17_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module18_managed_to_java_duplicates, %object
+	.type	.L.module17_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module18_managed_to_java_duplicates:
+.L.module17_managed_to_java_duplicates:
 	.long	0x2000012	@ type_token_id
 	.long	0x12cf	@ java_map_index
 
 	.long	0x200001c	@ type_token_id
 	.long	0x12c4	@ java_map_index
 
-	.size	.L.module18_managed_to_java_duplicates, 16
+	.size	.L.module17_managed_to_java_duplicates, 16
+
+	.section	.rodata.module18_managed_to_java, "a", %progbits
+
+	.type	.L.module18_managed_to_java, %object
+	.p2align	2
+.L.module18_managed_to_java:
+	.long	0x2000003	@ type_token_id
+	.long	0x137c	@ java_map_index
+
+	.size	.L.module18_managed_to_java, 8
 
 	.section	.rodata.module19_managed_to_java, "a", %progbits
 
 	.type	.L.module19_managed_to_java, %object
 	.p2align	2
 .L.module19_managed_to_java:
-	.long	0x2000003	@ type_token_id
-	.long	0x137c	@ java_map_index
-
-	.size	.L.module19_managed_to_java, 8
-
-	.section	.rodata.module20_managed_to_java, "a", %progbits
-
-	.type	.L.module20_managed_to_java, %object
-	.p2align	2
-.L.module20_managed_to_java:
 	.long	0x2000029	@ type_token_id
 	.long	0x10df	@ java_map_index
 
@@ -2463,13 +2453,13 @@
 	.long	0x2000035	@ type_token_id
 	.long	0x10e5	@ java_map_index
 
-	.size	.L.module20_managed_to_java, 72
+	.size	.L.module19_managed_to_java, 72
 
-	.section	.rodata.module20_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module19_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module20_managed_to_java_duplicates, %object
+	.type	.L.module19_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module20_managed_to_java_duplicates:
+.L.module19_managed_to_java_duplicates:
 	.long	0x200002d	@ type_token_id
 	.long	0x10e0	@ java_map_index
 
@@ -2482,13 +2472,13 @@
 	.long	0x2000033	@ type_token_id
 	.long	0x10e3	@ java_map_index
 
-	.size	.L.module20_managed_to_java_duplicates, 32
+	.size	.L.module19_managed_to_java_duplicates, 32
 
-	.section	.rodata.module21_managed_to_java, "a", %progbits
+	.section	.rodata.module20_managed_to_java, "a", %progbits
 
-	.type	.L.module21_managed_to_java, %object
+	.type	.L.module20_managed_to_java, %object
 	.p2align	2
-.L.module21_managed_to_java:
+.L.module20_managed_to_java:
 	.long	0x200005d	@ type_token_id
 	.long	0xa8c	@ java_map_index
 
@@ -3557,13 +3547,13 @@
 	.long	0x200024e	@ type_token_id
 	.long	0x1110	@ java_map_index
 
-	.size	.L.module21_managed_to_java, 2848
+	.size	.L.module20_managed_to_java, 2848
 
-	.section	.rodata.module21_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module20_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module21_managed_to_java_duplicates, %object
+	.type	.L.module20_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module21_managed_to_java_duplicates:
+.L.module20_managed_to_java_duplicates:
 	.long	0x200005f	@ type_token_id
 	.long	0xa8d	@ java_map_index
 
@@ -3906,13 +3896,13 @@
 	.long	0x200024c	@ type_token_id
 	.long	0x11fd	@ java_map_index
 
-	.size	.L.module21_managed_to_java_duplicates, 912
+	.size	.L.module20_managed_to_java_duplicates, 912
 
-	.section	.rodata.module22_managed_to_java, "a", %progbits
+	.section	.rodata.module21_managed_to_java, "a", %progbits
 
-	.type	.L.module22_managed_to_java, %object
+	.type	.L.module21_managed_to_java, %object
 	.p2align	2
-.L.module22_managed_to_java:
+.L.module21_managed_to_java:
 	.long	0x2000008	@ type_token_id
 	.long	0x1278	@ java_map_index
 
@@ -3949,13 +3939,13 @@
 	.long	0x2000019	@ type_token_id
 	.long	0x127a	@ java_map_index
 
-	.size	.L.module22_managed_to_java, 96
+	.size	.L.module21_managed_to_java, 96
 
-	.section	.rodata.module22_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module21_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module22_managed_to_java_duplicates, %object
+	.type	.L.module21_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module22_managed_to_java_duplicates:
+.L.module21_managed_to_java_duplicates:
 	.long	0x200000b	@ type_token_id
 	.long	0x1275	@ java_map_index
 
@@ -3974,13 +3964,13 @@
 	.long	0x2000014	@ type_token_id
 	.long	0x1278	@ java_map_index
 
-	.size	.L.module22_managed_to_java_duplicates, 48
+	.size	.L.module21_managed_to_java_duplicates, 48
 
-	.section	.rodata.module23_managed_to_java, "a", %progbits
+	.section	.rodata.module22_managed_to_java, "a", %progbits
 
-	.type	.L.module23_managed_to_java, %object
+	.type	.L.module22_managed_to_java, %object
 	.p2align	2
-.L.module23_managed_to_java:
+.L.module22_managed_to_java:
 	.long	0x200001e	@ type_token_id
 	.long	0x1379	@ java_map_index
 
@@ -3999,13 +3989,13 @@
 	.long	0x2000027	@ type_token_id
 	.long	0x1378	@ java_map_index
 
-	.size	.L.module23_managed_to_java, 48
+	.size	.L.module22_managed_to_java, 48
 
-	.section	.rodata.module23_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module22_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module23_managed_to_java_duplicates, %object
+	.type	.L.module22_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module23_managed_to_java_duplicates:
+.L.module22_managed_to_java_duplicates:
 	.long	0x2000021	@ type_token_id
 	.long	0x137a	@ java_map_index
 
@@ -4015,13 +4005,13 @@
 	.long	0x2000028	@ type_token_id
 	.long	0x1378	@ java_map_index
 
-	.size	.L.module23_managed_to_java_duplicates, 24
+	.size	.L.module22_managed_to_java_duplicates, 24
 
-	.section	.rodata.module24_managed_to_java, "a", %progbits
+	.section	.rodata.module23_managed_to_java, "a", %progbits
 
-	.type	.L.module24_managed_to_java, %object
+	.type	.L.module23_managed_to_java, %object
 	.p2align	2
-.L.module24_managed_to_java:
+.L.module23_managed_to_java:
 	.long	0x200000b	@ type_token_id
 	.long	0x1373	@ java_map_index
 
@@ -4037,36 +4027,36 @@
 	.long	0x2000013	@ type_token_id
 	.long	0x1376	@ java_map_index
 
-	.size	.L.module24_managed_to_java, 40
+	.size	.L.module23_managed_to_java, 40
 
-	.section	.rodata.module24_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module23_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module24_managed_to_java_duplicates, %object
+	.type	.L.module23_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module24_managed_to_java_duplicates:
+.L.module23_managed_to_java_duplicates:
 	.long	0x200000e	@ type_token_id
 	.long	0x1375	@ java_map_index
 
-	.size	.L.module24_managed_to_java_duplicates, 8
+	.size	.L.module23_managed_to_java_duplicates, 8
 
-	.section	.rodata.module25_managed_to_java, "a", %progbits
+	.section	.rodata.module24_managed_to_java, "a", %progbits
 
-	.type	.L.module25_managed_to_java, %object
+	.type	.L.module24_managed_to_java, %object
 	.p2align	2
-.L.module25_managed_to_java:
+.L.module24_managed_to_java:
 	.long	0x200000c	@ type_token_id
 	.long	0x1002	@ java_map_index
 
 	.long	0x200000d	@ type_token_id
 	.long	0x1003	@ java_map_index
 
-	.size	.L.module25_managed_to_java, 16
+	.size	.L.module24_managed_to_java, 16
 
-	.section	.rodata.module26_managed_to_java, "a", %progbits
+	.section	.rodata.module25_managed_to_java, "a", %progbits
 
-	.type	.L.module26_managed_to_java, %object
+	.type	.L.module25_managed_to_java, %object
 	.p2align	2
-.L.module26_managed_to_java:
+.L.module25_managed_to_java:
 	.long	0x2000025	@ type_token_id
 	.long	0x1309	@ java_map_index
 
@@ -4247,13 +4237,13 @@
 	.long	0x200008f	@ type_token_id
 	.long	0x1318	@ java_map_index
 
-	.size	.L.module26_managed_to_java, 480
+	.size	.L.module25_managed_to_java, 480
 
-	.section	.rodata.module26_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module25_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module26_managed_to_java_duplicates, %object
+	.type	.L.module25_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module26_managed_to_java_duplicates:
+.L.module25_managed_to_java_duplicates:
 	.long	0x200002a	@ type_token_id
 	.long	0x12e7	@ java_map_index
 
@@ -4329,13 +4319,13 @@
 	.long	0x200008d	@ type_token_id
 	.long	0x1316	@ java_map_index
 
-	.size	.L.module26_managed_to_java_duplicates, 200
+	.size	.L.module25_managed_to_java_duplicates, 200
 
-	.section	.rodata.module27_managed_to_java, "a", %progbits
+	.section	.rodata.module26_managed_to_java, "a", %progbits
 
-	.type	.L.module27_managed_to_java, %object
+	.type	.L.module26_managed_to_java, %object
 	.p2align	2
-.L.module27_managed_to_java:
+.L.module26_managed_to_java:
 	.long	0x2000007	@ type_token_id
 	.long	0x1274	@ java_map_index
 
@@ -4345,23 +4335,23 @@
 	.long	0x200000a	@ type_token_id
 	.long	0x128a	@ java_map_index
 
-	.size	.L.module27_managed_to_java, 24
+	.size	.L.module26_managed_to_java, 24
 
-	.section	.rodata.module27_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module26_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module27_managed_to_java_duplicates, %object
+	.type	.L.module26_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module27_managed_to_java_duplicates:
+.L.module26_managed_to_java_duplicates:
 	.long	0x2000008	@ type_token_id
 	.long	0x1274	@ java_map_index
 
-	.size	.L.module27_managed_to_java_duplicates, 8
+	.size	.L.module26_managed_to_java_duplicates, 8
 
-	.section	.rodata.module28_managed_to_java, "a", %progbits
+	.section	.rodata.module27_managed_to_java, "a", %progbits
 
-	.type	.L.module28_managed_to_java, %object
+	.type	.L.module27_managed_to_java, %object
 	.p2align	2
-.L.module28_managed_to_java:
+.L.module27_managed_to_java:
 	.long	0x200000b	@ type_token_id
 	.long	0x139d	@ java_map_index
 
@@ -4383,26 +4373,26 @@
 	.long	0x2000013	@ type_token_id
 	.long	0x13a1	@ java_map_index
 
-	.size	.L.module28_managed_to_java, 56
+	.size	.L.module27_managed_to_java, 56
 
-	.section	.rodata.module28_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module27_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module28_managed_to_java_duplicates, %object
+	.type	.L.module27_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module28_managed_to_java_duplicates:
+.L.module27_managed_to_java_duplicates:
 	.long	0x2000010	@ type_token_id
 	.long	0x139c	@ java_map_index
 
 	.long	0x2000012	@ type_token_id
 	.long	0x139b	@ java_map_index
 
-	.size	.L.module28_managed_to_java_duplicates, 16
+	.size	.L.module27_managed_to_java_duplicates, 16
 
-	.section	.rodata.module29_managed_to_java, "a", %progbits
+	.section	.rodata.module28_managed_to_java, "a", %progbits
 
-	.type	.L.module29_managed_to_java, %object
+	.type	.L.module28_managed_to_java, %object
 	.p2align	2
-.L.module29_managed_to_java:
+.L.module28_managed_to_java:
 	.long	0x2000007	@ type_token_id
 	.long	0x100c	@ java_map_index
 
@@ -4421,26 +4411,26 @@
 	.long	0x200000d	@ type_token_id
 	.long	0x100f	@ java_map_index
 
-	.size	.L.module29_managed_to_java, 48
+	.size	.L.module28_managed_to_java, 48
 
-	.section	.rodata.module29_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module28_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module29_managed_to_java_duplicates, %object
+	.type	.L.module28_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module29_managed_to_java_duplicates:
+.L.module28_managed_to_java_duplicates:
 	.long	0x2000008	@ type_token_id
 	.long	0x100c	@ java_map_index
 
 	.long	0x200000e	@ type_token_id
 	.long	0x100f	@ java_map_index
 
-	.size	.L.module29_managed_to_java_duplicates, 16
+	.size	.L.module28_managed_to_java_duplicates, 16
 
-	.section	.rodata.module30_managed_to_java, "a", %progbits
+	.section	.rodata.module29_managed_to_java, "a", %progbits
 
-	.type	.L.module30_managed_to_java, %object
+	.type	.L.module29_managed_to_java, %object
 	.p2align	2
-.L.module30_managed_to_java:
+.L.module29_managed_to_java:
 	.long	0x2000009	@ type_token_id
 	.long	0xfcc	@ java_map_index
 
@@ -4456,26 +4446,26 @@
 	.long	0x200000e	@ type_token_id
 	.long	0xfcb	@ java_map_index
 
-	.size	.L.module30_managed_to_java, 40
+	.size	.L.module29_managed_to_java, 40
 
-	.section	.rodata.module30_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module29_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module30_managed_to_java_duplicates, %object
+	.type	.L.module29_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module30_managed_to_java_duplicates:
+.L.module29_managed_to_java_duplicates:
 	.long	0x200000a	@ type_token_id
 	.long	0xfcc	@ java_map_index
 
 	.long	0x200000f	@ type_token_id
 	.long	0xfcb	@ java_map_index
 
-	.size	.L.module30_managed_to_java_duplicates, 16
+	.size	.L.module29_managed_to_java_duplicates, 16
 
-	.section	.rodata.module31_managed_to_java, "a", %progbits
+	.section	.rodata.module30_managed_to_java, "a", %progbits
 
-	.type	.L.module31_managed_to_java, %object
+	.type	.L.module30_managed_to_java, %object
 	.p2align	2
-.L.module31_managed_to_java:
+.L.module30_managed_to_java:
 	.long	0x200000b	@ type_token_id
 	.long	0xec7	@ java_map_index
 
@@ -4578,13 +4568,13 @@
 	.long	0x200003c	@ type_token_id
 	.long	0xed8	@ java_map_index
 
-	.size	.L.module31_managed_to_java, 272
+	.size	.L.module30_managed_to_java, 272
 
-	.section	.rodata.module31_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module30_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module31_managed_to_java_duplicates, %object
+	.type	.L.module30_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module31_managed_to_java_duplicates:
+.L.module30_managed_to_java_duplicates:
 	.long	0x200000d	@ type_token_id
 	.long	0xecb	@ java_map_index
 
@@ -4615,13 +4605,13 @@
 	.long	0x2000027	@ type_token_id
 	.long	0xed7	@ java_map_index
 
-	.size	.L.module31_managed_to_java_duplicates, 80
+	.size	.L.module30_managed_to_java_duplicates, 80
 
-	.section	.rodata.module32_managed_to_java, "a", %progbits
+	.section	.rodata.module31_managed_to_java, "a", %progbits
 
-	.type	.L.module32_managed_to_java, %object
+	.type	.L.module31_managed_to_java, %object
 	.p2align	2
-.L.module32_managed_to_java:
+.L.module31_managed_to_java:
 	.long	0x200002b	@ type_token_id
 	.long	0x1253	@ java_map_index
 
@@ -4712,13 +4702,13 @@
 	.long	0x2000059	@ type_token_id
 	.long	0x125d	@ java_map_index
 
-	.size	.L.module32_managed_to_java, 240
+	.size	.L.module31_managed_to_java, 240
 
-	.section	.rodata.module32_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module31_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module32_managed_to_java_duplicates, %object
+	.type	.L.module31_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module32_managed_to_java_duplicates:
+.L.module31_managed_to_java_duplicates:
 	.long	0x2000030	@ type_token_id
 	.long	0x1254	@ java_map_index
 
@@ -4761,13 +4751,13 @@
 	.long	0x2000057	@ type_token_id
 	.long	0x125c	@ java_map_index
 
-	.size	.L.module32_managed_to_java_duplicates, 112
+	.size	.L.module31_managed_to_java_duplicates, 112
 
-	.section	.rodata.module33_managed_to_java, "a", %progbits
+	.section	.rodata.module32_managed_to_java, "a", %progbits
 
-	.type	.L.module33_managed_to_java, %object
+	.type	.L.module32_managed_to_java, %object
 	.p2align	2
-.L.module33_managed_to_java:
+.L.module32_managed_to_java:
 	.long	0x200004e	@ type_token_id
 	.long	0x131b	@ java_map_index
 
@@ -5029,13 +5019,13 @@
 	.long	0x20000db	@ type_token_id
 	.long	0x135e	@ java_map_index
 
-	.size	.L.module33_managed_to_java, 696
+	.size	.L.module32_managed_to_java, 696
 
-	.section	.rodata.module33_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module32_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module33_managed_to_java_duplicates, %object
+	.type	.L.module32_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module33_managed_to_java_duplicates:
+.L.module32_managed_to_java_duplicates:
 	.long	0x2000059	@ type_token_id
 	.long	0x1336	@ java_map_index
 
@@ -5147,13 +5137,13 @@
 	.long	0x20000dc	@ type_token_id
 	.long	0x135e	@ java_map_index
 
-	.size	.L.module33_managed_to_java_duplicates, 296
+	.size	.L.module32_managed_to_java_duplicates, 296
 
-	.section	.rodata.module34_managed_to_java, "a", %progbits
+	.section	.rodata.module33_managed_to_java, "a", %progbits
 
-	.type	.L.module34_managed_to_java, %object
+	.type	.L.module33_managed_to_java, %object
 	.p2align	2
-.L.module34_managed_to_java:
+.L.module33_managed_to_java:
 	.long	0x200000d	@ type_token_id
 	.long	0x13bb	@ java_map_index
 
@@ -5187,13 +5177,13 @@
 	.long	0x200001d	@ type_token_id
 	.long	0x13c2	@ java_map_index
 
-	.size	.L.module34_managed_to_java, 88
+	.size	.L.module33_managed_to_java, 88
 
-	.section	.rodata.module34_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module33_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module34_managed_to_java_duplicates, %object
+	.type	.L.module33_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module34_managed_to_java_duplicates:
+.L.module33_managed_to_java_duplicates:
 	.long	0x2000011	@ type_token_id
 	.long	0x13b8	@ java_map_index
 
@@ -5215,26 +5205,26 @@
 	.long	0x200001e	@ type_token_id
 	.long	0x13c2	@ java_map_index
 
-	.size	.L.module34_managed_to_java_duplicates, 56
+	.size	.L.module33_managed_to_java_duplicates, 56
 
-	.section	.rodata.module35_managed_to_java, "a", %progbits
+	.section	.rodata.module34_managed_to_java, "a", %progbits
 
-	.type	.L.module35_managed_to_java, %object
+	.type	.L.module34_managed_to_java, %object
 	.p2align	2
-.L.module35_managed_to_java:
+.L.module34_managed_to_java:
 	.long	0x2000009	@ type_token_id
 	.long	0x1509	@ java_map_index
 
 	.long	0x200000b	@ type_token_id
 	.long	0x150a	@ java_map_index
 
-	.size	.L.module35_managed_to_java, 16
+	.size	.L.module34_managed_to_java, 16
 
-	.section	.rodata.module36_managed_to_java, "a", %progbits
+	.section	.rodata.module35_managed_to_java, "a", %progbits
 
-	.type	.L.module36_managed_to_java, %object
+	.type	.L.module35_managed_to_java, %object
 	.p2align	2
-.L.module36_managed_to_java:
+.L.module35_managed_to_java:
 	.long	0x2000004	@ type_token_id
 	.long	0xfcd	@ java_map_index
 
@@ -5244,23 +5234,23 @@
 	.long	0x2000008	@ type_token_id
 	.long	0x1c26	@ java_map_index
 
-	.size	.L.module36_managed_to_java, 24
+	.size	.L.module35_managed_to_java, 24
 
-	.section	.rodata.module36_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module35_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module36_managed_to_java_duplicates, %object
+	.type	.L.module35_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module36_managed_to_java_duplicates:
+.L.module35_managed_to_java_duplicates:
 	.long	0x2000006	@ type_token_id
 	.long	0xfce	@ java_map_index
 
-	.size	.L.module36_managed_to_java_duplicates, 8
+	.size	.L.module35_managed_to_java_duplicates, 8
 
-	.section	.rodata.module37_managed_to_java, "a", %progbits
+	.section	.rodata.module36_managed_to_java, "a", %progbits
 
-	.type	.L.module37_managed_to_java, %object
+	.type	.L.module36_managed_to_java, %object
 	.p2align	2
-.L.module37_managed_to_java:
+.L.module36_managed_to_java:
 	.long	0x2000017	@ type_token_id
 	.long	0x129d	@ java_map_index
 
@@ -5477,13 +5467,13 @@
 	.long	0x200007d	@ type_token_id
 	.long	0xa86	@ java_map_index
 
-	.size	.L.module37_managed_to_java, 576
+	.size	.L.module36_managed_to_java, 576
 
-	.section	.rodata.module37_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module36_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module37_managed_to_java_duplicates, %object
+	.type	.L.module36_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module37_managed_to_java_duplicates:
+.L.module36_managed_to_java_duplicates:
 	.long	0x200001e	@ type_token_id
 	.long	0x12a3	@ java_map_index
 
@@ -5568,13 +5558,13 @@
 	.long	0x200007c	@ type_token_id
 	.long	0xa64	@ java_map_index
 
-	.size	.L.module37_managed_to_java_duplicates, 224
+	.size	.L.module36_managed_to_java_duplicates, 224
 
-	.section	.rodata.module38_managed_to_java, "a", %progbits
+	.section	.rodata.module37_managed_to_java, "a", %progbits
 
-	.type	.L.module38_managed_to_java, %object
+	.type	.L.module37_managed_to_java, %object
 	.p2align	2
-.L.module38_managed_to_java:
+.L.module37_managed_to_java:
 	.long	0x200000c	@ type_token_id
 	.long	0x1271	@ java_map_index
 
@@ -5587,26 +5577,26 @@
 	.long	0x2000010	@ type_token_id
 	.long	0x126f	@ java_map_index
 
-	.size	.L.module38_managed_to_java, 32
+	.size	.L.module37_managed_to_java, 32
 
-	.section	.rodata.module38_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module37_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module38_managed_to_java_duplicates, %object
+	.type	.L.module37_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module38_managed_to_java_duplicates:
+.L.module37_managed_to_java_duplicates:
 	.long	0x200000f	@ type_token_id
 	.long	0x126e	@ java_map_index
 
 	.long	0x2000011	@ type_token_id
 	.long	0x126f	@ java_map_index
 
-	.size	.L.module38_managed_to_java_duplicates, 16
+	.size	.L.module37_managed_to_java_duplicates, 16
 
-	.section	.rodata.module39_managed_to_java, "a", %progbits
+	.section	.rodata.module38_managed_to_java, "a", %progbits
 
-	.type	.L.module39_managed_to_java, %object
+	.type	.L.module38_managed_to_java, %object
 	.p2align	2
-.L.module39_managed_to_java:
+.L.module38_managed_to_java:
 	.long	0x20000dc	@ type_token_id
 	.long	0x15e1	@ java_map_index
 
@@ -5661,13 +5651,13 @@
 	.long	0x20000fa	@ type_token_id
 	.long	0x15f1	@ java_map_index
 
-	.size	.L.module39_managed_to_java, 144
+	.size	.L.module38_managed_to_java, 144
 
-	.section	.rodata.module40_managed_to_java, "a", %progbits
+	.section	.rodata.module39_managed_to_java, "a", %progbits
 
-	.type	.L.module40_managed_to_java, %object
+	.type	.L.module39_managed_to_java, %object
 	.p2align	2
-.L.module40_managed_to_java:
+.L.module39_managed_to_java:
 	.long	0x200007b	@ type_token_id
 	.long	0x1012	@ java_map_index
 
@@ -6058,13 +6048,13 @@
 	.long	0x2000122	@ type_token_id
 	.long	0x1049	@ java_map_index
 
-	.size	.L.module40_managed_to_java, 1040
+	.size	.L.module39_managed_to_java, 1040
 
-	.section	.rodata.module40_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module39_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module40_managed_to_java_duplicates, %object
+	.type	.L.module39_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module40_managed_to_java_duplicates:
+.L.module39_managed_to_java_duplicates:
 	.long	0x200008e	@ type_token_id
 	.long	0x1080	@ java_map_index
 
@@ -6176,13 +6166,13 @@
 	.long	0x2000110	@ type_token_id
 	.long	0x1060	@ java_map_index
 
-	.size	.L.module40_managed_to_java_duplicates, 296
+	.size	.L.module39_managed_to_java_duplicates, 296
 
-	.section	.rodata.module41_managed_to_java, "a", %progbits
+	.section	.rodata.module40_managed_to_java, "a", %progbits
 
-	.type	.L.module41_managed_to_java, %object
+	.type	.L.module40_managed_to_java, %object
 	.p2align	2
-.L.module41_managed_to_java:
+.L.module40_managed_to_java:
 	.long	0x200000e	@ type_token_id
 	.long	0x1245	@ java_map_index
 
@@ -6216,13 +6206,13 @@
 	.long	0x200001e	@ type_token_id
 	.long	0x1248	@ java_map_index
 
-	.size	.L.module41_managed_to_java, 88
+	.size	.L.module40_managed_to_java, 88
 
-	.section	.rodata.module41_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module40_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module41_managed_to_java_duplicates, %object
+	.type	.L.module40_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module41_managed_to_java_duplicates:
+.L.module40_managed_to_java_duplicates:
 	.long	0x200000f	@ type_token_id
 	.long	0x1245	@ java_map_index
 
@@ -6238,13 +6228,13 @@
 	.long	0x200001f	@ type_token_id
 	.long	0x1248	@ java_map_index
 
-	.size	.L.module41_managed_to_java_duplicates, 40
+	.size	.L.module40_managed_to_java_duplicates, 40
 
-	.section	.rodata.module42_managed_to_java, "a", %progbits
+	.section	.rodata.module41_managed_to_java, "a", %progbits
 
-	.type	.L.module42_managed_to_java, %object
+	.type	.L.module41_managed_to_java, %object
 	.p2align	2
-.L.module42_managed_to_java:
+.L.module41_managed_to_java:
 	.long	0x2000262	@ type_token_id
 	.long	0x15fe	@ java_map_index
 
@@ -23429,13 +23419,13 @@
 	.long	0x2002cd7	@ type_token_id
 	.long	0x8d6	@ java_map_index
 
-	.size	.L.module42_managed_to_java, 45824
+	.size	.L.module41_managed_to_java, 45824
 
-	.section	.rodata.module42_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module41_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module42_managed_to_java_duplicates, %object
+	.type	.L.module41_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module42_managed_to_java_duplicates:
+.L.module41_managed_to_java_duplicates:
 	.long	0x200026c	@ type_token_id
 	.long	0x15fa	@ java_map_index
 
@@ -28467,13 +28457,13 @@
 	.long	0x2002c8b	@ type_token_id
 	.long	0xaf	@ java_map_index
 
-	.size	.L.module42_managed_to_java_duplicates, 13416
+	.size	.L.module41_managed_to_java_duplicates, 13416
 
-	.section	.rodata.module43_managed_to_java, "a", %progbits
+	.section	.rodata.module42_managed_to_java, "a", %progbits
 
-	.type	.L.module43_managed_to_java, %object
+	.type	.L.module42_managed_to_java, %object
 	.p2align	2
-.L.module43_managed_to_java:
+.L.module42_managed_to_java:
 	.long	0x2000055	@ type_token_id
 	.long	0x14e1	@ java_map_index
 
@@ -29500,13 +29490,13 @@
 	.long	0x2000256	@ type_token_id
 	.long	0x13cc	@ java_map_index
 
-	.size	.L.module43_managed_to_java, 2736
+	.size	.L.module42_managed_to_java, 2736
 
-	.section	.rodata.module43_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module42_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module43_managed_to_java_duplicates, %object
+	.type	.L.module42_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module43_managed_to_java_duplicates:
+.L.module42_managed_to_java_duplicates:
 	.long	0x2000059	@ type_token_id
 	.long	0x14f2	@ java_map_index
 
@@ -29861,23 +29851,23 @@
 	.long	0x2000253	@ type_token_id
 	.long	0x13cd	@ java_map_index
 
-	.size	.L.module43_managed_to_java_duplicates, 944
+	.size	.L.module42_managed_to_java_duplicates, 944
+
+	.section	.rodata.module43_managed_to_java, "a", %progbits
+
+	.type	.L.module43_managed_to_java, %object
+	.p2align	2
+.L.module43_managed_to_java:
+	.long	0x2000003	@ type_token_id
+	.long	0x129c	@ java_map_index
+
+	.size	.L.module43_managed_to_java, 8
 
 	.section	.rodata.module44_managed_to_java, "a", %progbits
 
 	.type	.L.module44_managed_to_java, %object
 	.p2align	2
 .L.module44_managed_to_java:
-	.long	0x2000003	@ type_token_id
-	.long	0x129c	@ java_map_index
-
-	.size	.L.module44_managed_to_java, 8
-
-	.section	.rodata.module45_managed_to_java, "a", %progbits
-
-	.type	.L.module45_managed_to_java, %object
-	.p2align	2
-.L.module45_managed_to_java:
 	.long	0x2000007	@ type_token_id
 	.long	0x1272	@ java_map_index
 
@@ -29908,13 +29898,13 @@
 	.long	0x2000014	@ type_token_id
 	.long	0x128f	@ java_map_index
 
-	.size	.L.module45_managed_to_java, 80
+	.size	.L.module44_managed_to_java, 80
 
-	.section	.rodata.module45_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module44_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module45_managed_to_java_duplicates, %object
+	.type	.L.module44_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module45_managed_to_java_duplicates:
+.L.module44_managed_to_java_duplicates:
 	.long	0x2000009	@ type_token_id
 	.long	0x1277	@ java_map_index
 
@@ -29927,13 +29917,13 @@
 	.long	0x2000013	@ type_token_id
 	.long	0x128e	@ java_map_index
 
-	.size	.L.module45_managed_to_java_duplicates, 32
+	.size	.L.module44_managed_to_java_duplicates, 32
 
-	.section	.rodata.module46_managed_to_java, "a", %progbits
+	.section	.rodata.module45_managed_to_java, "a", %progbits
 
-	.type	.L.module46_managed_to_java, %object
+	.type	.L.module45_managed_to_java, %object
 	.p2align	2
-.L.module46_managed_to_java:
+.L.module45_managed_to_java:
 	.long	0x2000011	@ type_token_id
 	.long	0x1234	@ java_map_index
 
@@ -29952,13 +29942,13 @@
 	.long	0x200001a	@ type_token_id
 	.long	0x1239	@ java_map_index
 
-	.size	.L.module46_managed_to_java, 48
+	.size	.L.module45_managed_to_java, 48
 
-	.section	.rodata.module46_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module45_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module46_managed_to_java_duplicates, %object
+	.type	.L.module45_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module46_managed_to_java_duplicates:
+.L.module45_managed_to_java_duplicates:
 	.long	0x2000012	@ type_token_id
 	.long	0x1234	@ java_map_index
 
@@ -29971,33 +29961,33 @@
 	.long	0x200001b	@ type_token_id
 	.long	0x1239	@ java_map_index
 
-	.size	.L.module46_managed_to_java_duplicates, 32
+	.size	.L.module45_managed_to_java_duplicates, 32
+
+	.section	.rodata.module46_managed_to_java, "a", %progbits
+
+	.type	.L.module46_managed_to_java, %object
+	.p2align	2
+.L.module46_managed_to_java:
+	.long	0x2000009	@ type_token_id
+	.long	0x123f	@ java_map_index
+
+	.size	.L.module46_managed_to_java, 8
+
+	.section	.rodata.module46_managed_to_java_duplicates, "a", %progbits
+
+	.type	.L.module46_managed_to_java_duplicates, %object
+	.p2align	2
+.L.module46_managed_to_java_duplicates:
+	.long	0x200000a	@ type_token_id
+	.long	0x123f	@ java_map_index
+
+	.size	.L.module46_managed_to_java_duplicates, 8
 
 	.section	.rodata.module47_managed_to_java, "a", %progbits
 
 	.type	.L.module47_managed_to_java, %object
 	.p2align	2
 .L.module47_managed_to_java:
-	.long	0x2000009	@ type_token_id
-	.long	0x123f	@ java_map_index
-
-	.size	.L.module47_managed_to_java, 8
-
-	.section	.rodata.module47_managed_to_java_duplicates, "a", %progbits
-
-	.type	.L.module47_managed_to_java_duplicates, %object
-	.p2align	2
-.L.module47_managed_to_java_duplicates:
-	.long	0x200000a	@ type_token_id
-	.long	0x123f	@ java_map_index
-
-	.size	.L.module47_managed_to_java_duplicates, 8
-
-	.section	.rodata.module48_managed_to_java, "a", %progbits
-
-	.type	.L.module48_managed_to_java, %object
-	.p2align	2
-.L.module48_managed_to_java:
 	.long	0x2000005	@ type_token_id
 	.long	0x1371	@ java_map_index
 
@@ -30016,13 +30006,13 @@
 	.long	0x200000c	@ type_token_id
 	.long	0x136f	@ java_map_index
 
-	.size	.L.module48_managed_to_java, 48
+	.size	.L.module47_managed_to_java, 48
 
-	.section	.rodata.module48_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module47_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module48_managed_to_java_duplicates, %object
+	.type	.L.module47_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module48_managed_to_java_duplicates:
+.L.module47_managed_to_java_duplicates:
 	.long	0x2000006	@ type_token_id
 	.long	0x1371	@ java_map_index
 
@@ -30032,13 +30022,13 @@
 	.long	0x200000d	@ type_token_id
 	.long	0x136f	@ java_map_index
 
-	.size	.L.module48_managed_to_java_duplicates, 24
+	.size	.L.module47_managed_to_java_duplicates, 24
 
-	.section	.rodata.module49_managed_to_java, "a", %progbits
+	.section	.rodata.module48_managed_to_java, "a", %progbits
 
-	.type	.L.module49_managed_to_java, %object
+	.type	.L.module48_managed_to_java, %object
 	.p2align	2
-.L.module49_managed_to_java:
+.L.module48_managed_to_java:
 	.long	0x200001e	@ type_token_id
 	.long	0x13ad	@ java_map_index
 
@@ -30078,13 +30068,13 @@
 	.long	0x2000033	@ type_token_id
 	.long	0x13b7	@ java_map_index
 
-	.size	.L.module49_managed_to_java, 104
+	.size	.L.module48_managed_to_java, 104
 
-	.section	.rodata.module49_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module48_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module49_managed_to_java_duplicates, %object
+	.type	.L.module48_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module49_managed_to_java_duplicates:
+.L.module48_managed_to_java_duplicates:
 	.long	0x200001f	@ type_token_id
 	.long	0x13ad	@ java_map_index
 
@@ -30100,13 +30090,13 @@
 	.long	0x2000031	@ type_token_id
 	.long	0x13b5	@ java_map_index
 
-	.size	.L.module49_managed_to_java_duplicates, 40
+	.size	.L.module48_managed_to_java_duplicates, 40
 
-	.section	.rodata.module50_managed_to_java, "a", %progbits
+	.section	.rodata.module49_managed_to_java, "a", %progbits
 
-	.type	.L.module50_managed_to_java, %object
+	.type	.L.module49_managed_to_java, %object
 	.p2align	2
-.L.module50_managed_to_java:
+.L.module49_managed_to_java:
 	.long	0x2000069	@ type_token_id
 	.long	0x10c5	@ java_map_index
 
@@ -30338,13 +30328,13 @@
 	.long	0x20000d3	@ type_token_id
 	.long	0x10b9	@ java_map_index
 
-	.size	.L.module50_managed_to_java, 616
+	.size	.L.module49_managed_to_java, 616
 
-	.section	.rodata.module50_managed_to_java_duplicates, "a", %progbits
+	.section	.rodata.module49_managed_to_java_duplicates, "a", %progbits
 
-	.type	.L.module50_managed_to_java_duplicates, %object
+	.type	.L.module49_managed_to_java_duplicates, %object
 	.p2align	2
-.L.module50_managed_to_java_duplicates:
+.L.module49_managed_to_java_duplicates:
 	.long	0x200006c	@ type_token_id
 	.long	0x10c8	@ java_map_index
 
@@ -30396,27 +30386,37 @@
 	.long	0x20000c3	@ type_token_id
 	.long	0x10b6	@ java_map_index
 
-	.size	.L.module50_managed_to_java_duplicates, 136
+	.size	.L.module49_managed_to_java_duplicates, 136
+
+	.section	.rodata.module50_managed_to_java, "a", %progbits
+
+	.type	.L.module50_managed_to_java, %object
+	.p2align	2
+.L.module50_managed_to_java:
+	.long	0x2000003	@ type_token_id
+	.long	0x1508	@ java_map_index
+
+	.size	.L.module50_managed_to_java, 8
+
+	.section	.rodata.module50_managed_to_java_duplicates, "a", %progbits
+
+	.type	.L.module50_managed_to_java_duplicates, %object
+	.p2align	2
+.L.module50_managed_to_java_duplicates:
+	.long	0x2000004	@ type_token_id
+	.long	0x1508	@ java_map_index
+
+	.size	.L.module50_managed_to_java_duplicates, 8
 
 	.section	.rodata.module51_managed_to_java, "a", %progbits
 
 	.type	.L.module51_managed_to_java, %object
 	.p2align	2
 .L.module51_managed_to_java:
-	.long	0x2000003	@ type_token_id
-	.long	0x1508	@ java_map_index
+	.long	0x2000002	@ type_token_id
+	.long	0x15ce	@ java_map_index
 
 	.size	.L.module51_managed_to_java, 8
-
-	.section	.rodata.module51_managed_to_java_duplicates, "a", %progbits
-
-	.type	.L.module51_managed_to_java_duplicates, %object
-	.p2align	2
-.L.module51_managed_to_java_duplicates:
-	.long	0x2000004	@ type_token_id
-	.long	0x1508	@ java_map_index
-
-	.size	.L.module51_managed_to_java_duplicates, 8
 
 	.section	.rodata.module52_managed_to_java, "a", %progbits
 

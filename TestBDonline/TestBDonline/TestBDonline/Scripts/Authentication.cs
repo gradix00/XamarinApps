@@ -251,6 +251,38 @@ namespace TestBDonline.Scripts
             return false;
         }
 
+        public bool TruncateTable(string name)
+        {
+            var conn = new MySqlConnection(connAddr);
+            conn.Open();
+
+            if (CheckAcces(conn))
+            {
+                MySqlCommand cmd = new MySqlCommand($"TRUNCATE {name}", conn);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            else
+                return false;
+            return true;
+        }
+
+        public bool DeleteAccount(int id)
+        {
+            var conn = new MySqlConnection(connAddr);
+            conn.Open();
+
+            if (CheckAcces(conn))
+            {
+                MySqlCommand cmd = new MySqlCommand($"DELETE FROM Users WHERE id={id}", conn);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            else
+                return false;
+            return true;
+        }
+
         public bool ChangePasswordUser(UserData data, string pwd)
         {
             var conn = new MySqlConnection(connAddr);

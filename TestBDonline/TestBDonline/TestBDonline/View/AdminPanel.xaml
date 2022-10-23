@@ -14,6 +14,14 @@
                    BorderColor="LightGoldenrodYellow"
                    BackgroundColor="CornflowerBlue">
                 <StackLayout>
+                    <Label Text="Zarządzanie systemem e-Wads"
+               TextColor="LightGoldenrodYellow"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               FontAttributes="Bold"
+               FontSize="20"
+               TextDecorations="Underline"
+               Grid.Column="1"/>
                     <Button Text="Utwórz post"
                         HorizontalOptions="CenterAndExpand"
                         Clicked="OpenPageAddingPost"
@@ -45,6 +53,18 @@
                             BackgroundColor="LightGoldenrodYellow"
                             TextColor="DimGray"
                             IsEnabled="False"/>
+                    <Button Text="Wyczyść dziennik zdarzeń"
+                        HorizontalOptions="CenterAndExpand"
+                        Clicked="ClearEventLog"
+                        WidthRequest="230"
+                            BackgroundColor="LightGoldenrodYellow"
+                            TextColor="DimGray"/>
+                    <Button Text="Wyczyść globalny czat"
+                        HorizontalOptions="CenterAndExpand"
+                        Clicked="ClearGlobalChat"
+                        WidthRequest="230"
+                            BackgroundColor="LightGoldenrodYellow"
+                            TextColor="DimGray"/>
                 </StackLayout>
             </Frame>
         </StackLayout>

@@ -14,6 +14,7 @@
                     <ColumnDefinition Width="25"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="75"/>
+                    <ColumnDefinition Width="75"/>
                 </Grid.ColumnDefinitions>
                 <Label Text="id"
                        FontAttributes="Bold"
@@ -25,10 +26,15 @@
                        TextTransform="Uppercase"
                        Grid.Column="1"
                        TextColor="LightGreen"/>
-                <Label Text="Punkty"
+                <Label Text="Status"
                        FontAttributes="Bold"
                        TextTransform="Uppercase"
                        Grid.Column="2"
+                       TextColor="LightGoldenrodYellow"/>
+                <Label Text="Punkty"
+                       FontAttributes="Bold"
+                       TextTransform="Uppercase"
+                       Grid.Column="3"
                        TextColor="Cyan"/>
             </Grid>
             <ListView VerticalOptions="StartAndExpand"
@@ -47,6 +53,7 @@
                                     <ColumnDefinition Width="25"/>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="75"/>
+                                    <ColumnDefinition Width="75"/>
                                 </Grid.ColumnDefinitions>
                                 <Label Text="{Binding ID}"
                                        FontAttributes="Bold"
@@ -55,8 +62,11 @@
                                 <Label Text="{Binding Nickname}"
                                        Grid.Column="1"
                                        TextColor="White"/>
-                                <Label Text="{Binding Points}"
+                                <Label Text="{Binding Status}"
                                        Grid.Column="2"
+                                       TextColor="GreenYellow"/>
+                                <Label Text="{Binding Points}"
+                                       Grid.Column="3"
                                        TextColor="White"/>
                             </Grid>
                         </ViewCell>

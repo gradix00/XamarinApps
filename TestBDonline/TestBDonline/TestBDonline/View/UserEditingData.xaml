@@ -35,8 +35,13 @@
             <CheckBox IsChecked="False"
                         HorizontalOptions="CenterAndExpand"
                         x:Name="toggle"/>
+            <Button Text="Usuń konto"
+                    TextColor="White"
+                        VerticalOptions="End"
+                        BackgroundColor="PaleVioletRed"
+                        Clicked="DeleteAccount"/>
             <Button Text="Zastosuj"
-                        VerticalOptions="EndAndExpand"
+                        VerticalOptions="End"
                         BackgroundColor="LightGoldenrodYellow"
                         Clicked="Apply"
                     TextColor="DimGray"/>

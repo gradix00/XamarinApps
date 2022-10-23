@@ -7,6 +7,7 @@ namespace TestBDonline.View
     {
         public int ID { get; set; }
         public string Nickname { get; set; }
+        public string Status { get; set; }
         public int Points { get; set; }
     }
 }

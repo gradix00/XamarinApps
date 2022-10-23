@@ -4,7 +4,7 @@
              x:Class="TestBDonline.View.LoginPage">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="eWads - Logowanie"/>
+        <ToolbarItem Text="e-Wads - Logowanie"/>
     </ContentPage.ToolbarItems>
     <Grid x:Name="bg"
         BackgroundColor="DimGray">
@@ -24,7 +24,7 @@
                Grid.ColumnSpan="3"
                Grid.RowSpan="3"/>
 
-        <Label Text="eWads"
+        <Label Text="e-Wads"
                TextColor="DarkSlateBlue"
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="CenterAndExpand"
@@ -59,7 +59,7 @@
                                 BackgroundColor="LightGoldenrodYellow"
                                 TextColor="DimGray"/>
                 <Button Text="Zapomniałem hasła (niedostępne)"
-                                IsEnabled="False"
+                                InputTransparent="False"
                                 Margin="30, 0, 30, 0"
                                 BackgroundColor="LightGoldenrodYellow"
                                 TextColor="DimGray"/>

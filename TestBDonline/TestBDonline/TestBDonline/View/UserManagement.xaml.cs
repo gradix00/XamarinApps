@@ -37,6 +37,7 @@ namespace TestBDonline.View
                 {
                     ID = user.ID,
                     Nickname = user.Nickname,
+                    Status = user.Status.ToString(),
                     Points = user.Points
                 });
             }        
@@ -46,8 +47,8 @@ namespace TestBDonline.View
 
         private void ManageUser(object sender, EventArgs e)
         {
-            var user = Data.GetUserDataByID((list.SelectedItem as UserCell).ID);
-            Navigation.PushAsync(new UserEditingData(user));
+            var userEdited = Data.GetUserDataByID((list.SelectedItem as UserCell).ID);
+            Navigation.PushAsync(new UserEditingData(Data, userEdited));
             list.SelectedItem = null;
         }
 

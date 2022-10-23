@@ -48,7 +48,7 @@ namespace TestBDonline.View
                 {
                     Autor = authentication.UserData.Nickname,
                     Details = $"Zalogowano się na konto. Email: {login.Text}",
-                    Date = DateTime.UtcNow
+                    Date = DateTime.Now
                 });
                 this.Navigation.RemovePage(this);    
             }

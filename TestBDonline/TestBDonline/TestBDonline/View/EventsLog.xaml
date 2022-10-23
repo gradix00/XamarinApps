@@ -62,7 +62,7 @@
                                 <Label Text="{Binding Details}"
                                        FontAttributes="Italic"
                                        Grid.Column="2"
-                                       TextColor="White"/>
+                                       TextColor="GreenYellow"/>
                                 <Label Text="{Binding Date}"
                                        FontAttributes="Bold"
                                        Grid.Column="3"
