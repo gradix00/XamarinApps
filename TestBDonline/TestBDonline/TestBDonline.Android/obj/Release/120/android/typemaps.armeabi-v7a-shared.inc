@@ -82,63 +82,63 @@ map_aname.15:
 
 	.type	map_aname.16, %object
 map_aname.16:
-	.asciz	"Xamarin.AndroidX.Loader"
-	.size	map_aname.16, 24
+	.asciz	"TestBDonline.Android"
+	.size	map_aname.16, 21
 
 	.type	map_aname.17, %object
 map_aname.17:
-	.asciz	"Xamarin.AndroidX.Navigation.Runtime"
-	.size	map_aname.17, 36
+	.asciz	"Xamarin.AndroidX.Loader"
+	.size	map_aname.17, 24
 
 	.type	map_aname.18, %object
 map_aname.18:
-	.asciz	"Xamarin.AndroidX.Tracing.Tracing"
-	.size	map_aname.18, 33
+	.asciz	"Xamarin.AndroidX.Navigation.Runtime"
+	.size	map_aname.18, 36
 
 	.type	map_aname.19, %object
 map_aname.19:
-	.asciz	"Xamarin.AndroidX.CoordinatorLayout"
-	.size	map_aname.19, 35
+	.asciz	"Xamarin.AndroidX.Tracing.Tracing"
+	.size	map_aname.19, 33
 
 	.type	map_aname.20, %object
 map_aname.20:
-	.asciz	"Xamarin.AndroidX.Core"
-	.size	map_aname.20, 22
+	.asciz	"Xamarin.AndroidX.CoordinatorLayout"
+	.size	map_aname.20, 35
 
 	.type	map_aname.21, %object
 map_aname.21:
-	.asciz	"Xamarin.AndroidX.Lifecycle.Common"
-	.size	map_aname.21, 34
+	.asciz	"Xamarin.AndroidX.Core"
+	.size	map_aname.21, 22
 
 	.type	map_aname.22, %object
 map_aname.22:
-	.asciz	"Xamarin.AndroidX.SwipeRefreshLayout"
-	.size	map_aname.22, 36
+	.asciz	"Xamarin.AndroidX.Lifecycle.Common"
+	.size	map_aname.22, 34
 
 	.type	map_aname.23, %object
 map_aname.23:
-	.asciz	"Xamarin.AndroidX.SlidingPaneLayout"
-	.size	map_aname.23, 35
+	.asciz	"Xamarin.AndroidX.SwipeRefreshLayout"
+	.size	map_aname.23, 36
 
 	.type	map_aname.24, %object
 map_aname.24:
-	.asciz	"Xamarin.AndroidX.CardView"
-	.size	map_aname.24, 26
+	.asciz	"Xamarin.AndroidX.SlidingPaneLayout"
+	.size	map_aname.24, 35
 
 	.type	map_aname.25, %object
 map_aname.25:
-	.asciz	"Xamarin.AndroidX.Preference"
-	.size	map_aname.25, 28
+	.asciz	"Xamarin.AndroidX.CardView"
+	.size	map_aname.25, 26
 
 	.type	map_aname.26, %object
 map_aname.26:
-	.asciz	"Xamarin.AndroidX.Lifecycle.LiveData"
-	.size	map_aname.26, 36
+	.asciz	"Xamarin.AndroidX.Preference"
+	.size	map_aname.26, 28
 
 	.type	map_aname.27, %object
 map_aname.27:
-	.asciz	"TestBDonline.Android"
-	.size	map_aname.27, 21
+	.asciz	"Xamarin.AndroidX.Lifecycle.LiveData"
+	.size	map_aname.27, 36
 
 	.type	map_aname.28, %object
 map_aname.28:

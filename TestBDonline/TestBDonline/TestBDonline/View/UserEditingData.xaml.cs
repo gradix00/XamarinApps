@@ -31,15 +31,26 @@ namespace TestBDonline.View
         {
             var auth = new Authentication();
 
-            UserData temp = UserData;
-            temp.Email = email.Text;
-            temp.Points = int.Parse(points.Text);
-            temp.Status = (Status)picker.SelectedIndex;
-            temp.RequirePasswordReset = toggle.IsChecked;
+            if (int.TryParse(points.Text, out int pt))
+            {
+                UserData temp = new UserData
+                {
+                    Nickname = UserData.Nickname,
+                    Email = email.Text,
+                    Points = pt,
+                    ID = UserData.ID,
+                    Status = (Status)picker.SelectedIndex,
+                    Gender = UserData.Gender,
+                    RequirePasswordReset = toggle.IsChecked
+                };
 
-            if (!auth.UpdateUserData(UserData))
-                DisplayAlert("Błąd!", "Nie można zmienić danych użytkownika", "Ok");
-            Navigation.RemovePage(this);
+
+                if (!auth.UpdateUserData(temp))
+                    DisplayAlert("Błąd!", "Nie można zmienić danych użytkownika", "Ok");
+                Navigation.RemovePage(this);
+            }
+            else
+                DisplayAlert("Błąd!", "Źle wprowadzone dane!", "Ok");
         }
 
         private void LoadUserDataUI()

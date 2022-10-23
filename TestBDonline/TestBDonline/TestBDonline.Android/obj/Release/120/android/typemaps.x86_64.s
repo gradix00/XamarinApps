@@ -220,12 +220,23 @@ map_modules:
 	.zero	4
 	.quad	0x0	# java_map
 
+	.byte	0x4a, 0xaf, 0xa8, 0x7f, 0xf9, 0x84, 0x25, 0x40, 0x8a, 0xca, 0x7d, 0x24, 0xc5, 0xae, 0x91, 0x77	# module_uuid: 7fa8af4a-84f9-4025-8aca-7d24c5ae9177
+	.long	0x1	# entry_count
+	.long	0x0	# duplicate_count
+	.quad	.L.module16_managed_to_java	# map
+	.quad	0	# duplicate_map
+	.quad	map_aname.16	# assembly_name: TestBDonline.Android
+	.quad	0x0	# image
+	.long	0x0	# java_name_width
+	.zero	4
+	.quad	0x0	# java_map
+
 	.byte	0x50, 0x2d, 0x4e, 0xe9, 0x2e, 0x49, 0xa0, 0x4f, 0x8c, 0x14, 0x15, 0x4b, 0x27, 0xf7, 0xf7, 0x31	# module_uuid: e94e2d50-492e-4fa0-8c14-154b27f7f731
 	.long	0xa	# entry_count
 	.long	0x5	# duplicate_count
-	.quad	.L.module16_managed_to_java	# map
-	.quad	.L.module16_managed_to_java_duplicates	# duplicate_map
-	.quad	map_aname.16	# assembly_name: Xamarin.AndroidX.Loader
+	.quad	.L.module17_managed_to_java	# map
+	.quad	.L.module17_managed_to_java_duplicates	# duplicate_map
+	.quad	map_aname.17	# assembly_name: Xamarin.AndroidX.Loader
 	.quad	0x0	# image
 	.long	0x0	# java_name_width
 	.zero	4
@@ -234,9 +245,9 @@ map_modules:
 	.byte	0x52, 0xb9, 0x4, 0x7e, 0xa4, 0xc6, 0xe7, 0x4e, 0x93, 0xf2, 0x0, 0x8d, 0x6a, 0xc7, 0x8d, 0xec	# module_uuid: 7e04b952-c6a4-4ee7-93f2-008d6ac78dec
 	.long	0xd	# entry_count
 	.long	0x2	# duplicate_count
-	.quad	.L.module17_managed_to_java	# map
-	.quad	.L.module17_managed_to_java_duplicates	# duplicate_map
-	.quad	map_aname.17	# assembly_name: Xamarin.AndroidX.Navigation.Runtime
+	.quad	.L.module18_managed_to_java	# map
+	.quad	.L.module18_managed_to_java_duplicates	# duplicate_map
+	.quad	map_aname.18	# assembly_name: Xamarin.AndroidX.Navigation.Runtime
 	.quad	0x0	# image
 	.long	0x0	# java_name_width
 	.zero	4
@@ -245,9 +256,9 @@ map_modules:
 	.byte	0x52, 0xf6, 0x6b, 0x1a, 0x1e, 0x54, 0x3e, 0x40, 0xb5, 0x0, 0xc, 0xf0, 0x39, 0x67, 0x6b, 0xd1	# module_uuid: 1a6bf652-541e-403e-b500-0cf039676bd1
 	.long	0x1	# entry_count
 	.long	0x0	# duplicate_count
-	.quad	.L.module18_managed_to_java	# map
+	.quad	.L.module19_managed_to_java	# map
 	.quad	0	# duplicate_map
-	.quad	map_aname.18	# assembly_name: Xamarin.AndroidX.Tracing.Tracing
+	.quad	map_aname.19	# assembly_name: Xamarin.AndroidX.Tracing.Tracing
 	.quad	0x0	# image
 	.long	0x0	# java_name_width
 	.zero	4
@@ -256,9 +267,9 @@ map_modules:
 	.byte	0x5b, 0x52, 0x32, 0x75, 0x8b, 0xac, 0x4f, 0x41, 0x90, 0x9f, 0xda, 0x99, 0x6e, 0xd7, 0x2d, 0xac	# module_uuid: 7532525b-ac8b-414f-909f-da996ed72dac
 	.long	0x9	# entry_count
 	.long	0x4	# duplicate_count
-	.quad	.L.module19_managed_to_java	# map
-	.quad	.L.module19_managed_to_java_duplicates	# duplicate_map
-	.quad	map_aname.19	# assembly_name: Xamarin.AndroidX.CoordinatorLayout
+	.quad	.L.module20_managed_to_java	# map
+	.quad	.L.module20_managed_to_java_duplicates	# duplicate_map
+	.quad	map_aname.20	# assembly_name: Xamarin.AndroidX.CoordinatorLayout
 	.quad	0x0	# image
 	.long	0x0	# java_name_width
 	.zero	4
@@ -267,9 +278,9 @@ map_modules:
 	.byte	0x5d, 0x50, 0x1b, 0x99, 0x2a, 0xaa, 0x8e, 0x41, 0xbd, 0x38, 0xd5, 0x3a, 0xb5, 0xe3, 0x63, 0x37	# module_uuid: 991b505d-aa2a-418e-bd38-d53ab5e36337
 	.long	0x164	# entry_count
 	.long	0x72	# duplicate_count
-	.quad	.L.module20_managed_to_java	# map
-	.quad	.L.module20_managed_to_java_duplicates	# duplicate_map
-	.quad	map_aname.20	# assembly_name: Xamarin.AndroidX.Core
+	.quad	.L.module21_managed_to_java	# map
+	.quad	.L.module21_managed_to_java_duplicates	# duplicate_map
+	.quad	map_aname.21	# assembly_name: Xamarin.AndroidX.Core
 	.quad	0x0	# image
 	.long	0x0	# java_name_width
 	.zero	4
@@ -278,9 +289,9 @@ map_modules:
 	.byte	0x5f, 0xa2, 0x64, 0x76, 0x8, 0x53, 0x1c, 0x40, 0x91, 0x96, 0x5b, 0x27, 0x87, 0x5e, 0x3c, 0x5b	# module_uuid: 7664a25f-5308-401c-9196-5b27875e3c5b
 	.long	0xc	# entry_count
 	.long	0x6	# duplicate_count
-	.quad	.L.module21_managed_to_java	# map
-	.quad	.L.module21_managed_to_java_duplicates	# duplicate_map
-	.quad	map_aname.21	# assembly_name: Xamarin.AndroidX.Lifecycle.Common
+	.quad	.L.module22_managed_to_java	# map
+	.quad	.L.module22_managed_to_java_duplicates	# duplicate_map
+	.quad	map_aname.22	# assembly_name: Xamarin.AndroidX.Lifecycle.Common
 	.quad	0x0	# image
 	.long	0x0	# java_name_width
 	.zero	4
@@ -289,9 +300,9 @@ map_modules:
 	.byte	0x64, 0x91, 0x31, 0x6d, 0x76, 0x3b, 0x75, 0x40, 0xbc, 0x1d, 0x7b, 0xc6, 0xae, 0x22, 0x93, 0x7c	# module_uuid: 6d319164-3b76-4075-bc1d-7bc6ae22937c
 	.long	0x6	# entry_count
 	.long	0x3	# duplicate_count
-	.quad	.L.module22_managed_to_java	# map
-	.quad	.L.module22_managed_to_java_duplicates	# duplicate_map
-	.quad	map_aname.22	# assembly_name: Xamarin.AndroidX.SwipeRefreshLayout
+	.quad	.L.module23_managed_to_java	# map
+	.quad	.L.module23_managed_to_java_duplicates	# duplicate_map
+	.quad	map_aname.23	# assembly_name: Xamarin.AndroidX.SwipeRefreshLayout
 	.quad	0x0	# image
 	.long	0x0	# java_name_width
 	.zero	4
@@ -300,9 +311,9 @@ map_modules:
 	.byte	0x6a, 0xee, 0xe6, 0x7d, 0xf5, 0xe6, 0xba, 0x4b, 0xaa, 0xb3, 0xb2, 0x7d, 0x69, 0xf9, 0x5d, 0x1b	# module_uuid: 7de6ee6a-e6f5-4bba-aab3-b27d69f95d1b
 	.long	0x5	# entry_count
 	.long	0x1	# duplicate_count
-	.quad	.L.module23_managed_to_java	# map
-	.quad	.L.module23_managed_to_java_duplicates	# duplicate_map
-	.quad	map_aname.23	# assembly_name: Xamarin.AndroidX.SlidingPaneLayout
+	.quad	.L.module24_managed_to_java	# map
+	.quad	.L.module24_managed_to_java_duplicates	# duplicate_map
+	.quad	map_aname.24	# assembly_name: Xamarin.AndroidX.SlidingPaneLayout
 	.quad	0x0	# image
 	.long	0x0	# java_name_width
 	.zero	4
@@ -311,9 +322,9 @@ map_modules:
 	.byte	0x6f, 0x59, 0x16, 0x31, 0x28, 0xa8, 0x62, 0x42, 0xbd, 0x25, 0xa5, 0x5d, 0xa8, 0x4e, 0xc8, 0x9e	# module_uuid: 3116596f-a828-4262-bd25-a55da84ec89e
 	.long	0x2	# entry_count
 	.long	0x0	# duplicate_count
-	.quad	.L.module24_managed_to_java	# map
+	.quad	.L.module25_managed_to_java	# map
 	.quad	0	# duplicate_map
-	.quad	map_aname.24	# assembly_name: Xamarin.AndroidX.CardView
+	.quad	map_aname.25	# assembly_name: Xamarin.AndroidX.CardView
 	.quad	0x0	# image
 	.long	0x0	# java_name_width
 	.zero	4
@@ -322,9 +333,9 @@ map_modules:
 	.byte	0x71, 0x3b, 0x3a, 0xf5, 0xac, 0x58, 0x70, 0x41, 0x87, 0xa8, 0x9f, 0x53, 0xb8, 0xff, 0x2f, 0x6a	# module_uuid: f53a3b71-58ac-4170-87a8-9f53b8ff2f6a
 	.long	0x3c	# entry_count
 	.long	0x19	# duplicate_count
-	.quad	.L.module25_managed_to_java	# map
-	.quad	.L.module25_managed_to_java_duplicates	# duplicate_map
-	.quad	map_aname.25	# assembly_name: Xamarin.AndroidX.Preference
+	.quad	.L.module26_managed_to_java	# map
+	.quad	.L.module26_managed_to_java_duplicates	# duplicate_map
+	.quad	map_aname.26	# assembly_name: Xamarin.AndroidX.Preference
 	.quad	0x0	# image
 	.long	0x0	# java_name_width
 	.zero	4
@@ -333,20 +344,9 @@ map_modules:
 	.byte	0x72, 0xd9, 0x99, 0x6a, 0x24, 0xb6, 0x67, 0x4a, 0xb7, 0x4c, 0xde, 0xbe, 0x6c, 0x52, 0x12, 0x78	# module_uuid: 6a99d972-b624-4a67-b74c-debe6c521278
 	.long	0x3	# entry_count
 	.long	0x1	# duplicate_count
-	.quad	.L.module26_managed_to_java	# map
-	.quad	.L.module26_managed_to_java_duplicates	# duplicate_map
-	.quad	map_aname.26	# assembly_name: Xamarin.AndroidX.Lifecycle.LiveData
-	.quad	0x0	# image
-	.long	0x0	# java_name_width
-	.zero	4
-	.quad	0x0	# java_map
-
-	.byte	0x77, 0x73, 0x2e, 0xa3, 0xfe, 0xc0, 0x1d, 0x45, 0x8b, 0xc8, 0xb9, 0x7a, 0x18, 0x80, 0xc1, 0x96	# module_uuid: a32e7377-c0fe-451d-8bc8-b97a1880c196
-	.long	0x1	# entry_count
-	.long	0x0	# duplicate_count
 	.quad	.L.module27_managed_to_java	# map
-	.quad	0	# duplicate_map
-	.quad	map_aname.27	# assembly_name: TestBDonline.Android
+	.quad	.L.module27_managed_to_java_duplicates	# duplicate_map
+	.quad	map_aname.27	# assembly_name: Xamarin.AndroidX.Lifecycle.LiveData
 	.quad	0x0	# image
 	.long	0x0	# java_name_width
 	.zero	4
@@ -16582,31 +16582,31 @@ map_java:
 	.zero	57	# byteCount == 66; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"android/support/v4/app/INotificationSideChannel"	# java_name
 	.zero	76	# byteCount == 47; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000064	# type_token_id
 	.ascii	"android/support/v4/app/INotificationSideChannel$Default"	# java_name
 	.zero	68	# byteCount == 55; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000065	# type_token_id
 	.ascii	"android/support/v4/app/INotificationSideChannel$Stub"	# java_name
 	.zero	71	# byteCount == 52; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000069	# type_token_id
 	.ascii	"android/support/v4/app/RemoteActionCompatParcelizer"	# java_name
 	.zero	72	# byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000063	# type_token_id
 	.ascii	"android/support/v4/graphics/drawable/IconCompatParcelizer"	# java_name
 	.zero	66	# byteCount == 57; fixedWidth == 123; returned size == 123
@@ -16876,25 +16876,25 @@ map_java:
 	.zero	65	# byteCount == 58; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"android/support/v4/os/IResultReceiver"	# java_name
 	.zero	86	# byteCount == 37; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200005d	# type_token_id
 	.ascii	"android/support/v4/os/IResultReceiver$Default"	# java_name
 	.zero	78	# byteCount == 45; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200005e	# type_token_id
 	.ascii	"android/support/v4/os/IResultReceiver$Stub"	# java_name
 	.zero	81	# byteCount == 42; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000062	# type_token_id
 	.ascii	"android/support/v4/os/ResultReceiver"	# java_name
 	.zero	87	# byteCount == 36; fixedWidth == 123; returned size == 123
@@ -25270,13 +25270,13 @@ map_java:
 	.zero	65	# byteCount == 58; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x18	# module_index
+	.long	0x19	# module_index
 	.long	0x200000c	# type_token_id
 	.ascii	"androidx/cardview/widget/CardView"	# java_name
 	.zero	90	# byteCount == 33; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x18	# module_index
+	.long	0x19	# module_index
 	.long	0x200000d	# type_token_id
 	.ascii	"androidx/cardview/widget/RoundRectDrawableWithShadow"	# java_name
 	.zero	71	# byteCount == 52; fixedWidth == 123; returned size == 123
@@ -26596,2047 +26596,2047 @@ map_java:
 	.zero	77	# byteCount == 46; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x13	# module_index
+	.long	0x14	# module_index
 	.long	0x2000029	# type_token_id
 	.ascii	"androidx/coordinatorlayout/widget/CoordinatorLayout"	# java_name
 	.zero	72	# byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x13	# module_index
+	.long	0x14	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/coordinatorlayout/widget/CoordinatorLayout$AttachedBehavior"	# java_name
 	.zero	55	# byteCount == 68; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x13	# module_index
+	.long	0x14	# module_index
 	.long	0x200002e	# type_token_id
 	.ascii	"androidx/coordinatorlayout/widget/CoordinatorLayout$Behavior"	# java_name
 	.zero	63	# byteCount == 60; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x13	# module_index
+	.long	0x14	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/coordinatorlayout/widget/CoordinatorLayout$DefaultBehavior"	# java_name
 	.zero	56	# byteCount == 67; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x13	# module_index
+	.long	0x14	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/coordinatorlayout/widget/CoordinatorLayout$DispatchChangeEvent"	# java_name
 	.zero	52	# byteCount == 71; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x13	# module_index
+	.long	0x14	# module_index
 	.long	0x2000034	# type_token_id
 	.ascii	"androidx/coordinatorlayout/widget/CoordinatorLayout$LayoutParams"	# java_name
 	.zero	59	# byteCount == 64; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x13	# module_index
+	.long	0x14	# module_index
 	.long	0x2000035	# type_token_id
 	.ascii	"androidx/coordinatorlayout/widget/CoordinatorLayout$SavedState"	# java_name
 	.zero	61	# byteCount == 62; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x13	# module_index
+	.long	0x14	# module_index
 	.long	0x200002a	# type_token_id
 	.ascii	"androidx/coordinatorlayout/widget/DirectedAcyclicGraph"	# java_name
 	.zero	69	# byteCount == 54; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x13	# module_index
+	.long	0x14	# module_index
 	.long	0x200002b	# type_token_id
 	.ascii	"androidx/coordinatorlayout/widget/ViewGroupUtils"	# java_name
 	.zero	75	# byteCount == 48; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000f8	# type_token_id
 	.ascii	"androidx/core/accessibilityservice/AccessibilityServiceInfoCompat"	# java_name
 	.zero	58	# byteCount == 65; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000d7	# type_token_id
 	.ascii	"androidx/core/app/ActivityCompat"	# java_name
 	.zero	91	# byteCount == 32; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/app/ActivityCompat$OnRequestPermissionsResultCallback"	# java_name
 	.zero	56	# byteCount == 67; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/app/ActivityCompat$PermissionCompatDelegate"	# java_name
 	.zero	66	# byteCount == 57; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/app/ActivityCompat$RequestPermissionsRequestCodeValidator"	# java_name
 	.zero	52	# byteCount == 71; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000d8	# type_token_id
 	.ascii	"androidx/core/app/ActivityManagerCompat"	# java_name
 	.zero	84	# byteCount == 39; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000d9	# type_token_id
 	.ascii	"androidx/core/app/ActivityOptionsCompat"	# java_name
 	.zero	84	# byteCount == 39; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000da	# type_token_id
 	.ascii	"androidx/core/app/AlarmManagerCompat"	# java_name
 	.zero	87	# byteCount == 36; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000db	# type_token_id
 	.ascii	"androidx/core/app/AppComponentFactory"	# java_name
 	.zero	86	# byteCount == 37; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000dc	# type_token_id
 	.ascii	"androidx/core/app/AppLaunchChecker"	# java_name
 	.zero	89	# byteCount == 34; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000dd	# type_token_id
 	.ascii	"androidx/core/app/AppOpsManagerCompat"	# java_name
 	.zero	86	# byteCount == 37; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000de	# type_token_id
 	.ascii	"androidx/core/app/BundleCompat"	# java_name
 	.zero	93	# byteCount == 30; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000df	# type_token_id
 	.ascii	"androidx/core/app/ComponentActivity"	# java_name
 	.zero	88	# byteCount == 35; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001b9	# type_token_id
 	.ascii	"androidx/core/app/ComponentActivity$ExtraData"	# java_name
 	.zero	78	# byteCount == 45; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000e0	# type_token_id
 	.ascii	"androidx/core/app/CoreComponentFactory"	# java_name
 	.zero	85	# byteCount == 38; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/app/CoreComponentFactory$CompatWrapped"	# java_name
 	.zero	71	# byteCount == 52; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000e1	# type_token_id
 	.ascii	"androidx/core/app/DialogCompat"	# java_name
 	.zero	93	# byteCount == 30; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000e2	# type_token_id
 	.ascii	"androidx/core/app/FrameMetricsAggregator"	# java_name
 	.zero	83	# byteCount == 40; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/app/FrameMetricsAggregator$MetricType"	# java_name
 	.zero	72	# byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000e5	# type_token_id
 	.ascii	"androidx/core/app/JobIntentService"	# java_name
 	.zero	89	# byteCount == 34; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000e7	# type_token_id
 	.ascii	"androidx/core/app/NavUtils"	# java_name
 	.zero	97	# byteCount == 26; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/app/NotificationBuilderWithBuilderAccessor"	# java_name
 	.zero	67	# byteCount == 56; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000e8	# type_token_id
 	.ascii	"androidx/core/app/NotificationChannelCompat"	# java_name
 	.zero	80	# byteCount == 43; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001be	# type_token_id
 	.ascii	"androidx/core/app/NotificationChannelCompat$Builder"	# java_name
 	.zero	72	# byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000e9	# type_token_id
 	.ascii	"androidx/core/app/NotificationChannelGroupCompat"	# java_name
 	.zero	75	# byteCount == 48; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001bf	# type_token_id
 	.ascii	"androidx/core/app/NotificationChannelGroupCompat$Builder"	# java_name
 	.zero	67	# byteCount == 56; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000ea	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat"	# java_name
 	.zero	87	# byteCount == 36; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001c0	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$Action"	# java_name
 	.zero	80	# byteCount == 43; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000240	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$Action$Builder"	# java_name
 	.zero	72	# byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$Action$Extender"	# java_name
 	.zero	71	# byteCount == 52; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$Action$SemanticAction"	# java_name
 	.zero	65	# byteCount == 58; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000245	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$Action$WearableExtender"	# java_name
 	.zero	63	# byteCount == 60; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$BadgeIconType"	# java_name
 	.zero	73	# byteCount == 50; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001c3	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$BigPictureStyle"	# java_name
 	.zero	71	# byteCount == 52; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001c4	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$BigTextStyle"	# java_name
 	.zero	74	# byteCount == 49; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001c5	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$BubbleMetadata"	# java_name
 	.zero	72	# byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000246	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$BubbleMetadata$Builder"	# java_name
 	.zero	64	# byteCount == 59; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001c6	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$Builder"	# java_name
 	.zero	79	# byteCount == 44; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001c7	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$CarExtender"	# java_name
 	.zero	75	# byteCount == 48; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000247	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$CarExtender$UnreadConversation"	# java_name
 	.zero	56	# byteCount == 67; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200024e	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$CarExtender$UnreadConversation$Builder"	# java_name
 	.zero	48	# byteCount == 75; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001c8	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$DecoratedCustomViewStyle"	# java_name
 	.zero	62	# byteCount == 61; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$Extender"	# java_name
 	.zero	78	# byteCount == 45; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$GroupAlertBehavior"	# java_name
 	.zero	68	# byteCount == 55; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001cd	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$InboxStyle"	# java_name
 	.zero	76	# byteCount == 47; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001ce	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$MessagingStyle"	# java_name
 	.zero	72	# byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000248	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$MessagingStyle$Message"	# java_name
 	.zero	64	# byteCount == 59; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$NotificationVisibility"	# java_name
 	.zero	64	# byteCount == 59; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$StreamType"	# java_name
 	.zero	76	# byteCount == 47; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001d3	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$Style"	# java_name
 	.zero	81	# byteCount == 42; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001d5	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompat$WearableExtender"	# java_name
 	.zero	70	# byteCount == 53; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000eb	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompatExtras"	# java_name
 	.zero	81	# byteCount == 42; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000ec	# type_token_id
 	.ascii	"androidx/core/app/NotificationCompatSideChannelService"	# java_name
 	.zero	69	# byteCount == 54; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000ee	# type_token_id
 	.ascii	"androidx/core/app/NotificationManagerCompat"	# java_name
 	.zero	80	# byteCount == 43; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000ef	# type_token_id
 	.ascii	"androidx/core/app/Person"	# java_name
 	.zero	99	# byteCount == 24; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001d6	# type_token_id
 	.ascii	"androidx/core/app/Person$Builder"	# java_name
 	.zero	91	# byteCount == 32; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000f0	# type_token_id
 	.ascii	"androidx/core/app/RemoteActionCompat"	# java_name
 	.zero	87	# byteCount == 36; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000f1	# type_token_id
 	.ascii	"androidx/core/app/RemoteActionCompatParcelizer"	# java_name
 	.zero	77	# byteCount == 46; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000f2	# type_token_id
 	.ascii	"androidx/core/app/RemoteInput"	# java_name
 	.zero	94	# byteCount == 29; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001d7	# type_token_id
 	.ascii	"androidx/core/app/RemoteInput$Builder"	# java_name
 	.zero	86	# byteCount == 37; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/app/RemoteInput$EditChoicesBeforeSending"	# java_name
 	.zero	69	# byteCount == 54; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/app/RemoteInput$Source"	# java_name
 	.zero	87	# byteCount == 36; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000f3	# type_token_id
 	.ascii	"androidx/core/app/ServiceCompat"	# java_name
 	.zero	92	# byteCount == 31; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/app/ServiceCompat$StopForegroundFlags"	# java_name
 	.zero	72	# byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000f4	# type_token_id
 	.ascii	"androidx/core/app/ShareCompat"	# java_name
 	.zero	94	# byteCount == 29; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001de	# type_token_id
 	.ascii	"androidx/core/app/ShareCompat$IntentBuilder"	# java_name
 	.zero	80	# byteCount == 43; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001df	# type_token_id
 	.ascii	"androidx/core/app/ShareCompat$IntentReader"	# java_name
 	.zero	81	# byteCount == 42; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000f5	# type_token_id
 	.ascii	"androidx/core/app/SharedElementCallback"	# java_name
 	.zero	84	# byteCount == 39; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/app/SharedElementCallback$OnSharedElementsReadyListener"	# java_name
 	.zero	54	# byteCount == 69; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000f7	# type_token_id
 	.ascii	"androidx/core/app/TaskStackBuilder"	# java_name
 	.zero	89	# byteCount == 34; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/app/TaskStackBuilder$SupportParentable"	# java_name
 	.zero	71	# byteCount == 52; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000bf	# type_token_id
 	.ascii	"androidx/core/content/ContentProviderCompat"	# java_name
 	.zero	80	# byteCount == 43; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000c0	# type_token_id
 	.ascii	"androidx/core/content/ContentResolverCompat"	# java_name
 	.zero	80	# byteCount == 43; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000c1	# type_token_id
 	.ascii	"androidx/core/content/ContextCompat"	# java_name
 	.zero	88	# byteCount == 35; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000c2	# type_token_id
 	.ascii	"androidx/core/content/FileProvider"	# java_name
 	.zero	89	# byteCount == 34; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000c3	# type_token_id
 	.ascii	"androidx/core/content/IntentCompat"	# java_name
 	.zero	89	# byteCount == 34; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000c4	# type_token_id
 	.ascii	"androidx/core/content/LocusIdCompat"	# java_name
 	.zero	88	# byteCount == 35; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000c5	# type_token_id
 	.ascii	"androidx/core/content/MimeTypeFilter"	# java_name
 	.zero	87	# byteCount == 36; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000c6	# type_token_id
 	.ascii	"androidx/core/content/PermissionChecker"	# java_name
 	.zero	84	# byteCount == 39; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/content/PermissionChecker$PermissionResult"	# java_name
 	.zero	67	# byteCount == 56; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000c7	# type_token_id
 	.ascii	"androidx/core/content/SharedPreferencesCompat"	# java_name
 	.zero	78	# byteCount == 45; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001a0	# type_token_id
 	.ascii	"androidx/core/content/SharedPreferencesCompat$EditorCompat"	# java_name
 	.zero	65	# byteCount == 58; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000ce	# type_token_id
 	.ascii	"androidx/core/content/pm/ActivityInfoCompat"	# java_name
 	.zero	80	# byteCount == 43; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000cf	# type_token_id
 	.ascii	"androidx/core/content/pm/PackageInfoCompat"	# java_name
 	.zero	81	# byteCount == 42; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000d0	# type_token_id
 	.ascii	"androidx/core/content/pm/PermissionInfoCompat"	# java_name
 	.zero	78	# byteCount == 45; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/content/pm/PermissionInfoCompat$Protection"	# java_name
 	.zero	67	# byteCount == 56; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/content/pm/PermissionInfoCompat$ProtectionFlags"	# java_name
 	.zero	62	# byteCount == 61; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000d1	# type_token_id
 	.ascii	"androidx/core/content/pm/ShortcutInfoChangeListener"	# java_name
 	.zero	72	# byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000d3	# type_token_id
 	.ascii	"androidx/core/content/pm/ShortcutInfoCompat"	# java_name
 	.zero	80	# byteCount == 43; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001af	# type_token_id
 	.ascii	"androidx/core/content/pm/ShortcutInfoCompat$Builder"	# java_name
 	.zero	72	# byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000d4	# type_token_id
 	.ascii	"androidx/core/content/pm/ShortcutInfoCompatSaver"	# java_name
 	.zero	75	# byteCount == 48; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001b0	# type_token_id
 	.ascii	"androidx/core/content/pm/ShortcutInfoCompatSaver$NoopImpl"	# java_name
 	.zero	66	# byteCount == 57; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000d6	# type_token_id
 	.ascii	"androidx/core/content/pm/ShortcutManagerCompat"	# java_name
 	.zero	77	# byteCount == 46; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/content/pm/ShortcutManagerCompat$ShortcutMatchFlags"	# java_name
 	.zero	58	# byteCount == 65; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000c8	# type_token_id
 	.ascii	"androidx/core/content/res/ColorStateListInflaterCompat"	# java_name
 	.zero	69	# byteCount == 54; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000c9	# type_token_id
 	.ascii	"androidx/core/content/res/ComplexColorCompat"	# java_name
 	.zero	79	# byteCount == 44; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000ca	# type_token_id
 	.ascii	"androidx/core/content/res/ConfigurationHelper"	# java_name
 	.zero	78	# byteCount == 45; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000cb	# type_token_id
 	.ascii	"androidx/core/content/res/FontResourcesParserCompat"	# java_name
 	.zero	72	# byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/content/res/FontResourcesParserCompat$FamilyResourceEntry"	# java_name
 	.zero	52	# byteCount == 71; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/content/res/FontResourcesParserCompat$FetchStrategy"	# java_name
 	.zero	58	# byteCount == 65; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001a5	# type_token_id
 	.ascii	"androidx/core/content/res/FontResourcesParserCompat$FontFamilyFilesResourceEntry"	# java_name
 	.zero	43	# byteCount == 80; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001a6	# type_token_id
 	.ascii	"androidx/core/content/res/FontResourcesParserCompat$FontFileResourceEntry"	# java_name
 	.zero	50	# byteCount == 73; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001a7	# type_token_id
 	.ascii	"androidx/core/content/res/FontResourcesParserCompat$ProviderResourceEntry"	# java_name
 	.zero	50	# byteCount == 73; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000cc	# type_token_id
 	.ascii	"androidx/core/content/res/ResourcesCompat"	# java_name
 	.zero	82	# byteCount == 41; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001a8	# type_token_id
 	.ascii	"androidx/core/content/res/ResourcesCompat$FontCallback"	# java_name
 	.zero	69	# byteCount == 54; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001aa	# type_token_id
 	.ascii	"androidx/core/content/res/ResourcesCompat$ThemeCompat"	# java_name
 	.zero	70	# byteCount == 53; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000cd	# type_token_id
 	.ascii	"androidx/core/content/res/TypedArrayUtils"	# java_name
 	.zero	82	# byteCount == 41; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000bc	# type_token_id
 	.ascii	"androidx/core/database/CursorWindowCompat"	# java_name
 	.zero	82	# byteCount == 41; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000bd	# type_token_id
 	.ascii	"androidx/core/database/DatabaseUtilsCompat"	# java_name
 	.zero	81	# byteCount == 42; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000be	# type_token_id
 	.ascii	"androidx/core/database/sqlite/SQLiteCursorCompat"	# java_name
 	.zero	75	# byteCount == 48; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000a7	# type_token_id
 	.ascii	"androidx/core/graphics/BitmapCompat"	# java_name
 	.zero	88	# byteCount == 35; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000a8	# type_token_id
 	.ascii	"androidx/core/graphics/BlendModeColorFilterCompat"	# java_name
 	.zero	74	# byteCount == 49; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000a9	# type_token_id
 	.ascii	"androidx/core/graphics/BlendModeCompat"	# java_name
 	.zero	85	# byteCount == 38; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000aa	# type_token_id
 	.ascii	"androidx/core/graphics/ColorUtils"	# java_name
 	.zero	90	# byteCount == 33; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000ab	# type_token_id
 	.ascii	"androidx/core/graphics/Insets"	# java_name
 	.zero	94	# byteCount == 29; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000ac	# type_token_id
 	.ascii	"androidx/core/graphics/PaintCompat"	# java_name
 	.zero	89	# byteCount == 34; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000ad	# type_token_id
 	.ascii	"androidx/core/graphics/PathParser"	# java_name
 	.zero	90	# byteCount == 33; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200019a	# type_token_id
 	.ascii	"androidx/core/graphics/PathParser$PathDataNode"	# java_name
 	.zero	77	# byteCount == 46; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000ae	# type_token_id
 	.ascii	"androidx/core/graphics/PathSegment"	# java_name
 	.zero	89	# byteCount == 34; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000af	# type_token_id
 	.ascii	"androidx/core/graphics/PathUtils"	# java_name
 	.zero	91	# byteCount == 32; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000b0	# type_token_id
 	.ascii	"androidx/core/graphics/TypefaceCompat"	# java_name
 	.zero	86	# byteCount == 37; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200019b	# type_token_id
 	.ascii	"androidx/core/graphics/TypefaceCompat$ResourcesCallbackAdapter"	# java_name
 	.zero	61	# byteCount == 62; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000b1	# type_token_id
 	.ascii	"androidx/core/graphics/TypefaceCompatUtil"	# java_name
 	.zero	82	# byteCount == 41; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000b2	# type_token_id
 	.ascii	"androidx/core/graphics/drawable/DrawableCompat"	# java_name
 	.zero	77	# byteCount == 46; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000b3	# type_token_id
 	.ascii	"androidx/core/graphics/drawable/IconCompat"	# java_name
 	.zero	81	# byteCount == 42; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/graphics/drawable/IconCompat$IconType"	# java_name
 	.zero	72	# byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000b4	# type_token_id
 	.ascii	"androidx/core/graphics/drawable/IconCompatParcelizer"	# java_name
 	.zero	71	# byteCount == 52; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000b9	# type_token_id
 	.ascii	"androidx/core/graphics/drawable/RoundedBitmapDrawable"	# java_name
 	.zero	70	# byteCount == 53; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000bb	# type_token_id
 	.ascii	"androidx/core/graphics/drawable/RoundedBitmapDrawableFactory"	# java_name
 	.zero	63	# byteCount == 60; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/graphics/drawable/TintAwareDrawable"	# java_name
 	.zero	74	# byteCount == 49; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/graphics/drawable/WrappedDrawable"	# java_name
 	.zero	76	# byteCount == 47; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000a6	# type_token_id
 	.ascii	"androidx/core/hardware/display/DisplayManagerCompat"	# java_name
 	.zero	72	# byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000a5	# type_token_id
 	.ascii	"androidx/core/hardware/fingerprint/FingerprintManagerCompat"	# java_name
 	.zero	64	# byteCount == 59; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000196	# type_token_id
 	.ascii	"androidx/core/hardware/fingerprint/FingerprintManagerCompat$AuthenticationCallback"	# java_name
 	.zero	41	# byteCount == 82; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000198	# type_token_id
 	.ascii	"androidx/core/hardware/fingerprint/FingerprintManagerCompat$AuthenticationResult"	# java_name
 	.zero	43	# byteCount == 80; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000199	# type_token_id
 	.ascii	"androidx/core/hardware/fingerprint/FingerprintManagerCompat$CryptoObject"	# java_name
 	.zero	51	# byteCount == 72; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200009a	# type_token_id
 	.ascii	"androidx/core/internal/view/SupportMenu"	# java_name
 	.zero	84	# byteCount == 39; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200009e	# type_token_id
 	.ascii	"androidx/core/internal/view/SupportMenuItem"	# java_name
 	.zero	80	# byteCount == 43; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/internal/view/SupportSubMenu"	# java_name
 	.zero	81	# byteCount == 42; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000096	# type_token_id
 	.ascii	"androidx/core/location/GnssStatusCompat"	# java_name
 	.zero	84	# byteCount == 39; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000192	# type_token_id
 	.ascii	"androidx/core/location/GnssStatusCompat$Callback"	# java_name
 	.zero	75	# byteCount == 48; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/location/GnssStatusCompat$ConstellationType"	# java_name
 	.zero	66	# byteCount == 57; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000098	# type_token_id
 	.ascii	"androidx/core/location/LocationCompat"	# java_name
 	.zero	86	# byteCount == 37; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000099	# type_token_id
 	.ascii	"androidx/core/location/LocationManagerCompat"	# java_name
 	.zero	79	# byteCount == 44; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000095	# type_token_id
 	.ascii	"androidx/core/math/MathUtils"	# java_name
 	.zero	95	# byteCount == 28; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000090	# type_token_id
 	.ascii	"androidx/core/net/ConnectivityManagerCompat"	# java_name
 	.zero	80	# byteCount == 43; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/net/ConnectivityManagerCompat$RestrictBackgroundStatus"	# java_name
 	.zero	55	# byteCount == 68; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000091	# type_token_id
 	.ascii	"androidx/core/net/MailTo"	# java_name
 	.zero	99	# byteCount == 24; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000092	# type_token_id
 	.ascii	"androidx/core/net/ParseException"	# java_name
 	.zero	91	# byteCount == 32; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000093	# type_token_id
 	.ascii	"androidx/core/net/TrafficStatsCompat"	# java_name
 	.zero	87	# byteCount == 36; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000094	# type_token_id
 	.ascii	"androidx/core/net/UriCompat"	# java_name
 	.zero	96	# byteCount == 27; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200007f	# type_token_id
 	.ascii	"androidx/core/os/BuildCompat"	# java_name
 	.zero	95	# byteCount == 28; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/os/BuildCompat$PrereleaseSdkCheck"	# java_name
 	.zero	76	# byteCount == 47; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000080	# type_token_id
 	.ascii	"androidx/core/os/CancellationSignal"	# java_name
 	.zero	88	# byteCount == 35; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/os/CancellationSignal$OnCancelListener"	# java_name
 	.zero	71	# byteCount == 52; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000081	# type_token_id
 	.ascii	"androidx/core/os/ConfigurationCompat"	# java_name
 	.zero	87	# byteCount == 36; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000082	# type_token_id
 	.ascii	"androidx/core/os/EnvironmentCompat"	# java_name
 	.zero	89	# byteCount == 34; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000083	# type_token_id
 	.ascii	"androidx/core/os/ExecutorCompat"	# java_name
 	.zero	92	# byteCount == 31; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000084	# type_token_id
 	.ascii	"androidx/core/os/HandlerCompat"	# java_name
 	.zero	93	# byteCount == 30; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000087	# type_token_id
 	.ascii	"androidx/core/os/LocaleListCompat"	# java_name
 	.zero	90	# byteCount == 33; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000088	# type_token_id
 	.ascii	"androidx/core/os/MessageCompat"	# java_name
 	.zero	93	# byteCount == 30; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000089	# type_token_id
 	.ascii	"androidx/core/os/OperationCanceledException"	# java_name
 	.zero	80	# byteCount == 43; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200008b	# type_token_id
 	.ascii	"androidx/core/os/ParcelCompat"	# java_name
 	.zero	94	# byteCount == 29; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200008a	# type_token_id
 	.ascii	"androidx/core/os/ParcelableCompat"	# java_name
 	.zero	90	# byteCount == 33; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/os/ParcelableCompatCreatorCallbacks"	# java_name
 	.zero	74	# byteCount == 49; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200008c	# type_token_id
 	.ascii	"androidx/core/os/ProcessCompat"	# java_name
 	.zero	93	# byteCount == 30; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200008d	# type_token_id
 	.ascii	"androidx/core/os/TraceCompat"	# java_name
 	.zero	95	# byteCount == 28; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200008e	# type_token_id
 	.ascii	"androidx/core/os/UserHandleCompat"	# java_name
 	.zero	90	# byteCount == 33; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200008f	# type_token_id
 	.ascii	"androidx/core/os/UserManagerCompat"	# java_name
 	.zero	89	# byteCount == 34; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200007c	# type_token_id
 	.ascii	"androidx/core/provider/FontRequest"	# java_name
 	.zero	89	# byteCount == 34; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200007d	# type_token_id
 	.ascii	"androidx/core/provider/FontsContractCompat"	# java_name
 	.zero	81	# byteCount == 42; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000183	# type_token_id
 	.ascii	"androidx/core/provider/FontsContractCompat$Columns"	# java_name
 	.zero	73	# byteCount == 50; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000184	# type_token_id
 	.ascii	"androidx/core/provider/FontsContractCompat$FontFamilyResult"	# java_name
 	.zero	64	# byteCount == 59; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000185	# type_token_id
 	.ascii	"androidx/core/provider/FontsContractCompat$FontInfo"	# java_name
 	.zero	72	# byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000186	# type_token_id
 	.ascii	"androidx/core/provider/FontsContractCompat$FontRequestCallback"	# java_name
 	.zero	61	# byteCount == 62; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/provider/FontsContractCompat$FontRequestCallback$FontRequestFailReason"	# java_name
 	.zero	39	# byteCount == 84; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200007e	# type_token_id
 	.ascii	"androidx/core/provider/SelfDestructiveThread"	# java_name
 	.zero	79	# byteCount == 44; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/provider/SelfDestructiveThread$ReplyCallback"	# java_name
 	.zero	65	# byteCount == 58; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000079	# type_token_id
 	.ascii	"androidx/core/telephony/SubscriptionManagerCompat"	# java_name
 	.zero	74	# byteCount == 49; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200007a	# type_token_id
 	.ascii	"androidx/core/telephony/TelephonyManagerCompat"	# java_name
 	.zero	77	# byteCount == 46; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200007b	# type_token_id
 	.ascii	"androidx/core/telephony/mbms/MbmsHelper"	# java_name
 	.zero	84	# byteCount == 39; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000176	# type_token_id
 	.ascii	"androidx/core/text/BidiFormatter"	# java_name
 	.zero	91	# byteCount == 32; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000239	# type_token_id
 	.ascii	"androidx/core/text/BidiFormatter$Builder"	# java_name
 	.zero	83	# byteCount == 40; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000177	# type_token_id
 	.ascii	"androidx/core/text/HtmlCompat"	# java_name
 	.zero	94	# byteCount == 29; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000178	# type_token_id
 	.ascii	"androidx/core/text/ICUCompat"	# java_name
 	.zero	95	# byteCount == 28; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000175	# type_token_id
 	.ascii	"androidx/core/text/PrecomputedTextCompat"	# java_name
 	.zero	83	# byteCount == 40; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000238	# type_token_id
 	.ascii	"androidx/core/text/PrecomputedTextCompat$Params"	# java_name
 	.zero	76	# byteCount == 47; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200024d	# type_token_id
 	.ascii	"androidx/core/text/PrecomputedTextCompat$Params$Builder"	# java_name
 	.zero	68	# byteCount == 55; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/text/TextDirectionHeuristicCompat"	# java_name
 	.zero	76	# byteCount == 47; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200017c	# type_token_id
 	.ascii	"androidx/core/text/TextDirectionHeuristicsCompat"	# java_name
 	.zero	75	# byteCount == 48; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200023a	# type_token_id
 	.ascii	"androidx/core/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl"	# java_name
 	.zero	48	# byteCount == 75; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200017d	# type_token_id
 	.ascii	"androidx/core/text/TextUtilsCompat"	# java_name
 	.zero	89	# byteCount == 34; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200017e	# type_token_id
 	.ascii	"androidx/core/text/util/LinkifyCompat"	# java_name
 	.zero	86	# byteCount == 37; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/text/util/LinkifyCompat$LinkifyMask"	# java_name
 	.zero	74	# byteCount == 49; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200006a	# type_token_id
 	.ascii	"androidx/core/util/AtomicFile"	# java_name
 	.zero	94	# byteCount == 29; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/util/Consumer"	# java_name
 	.zero	96	# byteCount == 27; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200006b	# type_token_id
 	.ascii	"androidx/core/util/DebugUtils"	# java_name
 	.zero	94	# byteCount == 29; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000072	# type_token_id
 	.ascii	"androidx/core/util/LogWriter"	# java_name
 	.zero	95	# byteCount == 28; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000073	# type_token_id
 	.ascii	"androidx/core/util/ObjectsCompat"	# java_name
 	.zero	91	# byteCount == 32; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000074	# type_token_id
 	.ascii	"androidx/core/util/Pair"	# java_name
 	.zero	100	# byteCount == 23; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000075	# type_token_id
 	.ascii	"androidx/core/util/PatternsCompat"	# java_name
 	.zero	90	# byteCount == 33; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000076	# type_token_id
 	.ascii	"androidx/core/util/Pools"	# java_name
 	.zero	99	# byteCount == 24; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/util/Pools$Pool"	# java_name
 	.zero	94	# byteCount == 29; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000181	# type_token_id
 	.ascii	"androidx/core/util/Pools$SimplePool"	# java_name
 	.zero	88	# byteCount == 35; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000182	# type_token_id
 	.ascii	"androidx/core/util/Pools$SynchronizedPool"	# java_name
 	.zero	82	# byteCount == 41; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000077	# type_token_id
 	.ascii	"androidx/core/util/Preconditions"	# java_name
 	.zero	91	# byteCount == 32; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/util/Predicate"	# java_name
 	.zero	95	# byteCount == 28; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/util/Supplier"	# java_name
 	.zero	96	# byteCount == 27; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000078	# type_token_id
 	.ascii	"androidx/core/util/TimeUtils"	# java_name
 	.zero	95	# byteCount == 28; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000118	# type_token_id
 	.ascii	"androidx/core/view/AccessibilityDelegateCompat"	# java_name
 	.zero	77	# byteCount == 46; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000119	# type_token_id
 	.ascii	"androidx/core/view/ActionProvider"	# java_name
 	.zero	90	# byteCount == 33; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/ActionProvider$SubUiVisibilityListener"	# java_name
 	.zero	66	# byteCount == 57; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/ActionProvider$VisibilityListener"	# java_name
 	.zero	71	# byteCount == 52; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200011b	# type_token_id
 	.ascii	"androidx/core/view/ContentInfoCompat"	# java_name
 	.zero	87	# byteCount == 36; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001f9	# type_token_id
 	.ascii	"androidx/core/view/ContentInfoCompat$Builder"	# java_name
 	.zero	79	# byteCount == 44; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/ContentInfoCompat$Flags"	# java_name
 	.zero	81	# byteCount == 42; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/ContentInfoCompat$Source"	# java_name
 	.zero	80	# byteCount == 43; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200011c	# type_token_id
 	.ascii	"androidx/core/view/DisplayCompat"	# java_name
 	.zero	91	# byteCount == 32; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001fe	# type_token_id
 	.ascii	"androidx/core/view/DisplayCompat$ModeCompat"	# java_name
 	.zero	80	# byteCount == 43; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200011d	# type_token_id
 	.ascii	"androidx/core/view/DisplayCutoutCompat"	# java_name
 	.zero	85	# byteCount == 38; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200011e	# type_token_id
 	.ascii	"androidx/core/view/DragAndDropPermissionsCompat"	# java_name
 	.zero	76	# byteCount == 47; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200011f	# type_token_id
 	.ascii	"androidx/core/view/DragStartHelper"	# java_name
 	.zero	89	# byteCount == 34; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/DragStartHelper$OnDragStartListener"	# java_name
 	.zero	69	# byteCount == 54; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000120	# type_token_id
 	.ascii	"androidx/core/view/GestureDetectorCompat"	# java_name
 	.zero	83	# byteCount == 40; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000121	# type_token_id
 	.ascii	"androidx/core/view/GravityCompat"	# java_name
 	.zero	91	# byteCount == 32; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200012f	# type_token_id
 	.ascii	"androidx/core/view/InputDeviceCompat"	# java_name
 	.zero	87	# byteCount == 36; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200014a	# type_token_id
 	.ascii	"androidx/core/view/KeyEventDispatcher"	# java_name
 	.zero	86	# byteCount == 37; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/KeyEventDispatcher$Component"	# java_name
 	.zero	76	# byteCount == 47; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200014b	# type_token_id
 	.ascii	"androidx/core/view/LayoutInflaterCompat"	# java_name
 	.zero	84	# byteCount == 39; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/LayoutInflaterFactory"	# java_name
 	.zero	83	# byteCount == 40; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200014c	# type_token_id
 	.ascii	"androidx/core/view/MarginLayoutParamsCompat"	# java_name
 	.zero	80	# byteCount == 43; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200014d	# type_token_id
 	.ascii	"androidx/core/view/MenuCompat"	# java_name
 	.zero	94	# byteCount == 29; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200014e	# type_token_id
 	.ascii	"androidx/core/view/MenuItemCompat"	# java_name
 	.zero	90	# byteCount == 33; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/MenuItemCompat$OnActionExpandListener"	# java_name
 	.zero	67	# byteCount == 56; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200014f	# type_token_id
 	.ascii	"androidx/core/view/MotionEventCompat"	# java_name
 	.zero	87	# byteCount == 36; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/NestedScrollingChild"	# java_name
 	.zero	84	# byteCount == 39; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/NestedScrollingChild2"	# java_name
 	.zero	83	# byteCount == 40; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/NestedScrollingChild3"	# java_name
 	.zero	83	# byteCount == 40; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000150	# type_token_id
 	.ascii	"androidx/core/view/NestedScrollingChildHelper"	# java_name
 	.zero	78	# byteCount == 45; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/NestedScrollingParent"	# java_name
 	.zero	83	# byteCount == 40; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/NestedScrollingParent2"	# java_name
 	.zero	82	# byteCount == 41; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/NestedScrollingParent3"	# java_name
 	.zero	82	# byteCount == 41; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000116	# type_token_id
 	.ascii	"androidx/core/view/NestedScrollingParentHelper"	# java_name
 	.zero	77	# byteCount == 46; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/OnApplyWindowInsetsListener"	# java_name
 	.zero	77	# byteCount == 46; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/OnReceiveContentListener"	# java_name
 	.zero	80	# byteCount == 43; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/OnReceiveContentViewBehavior"	# java_name
 	.zero	76	# byteCount == 47; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000151	# type_token_id
 	.ascii	"androidx/core/view/OneShotPreDrawListener"	# java_name
 	.zero	82	# byteCount == 41; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000152	# type_token_id
 	.ascii	"androidx/core/view/PointerIconCompat"	# java_name
 	.zero	87	# byteCount == 36; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000153	# type_token_id
 	.ascii	"androidx/core/view/ScaleGestureDetectorCompat"	# java_name
 	.zero	78	# byteCount == 45; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/ScrollingView"	# java_name
 	.zero	91	# byteCount == 32; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/TintableBackgroundView"	# java_name
 	.zero	82	# byteCount == 41; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000154	# type_token_id
 	.ascii	"androidx/core/view/VelocityTrackerCompat"	# java_name
 	.zero	83	# byteCount == 40; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000155	# type_token_id
 	.ascii	"androidx/core/view/ViewCompat"	# java_name
 	.zero	94	# byteCount == 29; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/ViewCompat$FocusDirection"	# java_name
 	.zero	79	# byteCount == 44; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/ViewCompat$FocusRealDirection"	# java_name
 	.zero	75	# byteCount == 48; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/ViewCompat$FocusRelativeDirection"	# java_name
 	.zero	71	# byteCount == 52; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/ViewCompat$NestedScrollType"	# java_name
 	.zero	77	# byteCount == 46; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/ViewCompat$OnUnhandledKeyEventListenerCompat"	# java_name
 	.zero	60	# byteCount == 63; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/ViewCompat$ScrollAxis"	# java_name
 	.zero	83	# byteCount == 40; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/ViewCompat$ScrollIndicators"	# java_name
 	.zero	77	# byteCount == 46; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000156	# type_token_id
 	.ascii	"androidx/core/view/ViewConfigurationCompat"	# java_name
 	.zero	81	# byteCount == 42; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000157	# type_token_id
 	.ascii	"androidx/core/view/ViewGroupCompat"	# java_name
 	.zero	89	# byteCount == 34; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000117	# type_token_id
 	.ascii	"androidx/core/view/ViewParentCompat"	# java_name
 	.zero	88	# byteCount == 35; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000158	# type_token_id
 	.ascii	"androidx/core/view/ViewPropertyAnimatorCompat"	# java_name
 	.zero	78	# byteCount == 45; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/ViewPropertyAnimatorListener"	# java_name
 	.zero	76	# byteCount == 47; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000159	# type_token_id
 	.ascii	"androidx/core/view/ViewPropertyAnimatorListenerAdapter"	# java_name
 	.zero	69	# byteCount == 54; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/ViewPropertyAnimatorUpdateListener"	# java_name
 	.zero	70	# byteCount == 53; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200015a	# type_token_id
 	.ascii	"androidx/core/view/WindowCompat"	# java_name
 	.zero	92	# byteCount == 31; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200015b	# type_token_id
 	.ascii	"androidx/core/view/WindowInsetsAnimationCompat"	# java_name
 	.zero	77	# byteCount == 46; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000218	# type_token_id
 	.ascii	"androidx/core/view/WindowInsetsAnimationCompat$BoundsCompat"	# java_name
 	.zero	64	# byteCount == 59; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000219	# type_token_id
 	.ascii	"androidx/core/view/WindowInsetsAnimationCompat$Callback"	# java_name
 	.zero	68	# byteCount == 55; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/WindowInsetsAnimationCompat$Callback$DispatchMode"	# java_name
 	.zero	55	# byteCount == 68; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/WindowInsetsAnimationControlListenerCompat"	# java_name
 	.zero	62	# byteCount == 61; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200015c	# type_token_id
 	.ascii	"androidx/core/view/WindowInsetsAnimationControllerCompat"	# java_name
 	.zero	67	# byteCount == 56; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200015d	# type_token_id
 	.ascii	"androidx/core/view/WindowInsetsCompat"	# java_name
 	.zero	86	# byteCount == 37; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200021b	# type_token_id
 	.ascii	"androidx/core/view/WindowInsetsCompat$Builder"	# java_name
 	.zero	78	# byteCount == 45; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200021c	# type_token_id
 	.ascii	"androidx/core/view/WindowInsetsCompat$Type"	# java_name
 	.zero	81	# byteCount == 42; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/WindowInsetsCompat$Type$InsetsType"	# java_name
 	.zero	70	# byteCount == 53; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200015e	# type_token_id
 	.ascii	"androidx/core/view/WindowInsetsControllerCompat"	# java_name
 	.zero	76	# byteCount == 47; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/WindowInsetsControllerCompat$OnControllableInsetsChangedListener"	# java_name
 	.zero	40	# byteCount == 83; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000163	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityClickableSpanCompat"	# java_name
 	.zero	58	# byteCount == 65; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000164	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityEventCompat"	# java_name
 	.zero	66	# byteCount == 57; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityEventCompat$ContentChangeType"	# java_name
 	.zero	48	# byteCount == 75; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000165	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityManagerCompat"	# java_name
 	.zero	64	# byteCount == 59; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityManagerCompat$AccessibilityStateChangeListener"	# java_name
 	.zero	31	# byteCount == 92; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200022d	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityManagerCompat$AccessibilityStateChangeListenerCompat"	# java_name
 	.zero	25	# byteCount == 98; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityManagerCompat$TouchExplorationStateChangeListener"	# java_name
 	.zero	28	# byteCount == 95; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000166	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityNodeInfoCompat"	# java_name
 	.zero	63	# byteCount == 60; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000233	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityActionCompat"	# java_name
 	.zero	37	# byteCount == 86; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000234	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityNodeInfoCompat$CollectionInfoCompat"	# java_name
 	.zero	42	# byteCount == 81; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000235	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityNodeInfoCompat$CollectionItemInfoCompat"	# java_name
 	.zero	38	# byteCount == 85; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000236	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityNodeInfoCompat$RangeInfoCompat"	# java_name
 	.zero	47	# byteCount == 76; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000237	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityNodeInfoCompat$TouchDelegateInfoCompat"	# java_name
 	.zero	39	# byteCount == 84; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000167	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityNodeProviderCompat"	# java_name
 	.zero	59	# byteCount == 64; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000168	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityRecordCompat"	# java_name
 	.zero	65	# byteCount == 58; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityViewCommand"	# java_name
 	.zero	66	# byteCount == 57; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200016a	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityViewCommand$CommandArguments"	# java_name
 	.zero	49	# byteCount == 74; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200016c	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityViewCommand$MoveAtGranularityArguments"	# java_name
 	.zero	39	# byteCount == 84; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200016d	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityViewCommand$MoveHtmlArguments"	# java_name
 	.zero	48	# byteCount == 75; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200016e	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityViewCommand$MoveWindowArguments"	# java_name
 	.zero	46	# byteCount == 77; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200016f	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityViewCommand$ScrollToPositionArguments"	# java_name
 	.zero	40	# byteCount == 83; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000170	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityViewCommand$SetProgressArguments"	# java_name
 	.zero	45	# byteCount == 78; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000171	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityViewCommand$SetSelectionArguments"	# java_name
 	.zero	44	# byteCount == 79; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000172	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityViewCommand$SetTextArguments"	# java_name
 	.zero	49	# byteCount == 74; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000169	# type_token_id
 	.ascii	"androidx/core/view/accessibility/AccessibilityWindowInfoCompat"	# java_name
 	.zero	61	# byteCount == 62; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000162	# type_token_id
 	.ascii	"androidx/core/view/animation/PathInterpolatorCompat"	# java_name
 	.zero	72	# byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200015f	# type_token_id
 	.ascii	"androidx/core/view/inputmethod/EditorInfoCompat"	# java_name
 	.zero	76	# byteCount == 47; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000160	# type_token_id
 	.ascii	"androidx/core/view/inputmethod/InputConnectionCompat"	# java_name
 	.zero	71	# byteCount == 52; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/view/inputmethod/InputConnectionCompat$OnCommitContentListener"	# java_name
 	.zero	47	# byteCount == 76; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000161	# type_token_id
 	.ascii	"androidx/core/view/inputmethod/InputContentInfoCompat"	# java_name
 	.zero	70	# byteCount == 53; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000fa	# type_token_id
 	.ascii	"androidx/core/widget/AutoScrollHelper"	# java_name
 	.zero	86	# byteCount == 37; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000100	# type_token_id
 	.ascii	"androidx/core/widget/AutoSizeableTextView"	# java_name
 	.zero	82	# byteCount == 41; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000fc	# type_token_id
 	.ascii	"androidx/core/widget/CheckedTextViewCompat"	# java_name
 	.zero	81	# byteCount == 42; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000fd	# type_token_id
 	.ascii	"androidx/core/widget/CompoundButtonCompat"	# java_name
 	.zero	82	# byteCount == 41; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000fe	# type_token_id
 	.ascii	"androidx/core/widget/ContentLoadingProgressBar"	# java_name
 	.zero	77	# byteCount == 46; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000ff	# type_token_id
 	.ascii	"androidx/core/widget/EdgeEffectCompat"	# java_name
 	.zero	86	# byteCount == 37; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000104	# type_token_id
 	.ascii	"androidx/core/widget/ImageViewCompat"	# java_name
 	.zero	87	# byteCount == 36; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200010d	# type_token_id
 	.ascii	"androidx/core/widget/ListPopupWindowCompat"	# java_name
 	.zero	81	# byteCount == 42; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200010e	# type_token_id
 	.ascii	"androidx/core/widget/ListViewAutoScrollHelper"	# java_name
 	.zero	78	# byteCount == 45; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200010f	# type_token_id
 	.ascii	"androidx/core/widget/ListViewCompat"	# java_name
 	.zero	88	# byteCount == 35; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20000f9	# type_token_id
 	.ascii	"androidx/core/widget/NestedScrollView"	# java_name
 	.zero	86	# byteCount == 37; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/widget/NestedScrollView$OnScrollChangeListener"	# java_name
 	.zero	63	# byteCount == 60; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000110	# type_token_id
 	.ascii	"androidx/core/widget/PopupMenuCompat"	# java_name
 	.zero	87	# byteCount == 36; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000111	# type_token_id
 	.ascii	"androidx/core/widget/PopupWindowCompat"	# java_name
 	.zero	85	# byteCount == 38; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000112	# type_token_id
 	.ascii	"androidx/core/widget/ScrollerCompat"	# java_name
 	.zero	88	# byteCount == 35; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000113	# type_token_id
 	.ascii	"androidx/core/widget/TextViewCompat"	# java_name
 	.zero	88	# byteCount == 35; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/widget/TextViewCompat$AutoSizeTextType"	# java_name
 	.zero	71	# byteCount == 52; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000114	# type_token_id
 	.ascii	"androidx/core/widget/TextViewOnReceiveContentListener"	# java_name
 	.zero	70	# byteCount == 53; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/widget/TintableCheckedTextView"	# java_name
 	.zero	79	# byteCount == 44; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/widget/TintableCompoundButton"	# java_name
 	.zero	80	# byteCount == 43; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/widget/TintableCompoundDrawablesView"	# java_name
 	.zero	73	# byteCount == 50; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/core/widget/TintableImageSourceView"	# java_name
 	.zero	79	# byteCount == 44; fixedWidth == 123; returned size == 123
@@ -29020,25 +29020,25 @@ map_java:
 	.zero	88	# byteCount == 35; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x15	# module_index
+	.long	0x16	# module_index
 	.long	0x2000009	# type_token_id
 	.ascii	"androidx/lifecycle/CompositeGeneratedAdaptersObserver"	# java_name
 	.zero	70	# byteCount == 53; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x1a	# module_index
+	.long	0x1b	# module_index
 	.long	0x2000007	# type_token_id
 	.ascii	"androidx/lifecycle/ComputableLiveData"	# java_name
 	.zero	86	# byteCount == 37; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x15	# module_index
+	.long	0x16	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/lifecycle/GeneratedAdapter"	# java_name
 	.zero	88	# byteCount == 35; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x15	# module_index
+	.long	0x16	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/lifecycle/GenericLifecycleObserver"	# java_name
 	.zero	80	# byteCount == 43; fixedWidth == 123; returned size == 123
@@ -29050,37 +29050,37 @@ map_java:
 	.zero	70	# byteCount == 53; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x15	# module_index
+	.long	0x16	# module_index
 	.long	0x2000008	# type_token_id
 	.ascii	"androidx/lifecycle/Lifecycle"	# java_name
 	.zero	95	# byteCount == 28; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x15	# module_index
+	.long	0x16	# module_index
 	.long	0x2000018	# type_token_id
 	.ascii	"androidx/lifecycle/Lifecycle$Event"	# java_name
 	.zero	89	# byteCount == 34; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x15	# module_index
+	.long	0x16	# module_index
 	.long	0x2000019	# type_token_id
 	.ascii	"androidx/lifecycle/Lifecycle$State"	# java_name
 	.zero	89	# byteCount == 34; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x15	# module_index
+	.long	0x16	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/lifecycle/LifecycleEventObserver"	# java_name
 	.zero	82	# byteCount == 41; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x15	# module_index
+	.long	0x16	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/lifecycle/LifecycleObserver"	# java_name
 	.zero	87	# byteCount == 36; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x15	# module_index
+	.long	0x16	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/lifecycle/LifecycleOwner"	# java_name
 	.zero	90	# byteCount == 33; fixedWidth == 123; returned size == 123
@@ -29092,7 +29092,7 @@ map_java:
 	.zero	87	# byteCount == 36; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x15	# module_index
+	.long	0x16	# module_index
 	.long	0x2000015	# type_token_id
 	.ascii	"androidx/lifecycle/Lifecycling"	# java_name
 	.zero	93	# byteCount == 30; fixedWidth == 123; returned size == 123
@@ -29116,13 +29116,13 @@ map_java:
 	.zero	80	# byteCount == 43; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x1a	# module_index
+	.long	0x1b	# module_index
 	.long	0x2000009	# type_token_id
 	.ascii	"androidx/lifecycle/MediatorLiveData"	# java_name
 	.zero	88	# byteCount == 35; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x15	# module_index
+	.long	0x16	# module_index
 	.long	0x2000016	# type_token_id
 	.ascii	"androidx/lifecycle/MethodCallsLogger"	# java_name
 	.zero	87	# byteCount == 36; fixedWidth == 123; returned size == 123
@@ -29152,13 +29152,13 @@ map_java:
 	.zero	88	# byteCount == 35; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x15	# module_index
+	.long	0x16	# module_index
 	.long	0x2000017	# type_token_id
 	.ascii	"androidx/lifecycle/SingleGeneratedAdapterObserver"	# java_name
 	.zero	74	# byteCount == 49; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x1a	# module_index
+	.long	0x1b	# module_index
 	.long	0x200000a	# type_token_id
 	.ascii	"androidx/lifecycle/Transformations"	# java_name
 	.zero	89	# byteCount == 34; fixedWidth == 123; returned size == 123
@@ -29218,49 +29218,49 @@ map_java:
 	.zero	77	# byteCount == 46; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x10	# module_index
+	.long	0x11	# module_index
 	.long	0x2000015	# type_token_id
 	.ascii	"androidx/loader/app/LoaderManager"	# java_name
 	.zero	90	# byteCount == 33; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x10	# module_index
+	.long	0x11	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/loader/app/LoaderManager$LoaderCallbacks"	# java_name
 	.zero	74	# byteCount == 49; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x10	# module_index
+	.long	0x11	# module_index
 	.long	0x2000011	# type_token_id
 	.ascii	"androidx/loader/content/AsyncTaskLoader"	# java_name
 	.zero	84	# byteCount == 39; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x10	# module_index
+	.long	0x11	# module_index
 	.long	0x2000013	# type_token_id
 	.ascii	"androidx/loader/content/CursorLoader"	# java_name
 	.zero	87	# byteCount == 36; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x10	# module_index
+	.long	0x11	# module_index
 	.long	0x2000014	# type_token_id
 	.ascii	"androidx/loader/content/Loader"	# java_name
 	.zero	93	# byteCount == 30; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x10	# module_index
+	.long	0x11	# module_index
 	.long	0x2000017	# type_token_id
 	.ascii	"androidx/loader/content/Loader$ForceLoadContentObserver"	# java_name
 	.zero	68	# byteCount == 55; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x10	# module_index
+	.long	0x11	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/loader/content/Loader$OnLoadCanceledListener"	# java_name
 	.zero	70	# byteCount == 53; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x10	# module_index
+	.long	0x11	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/loader/content/Loader$OnLoadCompleteListener"	# java_name
 	.zero	70	# byteCount == 53; fixedWidth == 123; returned size == 123
@@ -29440,25 +29440,25 @@ map_java:
 	.zero	80	# byteCount == 43; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x11	# module_index
+	.long	0x12	# module_index
 	.long	0x2000010	# type_token_id
 	.ascii	"androidx/navigation/ActivityNavigator"	# java_name
 	.zero	86	# byteCount == 37; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x11	# module_index
+	.long	0x12	# module_index
 	.long	0x2000019	# type_token_id
 	.ascii	"androidx/navigation/ActivityNavigator$Destination"	# java_name
 	.zero	74	# byteCount == 49; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x11	# module_index
+	.long	0x12	# module_index
 	.long	0x200001a	# type_token_id
 	.ascii	"androidx/navigation/ActivityNavigator$Extras"	# java_name
 	.zero	79	# byteCount == 44; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x11	# module_index
+	.long	0x12	# module_index
 	.long	0x2000021	# type_token_id
 	.ascii	"androidx/navigation/ActivityNavigator$Extras$Builder"	# java_name
 	.zero	71	# byteCount == 52; fixedWidth == 123; returned size == 123
@@ -29494,19 +29494,19 @@ map_java:
 	.zero	84	# byteCount == 39; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x11	# module_index
+	.long	0x12	# module_index
 	.long	0x2000013	# type_token_id
 	.ascii	"androidx/navigation/NavBackStackEntry"	# java_name
 	.zero	86	# byteCount == 37; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x11	# module_index
+	.long	0x12	# module_index
 	.long	0x2000014	# type_token_id
 	.ascii	"androidx/navigation/NavController"	# java_name
 	.zero	90	# byteCount == 33; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x11	# module_index
+	.long	0x12	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/navigation/NavController$OnDestinationChangedListener"	# java_name
 	.zero	61	# byteCount == 62; fixedWidth == 123; returned size == 123
@@ -29524,7 +29524,7 @@ map_java:
 	.zero	84	# byteCount == 39; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x11	# module_index
+	.long	0x12	# module_index
 	.long	0x2000015	# type_token_id
 	.ascii	"androidx/navigation/NavDeepLinkBuilder"	# java_name
 	.zero	85	# byteCount == 38; fixedWidth == 123; returned size == 123
@@ -29572,19 +29572,19 @@ map_java:
 	.zero	86	# byteCount == 37; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x11	# module_index
+	.long	0x12	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/navigation/NavHost"	# java_name
 	.zero	96	# byteCount == 27; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x11	# module_index
+	.long	0x12	# module_index
 	.long	0x2000016	# type_token_id
 	.ascii	"androidx/navigation/NavHostController"	# java_name
 	.zero	86	# byteCount == 37; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x11	# module_index
+	.long	0x12	# module_index
 	.long	0x2000018	# type_token_id
 	.ascii	"androidx/navigation/NavInflater"	# java_name
 	.zero	92	# byteCount == 31; fixedWidth == 123; returned size == 123
@@ -29638,7 +29638,7 @@ map_java:
 	.zero	79	# byteCount == 44; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x11	# module_index
+	.long	0x12	# module_index
 	.long	0x2000017	# type_token_id
 	.ascii	"androidx/navigation/Navigation"	# java_name
 	.zero	93	# byteCount == 30; fixedWidth == 123; returned size == 123
@@ -29698,319 +29698,319 @@ map_java:
 	.zero	88	# byteCount == 35; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000026	# type_token_id
 	.ascii	"androidx/preference/AndroidResources"	# java_name
 	.zero	87	# byteCount == 36; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000027	# type_token_id
 	.ascii	"androidx/preference/CheckBoxPreference"	# java_name
 	.zero	85	# byteCount == 38; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000028	# type_token_id
 	.ascii	"androidx/preference/DialogPreference"	# java_name
 	.zero	87	# byteCount == 36; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/preference/DialogPreference$TargetFragment"	# java_name
 	.zero	72	# byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x200002d	# type_token_id
 	.ascii	"androidx/preference/DropDownPreference"	# java_name
 	.zero	85	# byteCount == 38; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x200002e	# type_token_id
 	.ascii	"androidx/preference/EditTextPreference"	# java_name
 	.zero	85	# byteCount == 38; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/preference/EditTextPreference$OnBindEditTextListener"	# java_name
 	.zero	62	# byteCount == 61; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000033	# type_token_id
 	.ascii	"androidx/preference/EditTextPreference$SimpleSummaryProvider"	# java_name
 	.zero	63	# byteCount == 60; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000036	# type_token_id
 	.ascii	"androidx/preference/EditTextPreferenceDialogFragment"	# java_name
 	.zero	71	# byteCount == 52; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000037	# type_token_id
 	.ascii	"androidx/preference/EditTextPreferenceDialogFragmentCompat"	# java_name
 	.zero	65	# byteCount == 58; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000038	# type_token_id
 	.ascii	"androidx/preference/ListPreference"	# java_name
 	.zero	89	# byteCount == 34; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000039	# type_token_id
 	.ascii	"androidx/preference/ListPreference$SimpleSummaryProvider"	# java_name
 	.zero	67	# byteCount == 56; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x200003a	# type_token_id
 	.ascii	"androidx/preference/ListPreferenceDialogFragment"	# java_name
 	.zero	75	# byteCount == 48; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x200003b	# type_token_id
 	.ascii	"androidx/preference/ListPreferenceDialogFragmentCompat"	# java_name
 	.zero	69	# byteCount == 54; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x200003c	# type_token_id
 	.ascii	"androidx/preference/MultiSelectListPreference"	# java_name
 	.zero	78	# byteCount == 45; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x200003d	# type_token_id
 	.ascii	"androidx/preference/MultiSelectListPreferenceDialogFragment"	# java_name
 	.zero	64	# byteCount == 59; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x200003e	# type_token_id
 	.ascii	"androidx/preference/MultiSelectListPreferenceDialogFragmentCompat"	# java_name
 	.zero	58	# byteCount == 65; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x200003f	# type_token_id
 	.ascii	"androidx/preference/Preference"	# java_name
 	.zero	93	# byteCount == 30; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000040	# type_token_id
 	.ascii	"androidx/preference/Preference$BaseSavedState"	# java_name
 	.zero	78	# byteCount == 45; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/preference/Preference$OnPreferenceChangeListener"	# java_name
 	.zero	66	# byteCount == 57; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/preference/Preference$OnPreferenceClickListener"	# java_name
 	.zero	67	# byteCount == 56; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/preference/Preference$SummaryProvider"	# java_name
 	.zero	77	# byteCount == 46; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000050	# type_token_id
 	.ascii	"androidx/preference/PreferenceCategory"	# java_name
 	.zero	85	# byteCount == 38; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000051	# type_token_id
 	.ascii	"androidx/preference/PreferenceDataStore"	# java_name
 	.zero	84	# byteCount == 39; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000053	# type_token_id
 	.ascii	"androidx/preference/PreferenceDialogFragment"	# java_name
 	.zero	79	# byteCount == 44; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000055	# type_token_id
 	.ascii	"androidx/preference/PreferenceDialogFragmentCompat"	# java_name
 	.zero	73	# byteCount == 50; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000057	# type_token_id
 	.ascii	"androidx/preference/PreferenceFragment"	# java_name
 	.zero	85	# byteCount == 38; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/preference/PreferenceFragment$OnPreferenceDisplayDialogCallback"	# java_name
 	.zero	51	# byteCount == 72; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/preference/PreferenceFragment$OnPreferenceStartFragmentCallback"	# java_name
 	.zero	51	# byteCount == 72; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/preference/PreferenceFragment$OnPreferenceStartScreenCallback"	# java_name
 	.zero	53	# byteCount == 70; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x200005f	# type_token_id
 	.ascii	"androidx/preference/PreferenceFragmentCompat"	# java_name
 	.zero	79	# byteCount == 44; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/preference/PreferenceFragmentCompat$OnPreferenceDisplayDialogCallback"	# java_name
 	.zero	45	# byteCount == 78; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/preference/PreferenceFragmentCompat$OnPreferenceStartFragmentCallback"	# java_name
 	.zero	45	# byteCount == 78; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/preference/PreferenceFragmentCompat$OnPreferenceStartScreenCallback"	# java_name
 	.zero	47	# byteCount == 76; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000067	# type_token_id
 	.ascii	"androidx/preference/PreferenceGroup"	# java_name
 	.zero	88	# byteCount == 35; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/preference/PreferenceGroup$OnExpandButtonClickListener"	# java_name
 	.zero	60	# byteCount == 63; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/preference/PreferenceGroup$PreferencePositionCallback"	# java_name
 	.zero	61	# byteCount == 62; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000025	# type_token_id
 	.ascii	"androidx/preference/PreferenceGroupAdapter"	# java_name
 	.zero	81	# byteCount == 42; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000070	# type_token_id
 	.ascii	"androidx/preference/PreferenceManager"	# java_name
 	.zero	86	# byteCount == 37; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/preference/PreferenceManager$OnDisplayPreferenceDialogListener"	# java_name
 	.zero	52	# byteCount == 71; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/preference/PreferenceManager$OnNavigateToScreenListener"	# java_name
 	.zero	59	# byteCount == 64; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/preference/PreferenceManager$OnPreferenceTreeClickListener"	# java_name
 	.zero	56	# byteCount == 67; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x200007d	# type_token_id
 	.ascii	"androidx/preference/PreferenceManager$PreferenceComparisonCallback"	# java_name
 	.zero	57	# byteCount == 66; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x200007f	# type_token_id
 	.ascii	"androidx/preference/PreferenceManager$SimplePreferenceComparisonCallback"	# java_name
 	.zero	51	# byteCount == 72; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000086	# type_token_id
 	.ascii	"androidx/preference/PreferenceRecyclerViewAccessibilityDelegate"	# java_name
 	.zero	60	# byteCount == 63; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000087	# type_token_id
 	.ascii	"androidx/preference/PreferenceScreen"	# java_name
 	.zero	87	# byteCount == 36; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000088	# type_token_id
 	.ascii	"androidx/preference/PreferenceViewHolder"	# java_name
 	.zero	83	# byteCount == 40; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000089	# type_token_id
 	.ascii	"androidx/preference/SeekBarPreference"	# java_name
 	.zero	86	# byteCount == 37; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x200008a	# type_token_id
 	.ascii	"androidx/preference/SwitchPreference"	# java_name
 	.zero	87	# byteCount == 36; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x200008b	# type_token_id
 	.ascii	"androidx/preference/SwitchPreferenceCompat"	# java_name
 	.zero	81	# byteCount == 42; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x200008c	# type_token_id
 	.ascii	"androidx/preference/TwoStatePreference"	# java_name
 	.zero	85	# byteCount == 38; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x200008e	# type_token_id
 	.ascii	"androidx/preference/UnPressableLinearLayout"	# java_name
 	.zero	80	# byteCount == 43; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x200008f	# type_token_id
 	.ascii	"androidx/preference/internal/PreferenceImageView"	# java_name
 	.zero	75	# byteCount == 48; fixedWidth == 123; returned size == 123
@@ -30556,61 +30556,61 @@ map_java:
 	.zero	72	# byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x17	# module_index
+	.long	0x18	# module_index
 	.long	0x200000b	# type_token_id
 	.ascii	"androidx/slidingpanelayout/widget/SlidingPaneLayout"	# java_name
 	.zero	72	# byteCount == 51; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x17	# module_index
+	.long	0x18	# module_index
 	.long	0x200000c	# type_token_id
 	.ascii	"androidx/slidingpanelayout/widget/SlidingPaneLayout$LayoutParams"	# java_name
 	.zero	59	# byteCount == 64; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x17	# module_index
+	.long	0x18	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/slidingpanelayout/widget/SlidingPaneLayout$PanelSlideListener"	# java_name
 	.zero	53	# byteCount == 70; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x17	# module_index
+	.long	0x18	# module_index
 	.long	0x2000013	# type_token_id
 	.ascii	"androidx/slidingpanelayout/widget/SlidingPaneLayout$SimplePanelSlideListener"	# java_name
 	.zero	47	# byteCount == 76; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x16	# module_index
+	.long	0x17	# module_index
 	.long	0x200001f	# type_token_id
 	.ascii	"androidx/swiperefreshlayout/widget/CircularProgressDrawable"	# java_name
 	.zero	64	# byteCount == 59; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x16	# module_index
+	.long	0x17	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/swiperefreshlayout/widget/CircularProgressDrawable$ProgressDrawableSize"	# java_name
 	.zero	43	# byteCount == 80; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x16	# module_index
+	.long	0x17	# module_index
 	.long	0x200001e	# type_token_id
 	.ascii	"androidx/swiperefreshlayout/widget/SwipeRefreshLayout"	# java_name
 	.zero	70	# byteCount == 53; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x16	# module_index
+	.long	0x17	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/swiperefreshlayout/widget/SwipeRefreshLayout$OnChildScrollUpCallback"	# java_name
 	.zero	46	# byteCount == 77; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x16	# module_index
+	.long	0x17	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/swiperefreshlayout/widget/SwipeRefreshLayout$OnRefreshListener"	# java_name
 	.zero	52	# byteCount == 71; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x12	# module_index
+	.long	0x13	# module_index
 	.long	0x2000003	# type_token_id
 	.ascii	"androidx/tracing/Trace"	# java_name
 	.zero	101	# byteCount == 22; fixedWidth == 123; returned size == 123
@@ -34174,7 +34174,7 @@ map_java:
 	.zero	69	# byteCount == 54; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x1b	# module_index
+	.long	0x10	# module_index
 	.long	0x2000002	# type_token_id
 	.ascii	"crc6470afcb29ec47820b/MainActivity"	# java_name
 	.zero	89	# byteCount == 34; fixedWidth == 123; returned size == 123
@@ -43936,91 +43936,91 @@ map_java:
 	.zero	41	# byteCount == 82; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001e2	# type_token_id
 	.ascii	"mono/androidx/core/app/SharedElementCallback_OnSharedElementsReadyListenerImplementor"	# java_name
 	.zero	38	# byteCount == 85; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200018d	# type_token_id
 	.ascii	"mono/androidx/core/os/CancellationSignal_OnCancelListenerImplementor"	# java_name
 	.zero	55	# byteCount == 68; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001f0	# type_token_id
 	.ascii	"mono/androidx/core/view/ActionProvider_SubUiVisibilityListenerImplementor"	# java_name
 	.zero	50	# byteCount == 73; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001f4	# type_token_id
 	.ascii	"mono/androidx/core/view/ActionProvider_VisibilityListenerImplementor"	# java_name
 	.zero	55	# byteCount == 68; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000202	# type_token_id
 	.ascii	"mono/androidx/core/view/DragStartHelper_OnDragStartListenerImplementor"	# java_name
 	.zero	53	# byteCount == 70; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000209	# type_token_id
 	.ascii	"mono/androidx/core/view/MenuItemCompat_OnActionExpandListenerImplementor"	# java_name
 	.zero	51	# byteCount == 72; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000133	# type_token_id
 	.ascii	"mono/androidx/core/view/OnApplyWindowInsetsListenerImplementor"	# java_name
 	.zero	61	# byteCount == 62; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000137	# type_token_id
 	.ascii	"mono/androidx/core/view/OnReceiveContentListenerImplementor"	# java_name
 	.zero	64	# byteCount == 59; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000143	# type_token_id
 	.ascii	"mono/androidx/core/view/ViewPropertyAnimatorListenerImplementor"	# java_name
 	.zero	60	# byteCount == 63; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000147	# type_token_id
 	.ascii	"mono/androidx/core/view/ViewPropertyAnimatorUpdateListenerImplementor"	# java_name
 	.zero	54	# byteCount == 69; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000220	# type_token_id
 	.ascii	"mono/androidx/core/view/WindowInsetsControllerCompat_OnControllableInsetsChangedListenerImplementor"	# java_name
 	.zero	24	# byteCount == 99; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x200022c	# type_token_id
 	.ascii	"mono/androidx/core/view/accessibility/AccessibilityManagerCompat_AccessibilityStateChangeListenerImplementor"	# java_name
 	.zero	15	# byteCount == 108; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000232	# type_token_id
 	.ascii	"mono/androidx/core/view/accessibility/AccessibilityManagerCompat_TouchExplorationStateChangeListenerImplementor"	# java_name
 	.zero	12	# byteCount == 111; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x2000226	# type_token_id
 	.ascii	"mono/androidx/core/view/inputmethod/InputConnectionCompat_OnCommitContentListenerImplementor"	# java_name
 	.zero	31	# byteCount == 92; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x14	# module_index
+	.long	0x15	# module_index
 	.long	0x20001e8	# type_token_id
 	.ascii	"mono/androidx/core/widget/NestedScrollView_OnScrollChangeListenerImplementor"	# java_name
 	.zero	47	# byteCount == 76; fixedWidth == 123; returned size == 123
@@ -44062,19 +44062,19 @@ map_java:
 	.zero	63	# byteCount == 60; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x10	# module_index
+	.long	0x11	# module_index
 	.long	0x200001b	# type_token_id
 	.ascii	"mono/androidx/loader/content/Loader_OnLoadCanceledListenerImplementor"	# java_name
 	.zero	54	# byteCount == 69; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x10	# module_index
+	.long	0x11	# module_index
 	.long	0x200001f	# type_token_id
 	.ascii	"mono/androidx/loader/content/Loader_OnLoadCompleteListenerImplementor"	# java_name
 	.zero	54	# byteCount == 69; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x11	# module_index
+	.long	0x12	# module_index
 	.long	0x200001e	# type_token_id
 	.ascii	"mono/androidx/navigation/NavController_OnDestinationChangedListenerImplementor"	# java_name
 	.zero	45	# byteCount == 78; fixedWidth == 123; returned size == 123
@@ -44086,43 +44086,43 @@ map_java:
 	.zero	44	# byteCount == 79; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000032	# type_token_id
 	.ascii	"mono/androidx/preference/EditTextPreference_OnBindEditTextListenerImplementor"	# java_name
 	.zero	46	# byteCount == 77; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x200006a	# type_token_id
 	.ascii	"mono/androidx/preference/PreferenceGroup_OnExpandButtonClickListenerImplementor"	# java_name
 	.zero	44	# byteCount == 79; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000074	# type_token_id
 	.ascii	"mono/androidx/preference/PreferenceManager_OnDisplayPreferenceDialogListenerImplementor"	# java_name
 	.zero	36	# byteCount == 87; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000078	# type_token_id
 	.ascii	"mono/androidx/preference/PreferenceManager_OnNavigateToScreenListenerImplementor"	# java_name
 	.zero	43	# byteCount == 80; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x200007c	# type_token_id
 	.ascii	"mono/androidx/preference/PreferenceManager_OnPreferenceTreeClickListenerImplementor"	# java_name
 	.zero	40	# byteCount == 83; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000044	# type_token_id
 	.ascii	"mono/androidx/preference/Preference_OnPreferenceChangeListenerImplementor"	# java_name
 	.zero	50	# byteCount == 73; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x19	# module_index
+	.long	0x1a	# module_index
 	.long	0x2000048	# type_token_id
 	.ascii	"mono/androidx/preference/Preference_OnPreferenceClickListenerImplementor"	# java_name
 	.zero	51	# byteCount == 72; fixedWidth == 123; returned size == 123
@@ -44158,13 +44158,13 @@ map_java:
 	.zero	49	# byteCount == 74; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x17	# module_index
+	.long	0x18	# module_index
 	.long	0x2000012	# type_token_id
 	.ascii	"mono/androidx/slidingpanelayout/widget/SlidingPaneLayout_PanelSlideListenerImplementor"	# java_name
 	.zero	37	# byteCount == 86; fixedWidth == 123; returned size == 123
 	.zero	1
 
-	.long	0x16	# module_index
+	.long	0x17	# module_index
 	.long	0x2000024	# type_token_id
 	.ascii	"mono/androidx/swiperefreshlayout/widget/SwipeRefreshLayout_OnRefreshListenerImplementor"	# java_name
 	.zero	36	# byteCount == 87; fixedWidth == 123; returned size == 123

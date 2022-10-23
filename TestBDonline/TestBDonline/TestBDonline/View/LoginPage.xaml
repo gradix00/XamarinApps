@@ -58,6 +58,11 @@
                                 Margin="30, 0, 30, 0"
                                 BackgroundColor="LightGoldenrodYellow"
                                 TextColor="DimGray"/>
+                <Button Text="Zapomniałem hasła (niedostępne)"
+                                IsEnabled="False"
+                                Margin="30, 0, 30, 0"
+                                BackgroundColor="LightGoldenrodYellow"
+                                TextColor="DimGray"/>
                 <Button Text="Nie mam konta"
                             Clicked="OpenRegisterPage"
                             Margin="30, 0, 30, 0"

@@ -39,7 +39,10 @@ namespace TestBDonline.View
             var authentication = new Authentication();
             if (authentication.InitiateLogin(log, pass))
             {
-                Navigation.PushAsync(new Main(authentication));
+                if(authentication.UserData.RequirePasswordReset)
+                    Navigation.PushAsync(new ResetPasswordPage(authentication));
+                else
+                    Navigation.PushAsync(new Main(authentication));
 
                 authentication.CreateNewLog(new Scripts.Structs.EventData
                 {

@@ -22,7 +22,8 @@
                    TextColor="White"
                    PlaceholderColor="White"
                        Placeholder="Edytuj liczbę punktów"
-                       VerticalOptions="StartAndExpand"/>
+                       VerticalOptions="StartAndExpand"
+                   Keyboard="Numeric"/>
             <Picker SelectedIndex="0"
                     TextColor="White"
                     Title="Status"

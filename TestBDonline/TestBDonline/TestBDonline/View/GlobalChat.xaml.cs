@@ -121,7 +121,7 @@ namespace TestBDonline.View
                 HorizontalOptions = LayoutOptions.Start
             };
 
-            string msg = (align == Align.left) ? $"{data.Autor}: {data.Message}" : $"ty: {data.Message}";
+            string msg = (align == Align.left) ? $"{data.Autor}: {data.Message}" : $"{data.Message}";
             Label label = new Label
             {
                 TextColor = Color.White,

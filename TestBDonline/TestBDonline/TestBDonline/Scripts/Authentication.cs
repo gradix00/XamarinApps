@@ -251,6 +251,24 @@ namespace TestBDonline.Scripts
             return false;
         }
 
+        public bool ChangePasswordUser(UserData data, string pwd)
+        {
+            var conn = new MySqlConnection(connAddr);
+            conn.Open();
+
+            if (CheckAcces(conn))
+            {
+                MySqlCommand cmd = new MySqlCommand($"UPDATE Users SET password=@pwd, RequirePwdReset=@requireReset WHERE id={data.ID}", conn);
+                cmd.Parameters.AddWithValue("@pwd", pwd);
+                cmd.Parameters.AddWithValue("@requireReset", false);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            else
+                return false;
+            return true;
+        }
+
         public bool CreatePost(PostData data)
         {
             var conn = new MySqlConnection(connAddr);
@@ -299,8 +317,7 @@ namespace TestBDonline.Scripts
 
             if (CheckAcces(conn))
             {
-                Console.WriteLine("loll");
-                MySqlCommand cmd = new MySqlCommand($"UPDATE Users SET email = @email, points=@points, status=@status, RequirePwdReset=@requireReset WHERE id={data.ID}", conn);
+                MySqlCommand cmd = new MySqlCommand($"UPDATE Users SET email=@email, points=@points, status=@status, RequirePwdReset=@requireReset WHERE id={data.ID}", conn);
                 cmd.Parameters.AddWithValue("@email", data.Email);
                 cmd.Parameters.AddWithValue("@points", data.Points);
                 cmd.Parameters.AddWithValue("@status", data.Status.ToString());

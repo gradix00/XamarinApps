@@ -46,3 +46,4 @@ G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Debug\nets
 G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Debug\netstandard2.0\View\AddingPostPage.xaml.g.cs
 G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Debug\netstandard2.0\View\EventsLog.xaml.g.cs
 G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Debug\netstandard2.0\View\GlobalChat.xaml.g.cs
+G:\XamarinApps\XamarinApps\TestBDonline\TestBDonline\TestBDonline\obj\Debug\netstandard2.0\View\ResetPasswordPage.xaml.g.cs
