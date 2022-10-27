@@ -34,7 +34,15 @@ namespace TestBDonline.View
             user.Email = login.Text;
 
             if (Data.UpdateUserData(user))
+            {
                 DisplayAlert("Informacja", "Pomyślnie zapisano", "Ok");
+                Data.CreateNewLog(new Scripts.Structs.EventData
+                {
+                    Autor = Data.UserData.Nickname,
+                    Date = DateTime.Now,
+                    Details = "Zmieniono własne dane personalne"
+                });
+            }
             else
                 DisplayAlert("Błąd", "Błąd zapisu danych", "Ok");
         }

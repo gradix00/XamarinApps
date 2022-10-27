@@ -113,7 +113,7 @@ namespace TestBDonline.Scripts
             List<UserData> retList = new List<UserData>();
             if(CheckAcces(conn))
             {
-                MySqlCommand cmd = new MySqlCommand("SELECT id, nickname, email, points, status, RequirePwdReset FROM Users", conn);
+                MySqlCommand cmd = new MySqlCommand("SELECT id, nickname, email, points, status, gender, RequirePwdReset FROM Users", conn);
                 MySqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
@@ -124,6 +124,7 @@ namespace TestBDonline.Scripts
                         Email = reader["email"].ToString(),
                         Points = int.Parse(reader["points"].ToString()),
                         Status = new Dictionary.GetStatus().status[reader["status"].ToString()],
+                        Gender = new Dictionary.GetStatus().gender[reader["gender"].ToString()],
                         RequirePasswordReset = bool.Parse(reader["RequirePwdReset"].ToString())
                     });               
                 conn.Close();
@@ -226,8 +227,11 @@ namespace TestBDonline.Scripts
             List<UserData> getList = GetListAllUsers();
             foreach(UserData user in getList)
             {
-                if(id == user.ID)
+                if (id == user.ID)
+                {
+                    UserData = user;
                     return user;
+                }
             }
             return new UserData();
         }
@@ -349,9 +353,10 @@ namespace TestBDonline.Scripts
 
             if (CheckAcces(conn))
             {
-                MySqlCommand cmd = new MySqlCommand($"UPDATE Users SET email=@email, points=@points, status=@status, RequirePwdReset=@requireReset WHERE id={data.ID}", conn);
+                MySqlCommand cmd = new MySqlCommand($"UPDATE Users SET email=@email, points=@points, status=@status, gender=@gender, RequirePwdReset=@requireReset WHERE id={data.ID}", conn);
                 cmd.Parameters.AddWithValue("@email", data.Email);
                 cmd.Parameters.AddWithValue("@points", data.Points);
+                cmd.Parameters.AddWithValue("@gender", data.Gender.ToString());
                 cmd.Parameters.AddWithValue("@status", data.Status.ToString());
                 cmd.Parameters.AddWithValue("@requireReset", data.RequirePasswordReset);
                 cmd.ExecuteNonQuery();

@@ -11,7 +11,7 @@
                   Padding="0, 0, 0, 5">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="25"/>
-                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="120"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="82"/>
                 </Grid.ColumnDefinitions>
@@ -20,7 +20,7 @@
                        TextTransform="Uppercase"
                        Grid.Column="0"
                        TextColor="White"/>
-                <Label Text="autor"
+                <Label Text="Zmodyfikował"
                        FontAttributes="Bold"
                        TextTransform="Uppercase"
                        Grid.Column="1"
@@ -39,16 +39,18 @@
             <ListView VerticalOptions="StartAndExpand"
                       HorizontalOptions="FillAndExpand"
                       ItemsSource="{Binding EventCell}"
+                      SelectedItem="{Binding UserData}"
                       IsPullToRefreshEnabled="True"
                       Refreshing="RefresPostsList"
-                      x:Name="list" RefreshControlColor="CornflowerBlue">
+                      x:Name="list" RefreshControlColor="CornflowerBlue"
+                      ItemTapped="ItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="25"/>
-                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="120"/>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="82"/>
                                 </Grid.ColumnDefinitions>

@@ -112,13 +112,19 @@ namespace TestBDonline.View
             LoadMessage(Data);
         }
 
+        private void InfoMessage(object sender, EventArgs e)
+        {
+            TapGestureRecognizer gesture = (TapGestureRecognizer)(sender as Frame).GestureRecognizers[0];
+            DisplayAlert("Szczegóły", $"{gesture.CommandParameter}", "Ok");
+        }
+
         private Frame CreateMessage(MessageData data, Align align)
         {
             Frame frame = new Frame
             {
                 BackgroundColor = Color.DimGray,
                 BorderColor = Color.LightGoldenrodYellow,  
-                HorizontalOptions = LayoutOptions.Start
+                HorizontalOptions = LayoutOptions.Start,
             };
 
             string msg = (align == Align.left) ? $"{data.Autor}: {data.Message}" : $"{data.Message}";
@@ -134,6 +140,10 @@ namespace TestBDonline.View
                 frame.BackgroundColor = Color.CornflowerBlue;
             }
 
+            var gesture = new TapGestureRecognizer();
+            gesture.Tapped += InfoMessage;
+            gesture.CommandParameter = $"Autor: {data.Autor}\nWiadomość: {data.Message}\nData: {data.Date}";
+            frame.GestureRecognizers.Add(gesture);
             frame.Content = label;
             return frame;
         }

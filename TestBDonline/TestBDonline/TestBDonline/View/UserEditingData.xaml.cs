@@ -31,6 +31,7 @@ namespace TestBDonline.View
 
         private void Apply(object sender, EventArgs e)
         {
+            Data.GetUserDataByID(Data.UserData.ID);
             if (Data.UserData.Status == Status.admin)
             {
                 if (int.TryParse(points.Text, out int pt))
@@ -62,13 +63,14 @@ namespace TestBDonline.View
                     DisplayAlert("Błąd!", "Źle wprowadzone dane!", "Ok");
             }
             else
-                DisplayAlert("Błąd!", "Być może straciłeś uprawnienia admina, zaloguj się jeszcze raz do systemu", "Ok");
+                DisplayAlert("Błąd!", "Być może straciłeś uprawnienia admina, zaloguj się jeszcze raz do systemu. Możesz nadal korzystać z podstawowych funkcji aplikacji.", "Ok");
         }
 
         private async void DeleteAccount(object sender, EventArgs e)
         {
             var res = await DisplayPromptAsync("Informacja", $"Czy napewno chcesz usunąć konto użytkownika '{UserData.Nickname}({UserData.ID})'? Jeśli tak wpisz 'potwierdzam'", "Potwierdź", "Anuluj");
 
+            Data.GetUserDataByID(Data.UserData.ID);
             if (Data.UserData.Status == Status.admin)
             {
                 if (res == "potwierdzam")
@@ -86,15 +88,15 @@ namespace TestBDonline.View
                     }
                     else
                         DisplayAlert("Błąd!", $"Nie udało się usunąć użytkownika", "Ok");
-                }             
+                }
             }
             else
-                DisplayAlert("Błąd!", "Być może straciłeś uprawnienia admina, zaloguj się jeszcze raz do systemu", "Ok");
+                DisplayAlert("Błąd!", "Być może straciłeś uprawnienia admina, zaloguj się jeszcze raz do systemu. Możesz nadal korzystać z podstawowych funkcji aplikacji.", "Ok");
         }
 
         private void LoadUserDataUI()
         {
-            id.Text = $"ID: {UserData.ID} ({UserData.Nickname})\nPłeć: {UserData.Gender}";
+            id.Text = $"{UserData.Nickname} ({UserData.ID})\nPłeć: {UserData.Gender}";
             email.Text = UserData.Email;
             points.Text = UserData.Points.ToString();
             picker.SelectedIndex = (int)UserData.Status;

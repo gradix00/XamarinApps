@@ -22,6 +22,7 @@ namespace TestBDonline.View
 
         private void OpenPageAccount(object sender, EventArgs e)
         {
+            Data.GetUserDataByID(Data.UserData.ID);
             Navigation.PushAsync(new Account(Data));
         }
 

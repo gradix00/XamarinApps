@@ -47,7 +47,7 @@ namespace TestBDonline.View
 
         private void ManageUser(object sender, EventArgs e)
         {
-            var userEdited = Data.GetUserDataByID((list.SelectedItem as UserCell).ID);
+            var userEdited = new Authentication().GetUserDataByID((list.SelectedItem as UserCell).ID);
             Navigation.PushAsync(new UserEditingData(Data, userEdited));
             list.SelectedItem = null;
         }

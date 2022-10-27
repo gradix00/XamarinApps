@@ -54,8 +54,15 @@ namespace TestBDonline.View
 
         private async void RefresPostsList(object sender, EventArgs e)
         {
-            await System.Threading.Tasks.Task.Delay(750);
+            await Task.Delay(750);
             LoadLogs(Data);
+        }
+
+        private void ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            var log = (list.SelectedItem as EventCell);
+
+            DisplayAlert($"Informacje o zdarzeniu ({log.ID})", $"Zmodyfikowane przez: {log.Autor}\nOpis: {log.Details}\nData: {log.Date}", "Ok");
         }
     }
 }

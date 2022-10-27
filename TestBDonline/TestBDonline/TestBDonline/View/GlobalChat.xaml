@@ -21,7 +21,9 @@
                 <Editor Placeholder="napisz wiadomość"
                                 HorizontalOptions="FillAndExpand"
                                 x:Name="entry"
-                                PropertyChanged="EntryIsNotEmpty"/>
+                                PropertyChanged="EntryIsNotEmpty"
+                        PlaceholderColor="White"
+                        TextColor="White"/>
                 <Button VerticalOptions="EndAndExpand"
                             Text="wyślij"
                             HorizontalOptions="End"

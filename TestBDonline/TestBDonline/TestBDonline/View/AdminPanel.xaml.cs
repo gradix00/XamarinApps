@@ -34,20 +34,28 @@ namespace TestBDonline.View
         {
             var res = await DisplayPromptAsync("Informacja", "Czy napewno chcesz wyczyścić globalny czat? Jeśli tak wpisz 'potwierdzam'", "Potwierdź", "Anuluj");
 
-            if (res == "potwierdzam")
+            data.GetUserDataByID(data.UserData.ID);
+            if (data.UserData.Status == Scripts.Structs.Status.admin)
             {
-                if (data.TruncateTable("GlobalChat"))
+                if (res == "potwierdzam")
                 {
-                    DisplayAlert("Informacja", "Wyczyszczono cały globalny czat!", "Ok");
-                    data.CreateNewLog(new Scripts.Structs.EventData
+                    if (data.TruncateTable("GlobalChat"))
                     {
-                        Autor = data.UserData.Nickname,
-                        Date = DateTime.Now,
-                        Details = $"Usunięto historie globalnego czatu"
-                    });
+                        DisplayAlert("Informacja", "Wyczyszczono cały globalny czat!", "Ok");
+                        data.CreateNewLog(new Scripts.Structs.EventData
+                        {
+                            Autor = data.UserData.Nickname,
+                            Date = DateTime.Now,
+                            Details = $"Usunięto historie globalnego czatu"
+                        });
+                    }
+                    else
+                        DisplayAlert("Informacja", "Nie udało się wyczyścić globalnego czatu", "Ok");
                 }
-                else
-                    DisplayAlert("Informacja", "Nie udało się wyczyścić globalnego czatu", "Ok");
+            }
+            else
+            {
+                DisplayAlert("Błąd!", "Być może straciłeś uprawnienia admina, zaloguj się jeszcze raz do systemu. Możesz nadal korzystać z podstawowych funkcji aplikacji.", "Ok");
             }
         }
 
@@ -55,21 +63,28 @@ namespace TestBDonline.View
         {
             var res = await DisplayPromptAsync("Informacja", "Czy napewno chcesz wyczyścić dziennik zdarzeń? Jeśli tak wpisz 'potwierdzam'", "Potwierdź", "Anuluj");
 
-            if (res == "potwierdzam")
+
+            data.GetUserDataByID(data.UserData.ID);
+            if (data.UserData.Status == Scripts.Structs.Status.admin)
             {
-                if (data.TruncateTable("EventLog"))
+                if (res == "potwierdzam")
                 {
-                    DisplayAlert("Informacja", "Wyczyszczono dziennik zdarzeń!", "Ok");
-                    data.CreateNewLog(new Scripts.Structs.EventData
+                    if (data.TruncateTable("EventLog"))
                     {
-                        Autor = data.UserData.Nickname,
-                        Date = DateTime.Now,
-                        Details = $"Usunięto historie dziennika zdarzeń"
-                    });
+                        DisplayAlert("Informacja", "Wyczyszczono dziennik zdarzeń!", "Ok");
+                        data.CreateNewLog(new Scripts.Structs.EventData
+                        {
+                            Autor = data.UserData.Nickname,
+                            Date = DateTime.Now,
+                            Details = $"Usunięto historie dziennika zdarzeń"
+                        });
+                    }
+                    else
+                        DisplayAlert("Informacja", "Nie udało się wyczyścić dzienniku zdarzeń", "Ok");
                 }
-                else
-                    DisplayAlert("Informacja", "Nie udało się wyczyścić dzienniku zdarzeń", "Ok");
             }
+            else
+                DisplayAlert("Błąd!", "Być może straciłeś uprawnienia admina, zaloguj się jeszcze raz do systemu. Możesz nadal korzystać z podstawowych funkcji aplikacji.", "Ok");
         }
     }
 }
