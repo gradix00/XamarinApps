@@ -67,6 +67,28 @@ namespace TestBDonline.View
                 await DisplayAlert("Błąd!", "Być może straciłeś uprawnienia admina, zaloguj się jeszcze raz do systemu. Możesz nadal korzystać z podstawowych funkcji aplikacji.", "Ok");
         }
 
+        private async void LogoutUser(object sender, EventArgs e)
+        {           
+            await Data.GetUserDataByID(Data.UserData.ID);
+            if (Data.UserData.Status == Status.admin)
+            {
+                var usr = UserData;
+                usr.IsActive = false;
+                if (!await Task.Run(() => Data.UpdateUserData(usr)))
+                    await DisplayAlert("Błąd!", "Nie można wylogować użytkownika", "Ok");
+                else
+                    Data.CreateNewLog(new EventData
+                    {
+                        Autor = Data.UserData.Nickname,
+                        Date = DateTime.Now,
+                        Details = $"Wylogowano użytkownika {UserData.Nickname}"
+                    });
+                Navigation.RemovePage(this);
+            }
+            else
+                await DisplayAlert("Błąd!", "Być może straciłeś uprawnienia admina, zaloguj się jeszcze raz do systemu. Możesz nadal korzystać z podstawowych funkcji aplikacji.", "Ok");
+        }
+
         private async void DeleteAccount(object sender, EventArgs e)
         {
             var res = await DisplayPromptAsync("Informacja", $"Czy napewno chcesz usunąć konto użytkownika '{UserData.Nickname}({UserData.ID})'? Jeśli tak wpisz 'potwierdzam'", "Potwierdź", "Anuluj");

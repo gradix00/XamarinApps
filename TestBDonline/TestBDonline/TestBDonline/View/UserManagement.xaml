@@ -7,7 +7,7 @@
         <ToolbarItem Text="Zarządzanie użytkownikami"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout BackgroundColor="DimGray">
+        <StackLayout BackgroundColor="CornflowerBlue">
             <Grid BackgroundColor="IndianRed"
                   Padding="0, 0, 0, 5">
                 <Grid.ColumnDefinitions>
@@ -43,7 +43,7 @@
                       IsPullToRefreshEnabled="True"
                       SelectedItem="{Binding UserCell}"
                       ItemSelected="SelectedItem"
-                      Refreshing="RefresUsersList"
+                      Refreshing="RefresUsersList"                     
                       x:Name="list" RefreshControlColor="CornflowerBlue">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -79,7 +79,9 @@
                     IsEnabled="False"
                     x:Name="btn"
                     BackgroundColor="LightGoldenrodYellow"
-                    TextColor="DimGray"/>
+                    TextColor="DimGray"
+                    CornerRadius="10"
+                    Margin="10"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
