@@ -105,7 +105,8 @@ namespace TestBDonline.View
             {
                 Text = $"Polub ({data.Likes})",
                 BackgroundColor = Color.CornflowerBlue,
-                TextColor = Color.White
+                TextColor = Color.White,
+                CornerRadius = 10
             };
 
             frame.Content = layout;

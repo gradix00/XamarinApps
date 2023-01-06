@@ -194,7 +194,7 @@ namespace TestBDonline.Scripts
             return retList;
         }
 
-        public List<EventData> GetListAllEventLog(int numberRecords = 10)
+        public async Task<List<EventData>> GetListAllEventLog(int numberRecords = 10)
         {
             var conn = new MySqlConnection(connAddr);
             conn.OpenAsync();
@@ -205,7 +205,7 @@ namespace TestBDonline.Scripts
                 MySqlCommand cmd = new MySqlCommand($"SELECT * FROM EventLog ORDER BY id DESC LIMIT {numberRecords}", conn);
                 MySqlDataReader reader = cmd.ExecuteReader();
 
-                while (reader.Read())
+                while (await reader.ReadAsync())
                 {
                     retList.Add(new EventData
                     {
@@ -216,10 +216,7 @@ namespace TestBDonline.Scripts
                     });
                 }
             }
-            conn.CloseAsync();
-
-            foreach(var item in retList)
-                Console.WriteLine(item.Details);
+            await conn.CloseAsync();
             return retList;
         }
 
@@ -306,7 +303,7 @@ namespace TestBDonline.Scripts
             return true;
         }
 
-        public bool CreatePost(PostData data)
+        public async Task<bool> CreatePost(PostData data)
         {
             var conn = new MySqlConnection(connAddr);
             conn.Open();
@@ -320,11 +317,11 @@ namespace TestBDonline.Scripts
                 cmd.Parameters.AddWithValue("@description", data.Description);
                 cmd.Parameters.AddWithValue("@url", data.UrlImage);
                 cmd.Parameters.AddWithValue("@likes", "0");
-                cmd.ExecuteNonQuery();
-                conn.Close();
+                await cmd.ExecuteNonQueryAsync();
+                await conn.CloseAsync();
                 return true;
             }
-            conn.Close();
+            await conn.CloseAsync();
             return false;
         }
 

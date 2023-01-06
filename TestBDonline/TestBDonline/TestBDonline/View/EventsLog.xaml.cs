@@ -20,10 +20,10 @@ namespace TestBDonline.View
             LoadLogs(Data);         
         }
 
-        private void LoadLogs(Authentication data)
+        private async void LoadLogs(Authentication data)
         {                      
             ObservableCollection<EventCell> eventCells = new ObservableCollection<EventCell>();
-            var tempList = data.GetListAllEventLog(records);
+            var tempList = await Task.Run(()=> data.GetListAllEventLog(records));
 
             foreach (var log in tempList)
             {
@@ -42,7 +42,7 @@ namespace TestBDonline.View
             if (records > tempList.Count)
             {
                 records = tempList.Count;
-                DisplayAlert("Informacja", "Załadowano już wszystkie zdarzenia!", "Ok");
+                await DisplayAlert("Informacja", "Załadowano już wszystkie zdarzenia!", "Ok");
             }
         }
 
@@ -54,7 +54,6 @@ namespace TestBDonline.View
 
         private async void RefresPostsList(object sender, EventArgs e)
         {
-            await Task.Delay(750);
             LoadLogs(Data);
         }
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using TestBDonline.Scripts;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -22,7 +23,7 @@ namespace TestBDonline.View
             img.Source = url.Text;
         }
 
-        private void CreatePost(object sender, EventArgs e)
+        private async void CreatePost(object sender, EventArgs e)
         {
             if (Data.UserData.Status == Scripts.Structs.Status.admin)
             {
@@ -37,9 +38,9 @@ namespace TestBDonline.View
                         UrlImage = url.Text
                     };
 
-                    if (Data.CreatePost(post))
+                    if (await Task.Run(()=> Data.CreatePost(post)))
                     {
-                        DisplayAlert("Opublikowano post!", $"Dane postu:\nTytuł: {post.Title}\nOpis: {post.Description}\nUrl: {post.UrlImage}", "Ok");
+                        await DisplayAlert("Opublikowano post!", $"Dane postu:\nTytuł: {post.Title}\nOpis: {post.Description}\nUrl: {post.UrlImage}", "Ok");
 
                         Data.CreateNewLog(new Scripts.Structs.EventData
                         {
@@ -49,14 +50,14 @@ namespace TestBDonline.View
                         });
                     }
                     else
-                        DisplayAlert("Błąd tworzenia posta", "Być może nasza baza nie działa albo nie masz połączenia z internetem :<", "Ok");
+                        await DisplayAlert("Błąd tworzenia posta", "Być może nasza baza nie działa albo nie masz połączenia z internetem :<", "Ok");
                     Navigation.RemovePage(this);
                 }
                 else
-                    DisplayAlert("Pola są puste!", "Wypełnij pola, aby utworzyć post", "Ok");
+                    await DisplayAlert("Pola są puste!", "Wypełnij pola, aby utworzyć post", "Ok");
             }
             else
-                DisplayAlert("Błąd!", "Być może straciłeś uprawnienia admina, zaloguj się jeszcze raz do systemu", "Ok");
+                await DisplayAlert("Błąd!", "Być może straciłeś uprawnienia admina, zaloguj się jeszcze raz do systemu", "Ok");
         }
 
         private bool FieldsTextAreFill()

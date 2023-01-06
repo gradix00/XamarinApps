@@ -44,14 +44,11 @@ namespace TestBDonline.View
                     list.Children.Add(CreateElement(user));
             else
             {
-                Label lb = new Label
+                list.Children.Add(CreateElement(new UserData
                 {
-                    Text = "brak aktywnych użytkowników",
-                    TextColor = Color.CornflowerBlue,
-                    FontAttributes = FontAttributes.Bold,
-                    HorizontalOptions = LayoutOptions.CenterAndExpand,
-                    VerticalOptions = LayoutOptions.CenterAndExpand
-                };
+                    Nickname = "brak aktywnych użytkowników",
+                    Gender = Gender.Unidentified
+                }));
             }    
 
             indicator.IsVisible = false;
@@ -65,7 +62,7 @@ namespace TestBDonline.View
             {
                 MinimumHeightRequest = 70,
                 Orientation = StackOrientation.Horizontal,
-                HorizontalOptions = LayoutOptions.StartAndExpand
+                HorizontalOptions = LayoutOptions.CenterAndExpand
             };
 
             Label nickname = new Label
@@ -75,15 +72,18 @@ namespace TestBDonline.View
                 FontAttributes = FontAttributes.Bold
             };
 
-            Label points = new Label
+            Label gender = new Label
             {
-                Text = user.Points.ToString(),
+                Text = user.Gender.ToString(),
                 TextColor = Color.Green,
                 FontAttributes = FontAttributes.Bold
             };
 
+            if (user.Gender == Gender.Unidentified)
+                gender.Text = null;
+
             layout.Children.Add(nickname);
-            layout.Children.Add(points);
+            layout.Children.Add(gender);
 
             Frame fr = new Frame
             {

@@ -15,19 +15,19 @@ namespace TestBDonline.View
             this.data = data;
         }
 
-        private void OpenPageAddingPost(object sender, EventArgs e)
+        private async void OpenPageAddingPost(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new AddingPostPage(data));
+            await Navigation.PushAsync(new AddingPostPage(data));
         }
 
-        private void OpenPageEventsLog(object sender, EventArgs e)
+        private async void OpenPageEventsLog(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new EventsLog());
+            await Navigation.PushAsync(new EventsLog());
         }
 
-        private void OpenPageUsersManagement(object sender, EventArgs e)
+        private async void OpenPageUsersManagement(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new UserManagement(data));
+            await Navigation.PushAsync(new UserManagement(data));
         }
 
         private async void ClearGlobalChat(object sender, EventArgs e)
