@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using TestBDonline.Scripts;
 using TestBDonline.Scripts.Structs;
+using System.Threading.Tasks;
 
 namespace TestBDonline.View
 {
@@ -15,15 +16,14 @@ namespace TestBDonline.View
         public News(Authentication data)
         {
             InitializeComponent();
-            Title = "Nowości";
             Data = data;
             LoadNews(null, null);
         }
 
-        private void OpenPageAccount(object sender, EventArgs e)
+        private async void OpenPageAccount(object sender, EventArgs e)
         {
-            Data.GetUserDataByID(Data.UserData.ID);
-            Navigation.PushAsync(new Account(Data));
+            await Data.GetUserDataByID(Data.UserData.ID);
+            await Navigation.PushAsync(new Account(Data));
         }
 
         private void OpenPageGlobalChat(object sender, EventArgs e)
@@ -33,8 +33,9 @@ namespace TestBDonline.View
 
         private async void LoadNews(object sender, EventArgs e)
         {
-            await System.Threading.Tasks.Task.Delay(750);
-            var postsList = Data.GetListAllPosts(true);
+            indicator.IsVisible = true;
+            refreshView.IsVisible = false;
+            var postsList = await Task.Run(()=> Data.GetListAllPosts(true));
             page.Children.Clear();
 
             List<Frame> tempList = new List<Frame>();
@@ -47,20 +48,24 @@ namespace TestBDonline.View
 
             foreach (var layout in tempList)
                 page.Children.Add(layout);
+
             refreshView.IsRefreshing = false;
+            indicator.IsVisible = false;
+            refreshView.IsVisible = true;
         }
 
         private Frame CreatePost(PostData data)
         {
             Frame frame = new Frame
             {
-                BorderColor = Color.LightGoldenrodYellow,
-                BackgroundColor = Color.CornflowerBlue,
-                Margin = new Thickness(0, 7, 0, 7)
+                BorderColor = Color.CornflowerBlue,
+                BackgroundColor = Color.White,
+                Margin = new Thickness(0, 7, 0, 7),
+                CornerRadius = 15
             };
             StackLayout layout = new StackLayout
             {
-                HeightRequest = 400
+                MinimumHeightRequest = 400
             };
             Label title = new Label
             {
@@ -68,7 +73,7 @@ namespace TestBDonline.View
                 VerticalOptions = LayoutOptions.StartAndExpand,
                 HorizontalTextAlignment = TextAlignment.Center,
                 FontAttributes = FontAttributes.Bold,
-                TextColor = Color.White
+                TextColor = Color.CornflowerBlue
             };
             layout.Children.Add(title);
 
@@ -77,7 +82,7 @@ namespace TestBDonline.View
                 Text = data.Description,
                 VerticalOptions = LayoutOptions.StartAndExpand,
                 HorizontalTextAlignment = TextAlignment.Center,
-                TextColor = Color.White
+                TextColor = Color.CornflowerBlue
             };
 
             ImageSource src;
@@ -99,8 +104,8 @@ namespace TestBDonline.View
             Button btn = new Button
             {
                 Text = $"Polub ({data.Likes})",
-                BackgroundColor = Color.LightGoldenrodYellow,
-                TextColor = Color.DimGray
+                BackgroundColor = Color.CornflowerBlue,
+                TextColor = Color.White
             };
 
             frame.Content = layout;

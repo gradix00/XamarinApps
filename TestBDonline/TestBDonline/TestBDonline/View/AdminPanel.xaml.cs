@@ -34,14 +34,14 @@ namespace TestBDonline.View
         {
             var res = await DisplayPromptAsync("Informacja", "Czy napewno chcesz wyczyścić globalny czat? Jeśli tak wpisz 'potwierdzam'", "Potwierdź", "Anuluj");
 
-            data.GetUserDataByID(data.UserData.ID);
+            await data.GetUserDataByID(data.UserData.ID);
             if (data.UserData.Status == Scripts.Structs.Status.admin)
             {
                 if (res == "potwierdzam")
                 {
                     if (data.TruncateTable("GlobalChat"))
                     {
-                        DisplayAlert("Informacja", "Wyczyszczono cały globalny czat!", "Ok");
+                        await DisplayAlert("Informacja", "Wyczyszczono cały globalny czat!", "Ok");
                         data.CreateNewLog(new Scripts.Structs.EventData
                         {
                             Autor = data.UserData.Nickname,
@@ -50,12 +50,12 @@ namespace TestBDonline.View
                         });
                     }
                     else
-                        DisplayAlert("Informacja", "Nie udało się wyczyścić globalnego czatu", "Ok");
+                        await DisplayAlert("Informacja", "Nie udało się wyczyścić globalnego czatu", "Ok");
                 }
             }
             else
             {
-                DisplayAlert("Błąd!", "Być może straciłeś uprawnienia admina, zaloguj się jeszcze raz do systemu. Możesz nadal korzystać z podstawowych funkcji aplikacji.", "Ok");
+                await DisplayAlert("Błąd!", "Być może straciłeś uprawnienia admina, zaloguj się jeszcze raz do systemu. Możesz nadal korzystać z podstawowych funkcji aplikacji.", "Ok");
             }
         }
 
@@ -64,14 +64,14 @@ namespace TestBDonline.View
             var res = await DisplayPromptAsync("Informacja", "Czy napewno chcesz wyczyścić dziennik zdarzeń? Jeśli tak wpisz 'potwierdzam'", "Potwierdź", "Anuluj");
 
 
-            data.GetUserDataByID(data.UserData.ID);
+            await data.GetUserDataByID(data.UserData.ID);
             if (data.UserData.Status == Scripts.Structs.Status.admin)
             {
                 if (res == "potwierdzam")
                 {
                     if (data.TruncateTable("EventLog"))
                     {
-                        DisplayAlert("Informacja", "Wyczyszczono dziennik zdarzeń!", "Ok");
+                        await DisplayAlert("Informacja", "Wyczyszczono dziennik zdarzeń!", "Ok");
                         data.CreateNewLog(new Scripts.Structs.EventData
                         {
                             Autor = data.UserData.Nickname,
@@ -80,11 +80,11 @@ namespace TestBDonline.View
                         });
                     }
                     else
-                        DisplayAlert("Informacja", "Nie udało się wyczyścić dzienniku zdarzeń", "Ok");
+                        await DisplayAlert("Informacja", "Nie udało się wyczyścić dzienniku zdarzeń", "Ok");
                 }
             }
             else
-                DisplayAlert("Błąd!", "Być może straciłeś uprawnienia admina, zaloguj się jeszcze raz do systemu. Możesz nadal korzystać z podstawowych funkcji aplikacji.", "Ok");
+                await DisplayAlert("Błąd!", "Być może straciłeś uprawnienia admina, zaloguj się jeszcze raz do systemu. Możesz nadal korzystać z podstawowych funkcji aplikacji.", "Ok");
         }
     }
 }

@@ -1,52 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TestBDonline.View.Account">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Konto eWads"/>
-    </ContentPage.ToolbarItems>
+             x:Class="TestBDonline.View.Account"
+             Title="Konto">
     <ContentPage.Content>
-        <Grid BackgroundColor="CornflowerBlue">
+        <Grid BackgroundColor="White">
             <Grid.RowDefinitions>
+                <RowDefinition Height="1"
+                               x:Name="bar"/>
                 <RowDefinition Height="60"/>
                 <RowDefinition Height="150"/>
                 <RowDefinition Height="350"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
                 <ColumnDefinition/>
-                <ColumnDefinition Width="300"/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="20"/>
             </Grid.ColumnDefinitions>
 
+            <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="CenterAndExpand"
+                     IsVisible="false"
+                         Grid.Column="1"
+                     x:Name="indicator">
+                <Label Text="zapisywanie"
+                   TextColor="White"
+                   TextTransform="Uppercase"/>
+                <ActivityIndicator IsRunning="True"/>
+            </StackLayout>
             <Frame Grid.Column="1"
-                   BackgroundColor="LightGoldenrodYellow">
+                   Grid.Row="1"
+                   BackgroundColor="White"
+                   BorderColor="CornflowerBlue">
                 <Label Text="Twój nickname"
                        HorizontalOptions="CenterAndExpand"
                        x:Name="nick"
-                       FontSize="18"
+                       FontSize="17"
                        FontAttributes="Bold"
                        TextColor="DimGray"/>
             </Frame>
             <Frame Grid.Column="1"
-                   Grid.Row="1"
-                   BackgroundColor="LightCoral">
+                   Grid.Row="2"
+                   BackgroundColor="GhostWhite"
+                   BorderColor="CornflowerBlue">
                 <Label Text="Twoje punkty"
                        FontSize="30"
-                       TextColor="White"
+                       TextColor="CornflowerBlue"
                 x:Name="pts"
                        HorizontalTextAlignment="Center"
                 HorizontalOptions="CenterAndExpand" />
             </Frame>
-            <Frame Grid.Row="2"
-                   Grid.Column="1">
+            <Frame Grid.Row="3"
+                   Grid.Column="1"
+                   BorderColor="CornflowerBlue">
                 <StackLayout HorizontalOptions="CenterAndExpand">
                     <Label Text="Informacje o Tobie"
                            HorizontalOptions="CenterAndExpand"
-                           FontAttributes="Bold"/>
+                           FontAttributes="Bold"
+                           TextColor="CornflowerBlue"/>
                     <Picker SelectedItem="0"
                             Title="Płeć"
-                            TextColor="DimGray"
+                            TextColor="CornflowerBlue"
                             x:Name="picker"
                             HorizontalOptions="CenterAndExpand"/>
                     <Entry Placeholder="Email"
@@ -54,20 +69,23 @@
                            HorizontalTextAlignment="Center" 
                            x:Name="login"
                            Keyboard="Email"
-                           PlaceholderColor="DimGray"
-                               TextColor="DimGray"/>
+                           PlaceholderColor="CornflowerBlue"
+                               TextColor="CornflowerBlue"/>
                     <Button Text="Zapisz dane"
-                            BackgroundColor="ForestGreen"
+                            BackgroundColor="CornflowerBlue"
                             TextColor="White"
-                            Clicked="SaveData"/>
+                            Clicked="SaveData"
+                            CornerRadius="10"/>
                     <Button Text="Zmień hasło"
-                            BackgroundColor="LightGoldenrodYellow"
-                            TextColor="DimGray"
-                            Clicked="ChangePassword"/>
+                            BackgroundColor="CornflowerBlue"
+                            TextColor="White"
+                            Clicked="ChangePassword"
+                            CornerRadius="10"/>
                     <Button Text="Wyloguj"
                             BackgroundColor="PaleVioletRed"
                             TextColor="White"
-                            Clicked="Logout"/>
+                            Clicked="Logout"
+                            CornerRadius="10"/>
                 </StackLayout>
             </Frame>
         </Grid>

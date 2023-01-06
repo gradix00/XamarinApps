@@ -7,9 +7,10 @@
         <ToolbarItem Text="e-Wads - Logowanie"/>
     </ContentPage.ToolbarItems>
     <Grid x:Name="bg"
-        BackgroundColor="DimGray">
+        BackgroundColor="White">
         <Grid.RowDefinitions>
             <RowDefinition/>
+            <RowDefinition Height="20"/>
             <RowDefinition Height="400"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
@@ -19,63 +20,74 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Image Source="https://youthincmag.com/wp-content/uploads/2018/07/business-without-degree.jpg"
-                   Aspect="AspectFill"
-               Grid.ColumnSpan="3"
-               Grid.RowSpan="3"/>
-
         <Label Text="e-Wads"
-               TextColor="DarkSlateBlue"
+               TextColor="CornflowerBlue"
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="CenterAndExpand"
                FontAttributes="Bold"
                FontSize="50"
                TextDecorations="Underline"
                Grid.Column="1"/>
-        <Frame BackgroundColor="CornflowerBlue"
-               Grid.Row="1"
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="CenterAndExpand"
+                     IsVisible="False"
+                     Grid.Row="1"
+                     Grid.Column="1"
+                     x:Name="indicator">
+            <Label Text="logowanie"
+                   TextColor="CornflowerBlue"
+                   TextTransform="Uppercase"/>
+            <ActivityIndicator IsRunning="True"/>
+        </StackLayout>
+        <Frame BackgroundColor="White"
+               Grid.Row="2"
                Grid.Column="1"
-               BorderColor="LightGoldenrodYellow">
-            <StackLayout VerticalOptions="CenterAndExpand">
+               BorderColor="CornflowerBlue"
+               CornerRadius="25">
+            <StackLayout VerticalOptions="CenterAndExpand"
+                         x:Name="controls">
                 <Entry Placeholder="Email"
                            HorizontalOptions="CenterAndExpand"
                            HorizontalTextAlignment="Center" 
                            x:Name="login"
                            Margin="30, 0, 30, 0"
                            Keyboard="Email"
-                           PlaceholderColor="White"
-                               TextColor="White"/>
+                           PlaceholderColor="CornflowerBlue"
+                               TextColor="CornflowerBlue"/>
                 <Entry Placeholder="Password"
                            IsPassword="True"
                            HorizontalOptions="CenterAndExpand"
                            HorizontalTextAlignment="Center" 
                            x:Name="pwd"
                            Margin="30, 0, 30, 0"
-                           PlaceholderColor="White"
-                               TextColor="White"/>
+                           PlaceholderColor="CornflowerBlue"
+                               TextColor="CornflowerBlue"/>
                 <Button Text="Zaloguj"
                                 Clicked="Login"
                                 Margin="30, 0, 30, 0"
-                                BackgroundColor="LightGoldenrodYellow"
-                                TextColor="DimGray"/>
+                                BackgroundColor="CornflowerBlue"
+                                TextColor="White"
+                                CornerRadius="10"/>
                 <Button Text="Zapomniałem hasła (niedostępne)"
                                 InputTransparent="False"
                                 Margin="30, 0, 30, 0"
-                                BackgroundColor="LightGoldenrodYellow"
-                                TextColor="DimGray"/>
+                                BackgroundColor="CornflowerBlue"
+                                TextColor="White"
+                                CornerRadius="10"/>
                 <Button Text="Nie mam konta"
                             Clicked="OpenRegisterPage"
                             Margin="30, 0, 30, 0"
-                            BackgroundColor="LightGoldenrodYellow"
-                            TextColor="DimGray"/>
+                            BackgroundColor="CornflowerBlue"
+                            TextColor="White"
+                        CornerRadius="10"/>
                 <StackLayout Orientation="Horizontal"
                                  HorizontalOptions="CenterAndExpand">
                     <Label Text="Zapamiętaj dane"
                                VerticalOptions="CenterAndExpand"
-                               TextColor="White"
+                               TextColor="CornflowerBlue"
                                FontAttributes="Bold"/>
                     <CheckBox IsChecked="False"
-                                  Color="LightGoldenrodYellow"
+                                  Color="CornflowerBlue"
                                   x:Name="rememberData"/>
                 </StackLayout>
             </StackLayout>

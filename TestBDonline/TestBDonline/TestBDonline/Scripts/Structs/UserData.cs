@@ -21,5 +21,6 @@
         public Status Status { get; set; }
         public Gender Gender { get; set; }
         public bool RequirePasswordReset { get; set; }
+        public bool IsActive { get; set; }
     }
 }

@@ -5,9 +5,10 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="e-Wads - Rejestracja"/>
     </ContentPage.ToolbarItems>
-    <Grid BackgroundColor="DimGray">
+    <Grid BackgroundColor="White">
         <Grid.RowDefinitions>
             <RowDefinition/>
+            <RowDefinition Height="20"/>
             <RowDefinition Height="400"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
@@ -17,59 +18,69 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Image Source="https://youthincmag.com/wp-content/uploads/2018/07/business-without-degree.jpg"
-                   Aspect="AspectFill"
-               Grid.ColumnSpan="3"
-               Grid.RowSpan="3"/>
-
         <Label Text="e-Wads"
-               TextColor="LightGoldenrodYellow"
+               TextColor="CornflowerBlue"
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="CenterAndExpand"
                FontAttributes="Bold"
                FontSize="50"
                TextDecorations="Underline"
                Grid.Column="1"/>
-        
-        <Frame Grid.Row="1"
+
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="CenterAndExpand"
+                     IsVisible="False"
+                     Grid.Row="1"
+                     Grid.Column="1"
+                     x:Name="indicator">
+            <Label Text="rejestrowanie"
+                   TextColor="CornflowerBlue"
+                   TextTransform="Uppercase"/>
+            <ActivityIndicator IsRunning="True"/>
+        </StackLayout>
+
+        <Frame Grid.Row="2"
                Grid.Column="1"
-               BackgroundColor="CornflowerBlue"
-               BorderColor="LightGoldenrodYellow">
-            <StackLayout VerticalOptions="CenterAndExpand">
+               BackgroundColor="White"
+               BorderColor="CornflowerBlue"
+               CornerRadius="25">
+            <StackLayout VerticalOptions="CenterAndExpand"
+                         x:Name="controls">
                 <Entry Placeholder="Nickname"
                        HorizontalOptions="CenterAndExpand"
                        HorizontalTextAlignment="Center" 
                        x:Name="nickname"
                        Margin="30, 0, 30, 0"
-                       PlaceholderColor="White"
-                       TextColor="White"/>
+                       PlaceholderColor="CornflowerBlue"
+                       TextColor="CornflowerBlue"/>
                 <Entry Placeholder="Email"
                    HorizontalOptions="CenterAndExpand"
                    HorizontalTextAlignment="Center" 
                    x:Name="login"
                        Margin="30, 0, 30, 0"
                        Keyboard="Email"
-                       PlaceholderColor="White"
-                       TextColor="White"/>
+                       PlaceholderColor="CornflowerBlue"
+                       TextColor="CornflowerBlue"/>
                 <Entry Placeholder="Hasło"
                    HorizontalOptions="CenterAndExpand"
                    HorizontalTextAlignment="Center" 
                    x:Name="pwd1"
                        Margin="30, 0, 30, 0"
-                       PlaceholderColor="White"
-                       TextColor="White"/>
+                       PlaceholderColor="CornflowerBlue"
+                       TextColor="CornflowerBlue"/>
                 <Entry Placeholder="Wpisz ponownie hasło"
                    HorizontalOptions="CenterAndExpand"
                    HorizontalTextAlignment="Center" 
                    x:Name="pwd2"
                        Margin="30, 0, 30, 0"
-                       PlaceholderColor="White"
-                       TextColor="White"/>
+                       PlaceholderColor="CornflowerBlue"
+                       TextColor="CornflowerBlue"/>
                 <Button Text="Zarejestruj"
                         Clicked="Register"
                         Margin="30, 0, 30, 0"
-                        BackgroundColor="LightGoldenrodYellow"
-                        TextColor="DimGray"/>
+                        BackgroundColor="CornflowerBlue"
+                        TextColor="White"
+                        CornerRadius="10"/>
             </StackLayout>
         </Frame>
     </Grid>

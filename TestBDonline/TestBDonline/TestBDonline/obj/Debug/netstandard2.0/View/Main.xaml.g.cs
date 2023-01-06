@@ -14,15 +14,15 @@ namespace TestBDonline.View {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\Main.xaml")]
-    public partial class Main : global::Xamarin.Forms.CarouselPage {
+    public partial class Main : global::Xamarin.Forms.TabbedPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.CarouselPage main;
+        private global::Xamarin.Forms.TabbedPage main;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Main));
-            main = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.CarouselPage>(this, "main");
+            main = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.TabbedPage>(this, "main");
         }
     }
 }

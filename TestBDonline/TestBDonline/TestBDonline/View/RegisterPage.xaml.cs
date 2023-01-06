@@ -3,6 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Essentials;
 using Xamarin.Forms.Xaml;
 using TestBDonline.Scripts;
+using System.Threading.Tasks;
 
 namespace TestBDonline.View
 {
@@ -21,14 +22,18 @@ namespace TestBDonline.View
 			pwd2.WidthRequest = width;
 		}
 
-		private void Register(object sender, EventArgs e)
+		private async void Register(object sender, EventArgs e)
         {
 			if (pwd1.Text == pwd2.Text)
 			{
 				var authentication = new Authentication();
-				if (authentication.InitiateRegister(nickname.Text, login.Text, pwd1.Text))
+
+				indicator.IsVisible = true;
+				controls.IsEnabled = false;
+				bool res = await Task.Run(()=> authentication.InitiateRegister(nickname.Text, login.Text, pwd1.Text));
+				if (res)
 				{
-					DisplayAlert("Zarejstrowano!", "Brawo! Udało Ci się zarejestrować w naszej aplikacji. Teraz zaloguj sie i zarabiaj :>", "Ok");
+					await DisplayAlert("Zarejstrowano!", "Brawo! Udało Ci się zarejestrować w naszej aplikacji. Teraz zaloguj sie i zarabiaj :>", "Ok");
 
 					authentication.CreateNewLog(new Scripts.Structs.EventData 
 					{ 
@@ -39,10 +44,12 @@ namespace TestBDonline.View
 					this.Navigation.RemovePage(this);
 				}
 				else
-					DisplayAlert("Nie można się zarejestrować!", "Przyczyny:\n-Hasłą się różnią od siebie\n-Brak połączenia z internetem\n-Nasz serwer bazy nie działa :(", "Ok");
+					await DisplayAlert("Nie można się zarejestrować!", "Przyczyny:\n-Hasłą się różnią od siebie\n-Brak połączenia z internetem\n-Nasz serwer bazy nie działa :(", "Ok");
 			}
 			else
-				DisplayAlert("Różne hasła!", "Popraw hasła, gdyż są różne", "Ok");
+				await DisplayAlert("Różne hasła!", "Popraw hasła, gdyż są różne", "Ok");
+            indicator.IsVisible = false;
+            controls.IsEnabled = true;
         }
 	}
 }

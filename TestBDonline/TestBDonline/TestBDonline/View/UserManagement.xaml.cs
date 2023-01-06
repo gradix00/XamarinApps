@@ -26,10 +26,10 @@ namespace TestBDonline.View
             btn.IsEnabled = false;
         }
 
-        private void LoadListUsers(Authentication data)
+        private async void LoadListUsers(Authentication data)
         {
             ObservableCollection<UserCell> userCells = new ObservableCollection<UserCell>();
-            var usersData = data.GetListAllUsers();
+            var usersData = await Task.Run(()=> data.GetListAllUsers());
 
             foreach(var user in usersData)
             {
@@ -45,10 +45,11 @@ namespace TestBDonline.View
             list.IsRefreshing = false;
         }
 
-        private void ManageUser(object sender, EventArgs e)
+        private async void ManageUser(object sender, EventArgs e)
         {
-            var userEdited = new Authentication().GetUserDataByID((list.SelectedItem as UserCell).ID);
-            Navigation.PushAsync(new UserEditingData(Data, userEdited));
+            var auth = new Authentication();
+            var userEdited =await Task.Run(()=> auth.GetUserDataByID((list.SelectedItem as UserCell).ID));
+            await Navigation.PushAsync(new UserEditingData(Data, userEdited));
             list.SelectedItem = null;
         }
 

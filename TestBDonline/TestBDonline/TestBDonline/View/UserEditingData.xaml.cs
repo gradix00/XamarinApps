@@ -4,6 +4,7 @@ using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using TestBDonline.Scripts;
+using System.Threading.Tasks;
 
 namespace TestBDonline.View
 {
@@ -29,9 +30,9 @@ namespace TestBDonline.View
             LoadUserDataUI();
         }
 
-        private void Apply(object sender, EventArgs e)
+        private async void Apply(object sender, EventArgs e)
         {
-            Data.GetUserDataByID(Data.UserData.ID);
+            await Data.GetUserDataByID(Data.UserData.ID);
             if (Data.UserData.Status == Status.admin)
             {
                 if (int.TryParse(points.Text, out int pt))
@@ -48,8 +49,8 @@ namespace TestBDonline.View
                     };
 
 
-                    if (!Data.UpdateUserData(temp))
-                        DisplayAlert("Błąd!", "Nie można zmienić danych użytkownika", "Ok");
+                    if (!await Task.Run(()=> Data.UpdateUserData(temp)))
+                        await DisplayAlert("Błąd!", "Nie można zmienić danych użytkownika", "Ok");
                     else
                         Data.CreateNewLog(new EventData
                         {
@@ -60,24 +61,24 @@ namespace TestBDonline.View
                     Navigation.RemovePage(this);
                 }
                 else
-                    DisplayAlert("Błąd!", "Źle wprowadzone dane!", "Ok");
+                    await DisplayAlert("Błąd!", "Źle wprowadzone dane!", "Ok");
             }
             else
-                DisplayAlert("Błąd!", "Być może straciłeś uprawnienia admina, zaloguj się jeszcze raz do systemu. Możesz nadal korzystać z podstawowych funkcji aplikacji.", "Ok");
+                await DisplayAlert("Błąd!", "Być może straciłeś uprawnienia admina, zaloguj się jeszcze raz do systemu. Możesz nadal korzystać z podstawowych funkcji aplikacji.", "Ok");
         }
 
         private async void DeleteAccount(object sender, EventArgs e)
         {
             var res = await DisplayPromptAsync("Informacja", $"Czy napewno chcesz usunąć konto użytkownika '{UserData.Nickname}({UserData.ID})'? Jeśli tak wpisz 'potwierdzam'", "Potwierdź", "Anuluj");
 
-            Data.GetUserDataByID(Data.UserData.ID);
+            await Data.GetUserDataByID(Data.UserData.ID);
             if (Data.UserData.Status == Status.admin)
             {
                 if (res == "potwierdzam")
                 {
                     if (Data.DeleteAccount(UserData.ID))
                     {
-                        DisplayAlert("Informacja!", $"Usunięto użytkownika '{UserData.Nickname}'", "Ok");
+                        await DisplayAlert("Informacja!", $"Usunięto użytkownika '{UserData.Nickname}'", "Ok");
                         Data.CreateNewLog(new EventData
                         {
                             Autor = Data.UserData.Nickname,
@@ -87,11 +88,11 @@ namespace TestBDonline.View
                         Navigation.RemovePage(this);
                     }
                     else
-                        DisplayAlert("Błąd!", $"Nie udało się usunąć użytkownika", "Ok");
+                        await DisplayAlert("Błąd!", $"Nie udało się usunąć użytkownika", "Ok");
                 }
             }
             else
-                DisplayAlert("Błąd!", "Być może straciłeś uprawnienia admina, zaloguj się jeszcze raz do systemu. Możesz nadal korzystać z podstawowych funkcji aplikacji.", "Ok");
+                await DisplayAlert("Błąd!", "Być może straciłeś uprawnienia admina, zaloguj się jeszcze raz do systemu. Możesz nadal korzystać z podstawowych funkcji aplikacji.", "Ok");
         }
 
         private void LoadUserDataUI()

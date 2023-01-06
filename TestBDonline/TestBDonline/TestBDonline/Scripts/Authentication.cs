@@ -39,7 +39,7 @@ namespace TestBDonline.Scripts
             return false;
         }
 
-        public bool InitiateLogin(string email, string password)
+        public async Task<bool> InitiateLogin(string email, string password)
         {
             Email = email;
             Password = password;
@@ -53,13 +53,13 @@ namespace TestBDonline.Scripts
                 MySqlDataReader read = cmd.ExecuteReader();
 
                 int numberOfRecord = 0;
-                while (read.Read())
+                while (await read.ReadAsync())
                 {
-                    UserData = GetInfoUser(read["Id"].ToString(), read["Nickname"].ToString(), read["Email"].ToString(), read["Points"].ToString(), read["Status"].ToString(), read["Gender"].ToString(), read["RequirePwdReset"].ToString());
+                    UserData = GetInfoUser(read["Id"].ToString(), read["Nickname"].ToString(), read["Email"].ToString(), read["Points"].ToString(), read["Status"].ToString(), read["Gender"].ToString(), read["RequirePwdReset"].ToString(), read["Activity"].ToString());
                     numberOfRecord++;
                 }
          
-                conn.Close();
+                await conn.CloseAsync();
                 if (numberOfRecord > 0)
                     return true;
                 else
@@ -67,12 +67,12 @@ namespace TestBDonline.Scripts
             }
             else
             {
-                conn.Close();
+                await conn.CloseAsync();
                 return false;
             }
         }
 
-        public bool InitiateRegister(string nick, string email, string password)
+        public async Task<bool> InitiateRegister(string nick, string email, string password)
         {
             var conn = new MySqlConnection(connAddr);
             conn.Open();
@@ -83,29 +83,29 @@ namespace TestBDonline.Scripts
                 int numberOfRecord = 0;
 
                 MySqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
+                while (await reader.ReadAsync())
                     numberOfRecord++;
 
                 if (numberOfRecord == 0)
                 {
-                    conn.Close();
+                    await conn.CloseAsync();
 
-                    conn.Open();
+                    await conn.OpenAsync();
                     cmd = new MySqlCommand($"INSERT INTO Users(nickname, email, password, points) VALUES(@nickname, @email, @password, @points)", conn);
                     cmd.Parameters.AddWithValue("@nickname", nick);
                     cmd.Parameters.AddWithValue("@email", email);
                     cmd.Parameters.AddWithValue("@password", password);
                     cmd.Parameters.AddWithValue("@points", "0");
                     cmd.ExecuteNonQuery();
-                    conn.Close();
+                    await conn.CloseAsync();
                     return true;
                 }
             }
-            conn.Close();
+            await conn.CloseAsync();
             return false;
         }  
 
-        public List<UserData> GetListAllUsers()
+        public async Task<List<UserData>> GetListAllUsers()
         {
             var conn = new MySqlConnection(connAddr);
             conn.Open();
@@ -113,10 +113,10 @@ namespace TestBDonline.Scripts
             List<UserData> retList = new List<UserData>();
             if(CheckAcces(conn))
             {
-                MySqlCommand cmd = new MySqlCommand("SELECT id, nickname, email, points, status, gender, RequirePwdReset FROM Users", conn);
+                MySqlCommand cmd = new MySqlCommand("SELECT * FROM Users", conn);
                 MySqlDataReader reader = cmd.ExecuteReader();
 
-                while (reader.Read())
+                while (await reader.ReadAsync())
                     retList.Add(new UserData
                     {
                         ID = int.Parse(reader["id"].ToString()),
@@ -125,14 +125,15 @@ namespace TestBDonline.Scripts
                         Points = int.Parse(reader["points"].ToString()),
                         Status = new Dictionary.GetStatus().status[reader["status"].ToString()],
                         Gender = new Dictionary.GetStatus().gender[reader["gender"].ToString()],
-                        RequirePasswordReset = bool.Parse(reader["RequirePwdReset"].ToString())
+                        RequirePasswordReset = bool.Parse(reader["RequirePwdReset"].ToString()),
+                        IsActive = bool.Parse(reader["Activity"].ToString())
                     });               
-                conn.Close();
+                await conn.CloseAsync();
             }
             return retList;
         }
 
-        public List<PostData> GetListAllPosts(bool isRandom = false)
+        public async Task<List<PostData>> GetListAllPosts(bool isRandom = false)
         {
             var conn = new MySqlConnection(connAddr);
             conn.Open();
@@ -150,7 +151,7 @@ namespace TestBDonline.Scripts
                 MySqlCommand cmd = new MySqlCommand(txtCmd, conn);
                 MySqlDataReader reader = cmd.ExecuteReader();
 
-                while (reader.Read())
+                while (await reader.ReadAsync())
                 {
                     retList.Add(new PostData
                     {
@@ -163,7 +164,7 @@ namespace TestBDonline.Scripts
                     });
                 }
             }
-            conn.Close();
+            await conn.CloseAsync();
             return retList;
         }
 
@@ -222,9 +223,9 @@ namespace TestBDonline.Scripts
             return retList;
         }
 
-        public UserData GetUserDataByID(int id)
+        public async Task<UserData> GetUserDataByID(int id)
         {
-            List<UserData> getList = GetListAllUsers();
+            List<UserData> getList = await Task.Run(()=>GetListAllUsers());
             foreach(UserData user in getList)
             {
                 if (id == user.ID)
@@ -346,28 +347,29 @@ namespace TestBDonline.Scripts
             return false;
         }
 
-        public bool UpdateUserData(UserData data)
+        public async Task<bool> UpdateUserData(UserData data)
         {
             var conn = new MySqlConnection(connAddr);
             conn.Open();
 
             if (CheckAcces(conn))
             {
-                MySqlCommand cmd = new MySqlCommand($"UPDATE Users SET email=@email, points=@points, status=@status, gender=@gender, RequirePwdReset=@requireReset WHERE id={data.ID}", conn);
+                MySqlCommand cmd = new MySqlCommand($"UPDATE Users SET email=@email, points=@points, status=@status, gender=@gender, RequirePwdReset=@requireReset, Activity=@activity WHERE id={data.ID}", conn);
                 cmd.Parameters.AddWithValue("@email", data.Email);
                 cmd.Parameters.AddWithValue("@points", data.Points);
                 cmd.Parameters.AddWithValue("@gender", data.Gender.ToString());
                 cmd.Parameters.AddWithValue("@status", data.Status.ToString());
                 cmd.Parameters.AddWithValue("@requireReset", data.RequirePasswordReset);
-                cmd.ExecuteNonQuery();
-                conn.Close();
+                cmd.Parameters.AddWithValue("@activity", data.IsActive);
+                await cmd.ExecuteNonQueryAsync();
+                await conn.CloseAsync();
             }
             else
                 return false;
             return true;
         }
 
-        private UserData GetInfoUser(string id, string nick, string email, string points, string status, string gender, string rpr)
+        private UserData GetInfoUser(string id, string nick, string email, string points, string status, string gender, string rpr, string active)
         {
             UserData = new UserData()
             {
@@ -377,7 +379,8 @@ namespace TestBDonline.Scripts
                 Points = int.Parse(points),
                 Status = new Dictionary.GetStatus().status[status],
                 Gender = new Dictionary.GetStatus().gender[gender],
-                RequirePasswordReset = bool.Parse(rpr.ToString())
+                RequirePasswordReset = bool.Parse(rpr.ToString()),
+                IsActive = bool.Parse(active.ToString())
             };
             return UserData;
         }

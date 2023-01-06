@@ -20,10 +20,14 @@
           "Microsoft.Extensions.Configuration.Abstractions": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.Abstractions/2.0.0": {
@@ -32,10 +36,14 @@
           "Microsoft.Extensions.Primitives": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.Binder/2.0.0": {
@@ -44,10 +52,14 @@
           "Microsoft.Extensions.Configuration": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection/2.0.0": {
@@ -56,19 +68,27 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Logging/2.0.0": {
@@ -79,19 +99,27 @@
           "Microsoft.Extensions.Options": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Logging.Abstractions/2.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Options/2.0.0": {
@@ -101,10 +129,14 @@
           "Microsoft.Extensions.Primitives": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Primitives/2.0.0": {
@@ -113,10 +145,14 @@
           "System.Runtime.CompilerServices.Unsafe": "4.4.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -143,10 +179,14 @@
           "System.Diagnostics.DiagnosticSource": "5.0.1"
         },
         "compile": {
-          "lib/netstandard2.1/MySqlConnector.dll": {}
+          "lib/netstandard2.1/MySqlConnector.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/MySqlConnector.dll": {}
+          "lib/netstandard2.1/MySqlConnector.dll": {
+            "related": ".xml"
+          }
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -209,10 +249,14 @@
           "System.Xml.XmlDocument": "4.3.0"
         },
         "compile": {
-          "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+          "lib/netstandard1.3/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+          "lib/netstandard1.3/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "RabbitMQ.Client/4.1.0": {
@@ -347,10 +391,14 @@
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
         },
         "compile": {
-          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Diagnostics.Tools/4.3.0": {
@@ -618,10 +666,14 @@
       "System.Runtime.CompilerServices.Unsafe/5.0.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.Extensions/4.3.0": {
@@ -860,12 +912,20 @@
       "Xam.Plugins.Settings/3.1.1": {
         "type": "package",
         "compile": {
-          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {
+            "related": ".Abstractions.pdb;.Abstractions.xml;.xml"
+          }
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {
+            "related": ".Abstractions.pdb;.Abstractions.xml;.xml"
+          }
         }
       },
       "Xamarin.Essentials/1.7.0": {
@@ -879,25 +939,45 @@
           "System.Numerics"
         ],
         "compile": {
-          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Xamarin.Forms/5.0.0.2196": {
         "type": "package",
         "compile": {
-          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {
+            "related": ".iOS.pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {
+            "related": ".iOS.pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "resource": {
           "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll": {
@@ -1045,10 +1125,14 @@
           "Microsoft.Extensions.Configuration.Abstractions": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.Abstractions/2.0.0": {
@@ -1057,10 +1141,14 @@
           "Microsoft.Extensions.Primitives": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.Binder/2.0.0": {
@@ -1069,10 +1157,14 @@
           "Microsoft.Extensions.Configuration": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection/2.0.0": {
@@ -1081,19 +1173,27 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Logging/2.0.0": {
@@ -1104,19 +1204,27 @@
           "Microsoft.Extensions.Options": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Logging.Abstractions/2.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Options/2.0.0": {
@@ -1126,10 +1234,14 @@
           "Microsoft.Extensions.Primitives": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Primitives/2.0.0": {
@@ -1138,10 +1250,14 @@
           "System.Runtime.CompilerServices.Unsafe": "4.4.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -1168,10 +1284,14 @@
           "System.Diagnostics.DiagnosticSource": "5.0.1"
         },
         "compile": {
-          "lib/netstandard2.1/MySqlConnector.dll": {}
+          "lib/netstandard2.1/MySqlConnector.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/MySqlConnector.dll": {}
+          "lib/netstandard2.1/MySqlConnector.dll": {
+            "related": ".xml"
+          }
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -1234,10 +1354,14 @@
           "System.Xml.XmlDocument": "4.3.0"
         },
         "compile": {
-          "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+          "lib/netstandard1.3/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+          "lib/netstandard1.3/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "RabbitMQ.Client/4.1.0": {
@@ -1372,10 +1496,14 @@
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
         },
         "compile": {
-          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Diagnostics.Tools/4.3.0": {
@@ -1603,10 +1731,14 @@
       "System.Runtime.CompilerServices.Unsafe/5.0.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.Extensions/4.3.0": {
@@ -1801,12 +1933,20 @@
       "Xam.Plugins.Settings/3.1.1": {
         "type": "package",
         "compile": {
-          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {
+            "related": ".Abstractions.pdb;.Abstractions.xml;.xml"
+          }
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {
+            "related": ".Abstractions.pdb;.Abstractions.xml;.xml"
+          }
         }
       },
       "Xamarin.Essentials/1.7.0": {
@@ -1820,25 +1960,45 @@
           "System.Numerics"
         ],
         "compile": {
-          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Xamarin.Forms/5.0.0.2196": {
         "type": "package",
         "compile": {
-          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {
+            "related": ".iOS.pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {
+            "related": ".iOS.pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "resource": {
           "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll": {
@@ -1986,10 +2146,14 @@
           "Microsoft.Extensions.Configuration.Abstractions": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.Abstractions/2.0.0": {
@@ -1998,10 +2162,14 @@
           "Microsoft.Extensions.Primitives": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.Binder/2.0.0": {
@@ -2010,10 +2178,14 @@
           "Microsoft.Extensions.Configuration": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection/2.0.0": {
@@ -2022,19 +2194,27 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Logging/2.0.0": {
@@ -2045,19 +2225,27 @@
           "Microsoft.Extensions.Options": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Logging.Abstractions/2.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Options/2.0.0": {
@@ -2067,10 +2255,14 @@
           "Microsoft.Extensions.Primitives": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Primitives/2.0.0": {
@@ -2079,10 +2271,14 @@
           "System.Runtime.CompilerServices.Unsafe": "4.4.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -2109,10 +2305,14 @@
           "System.Diagnostics.DiagnosticSource": "5.0.1"
         },
         "compile": {
-          "lib/netstandard2.1/MySqlConnector.dll": {}
+          "lib/netstandard2.1/MySqlConnector.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/MySqlConnector.dll": {}
+          "lib/netstandard2.1/MySqlConnector.dll": {
+            "related": ".xml"
+          }
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -2175,10 +2375,14 @@
           "System.Xml.XmlDocument": "4.3.0"
         },
         "compile": {
-          "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+          "lib/netstandard1.3/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+          "lib/netstandard1.3/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "RabbitMQ.Client/4.1.0": {
@@ -2313,10 +2517,14 @@
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
         },
         "compile": {
-          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Diagnostics.Tools/4.3.0": {
@@ -2544,10 +2752,14 @@
       "System.Runtime.CompilerServices.Unsafe/5.0.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.Extensions/4.3.0": {
@@ -2742,12 +2954,20 @@
       "Xam.Plugins.Settings/3.1.1": {
         "type": "package",
         "compile": {
-          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {
+            "related": ".Abstractions.pdb;.Abstractions.xml;.xml"
+          }
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {
+            "related": ".Abstractions.pdb;.Abstractions.xml;.xml"
+          }
         }
       },
       "Xamarin.Essentials/1.7.0": {
@@ -2761,25 +2981,45 @@
           "System.Numerics"
         ],
         "compile": {
-          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Xamarin.Forms/5.0.0.2196": {
         "type": "package",
         "compile": {
-          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {
+            "related": ".iOS.pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {
+            "related": ".iOS.pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "resource": {
           "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll": {
@@ -2927,10 +3167,14 @@
           "Microsoft.Extensions.Configuration.Abstractions": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.Abstractions/2.0.0": {
@@ -2939,10 +3183,14 @@
           "Microsoft.Extensions.Primitives": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.Binder/2.0.0": {
@@ -2951,10 +3199,14 @@
           "Microsoft.Extensions.Configuration": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection/2.0.0": {
@@ -2963,19 +3215,27 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Logging/2.0.0": {
@@ -2986,19 +3246,27 @@
           "Microsoft.Extensions.Options": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Logging.Abstractions/2.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Options/2.0.0": {
@@ -3008,10 +3276,14 @@
           "Microsoft.Extensions.Primitives": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Primitives/2.0.0": {
@@ -3020,10 +3292,14 @@
           "System.Runtime.CompilerServices.Unsafe": "4.4.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -3050,10 +3326,14 @@
           "System.Diagnostics.DiagnosticSource": "5.0.1"
         },
         "compile": {
-          "lib/netstandard2.1/MySqlConnector.dll": {}
+          "lib/netstandard2.1/MySqlConnector.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/MySqlConnector.dll": {}
+          "lib/netstandard2.1/MySqlConnector.dll": {
+            "related": ".xml"
+          }
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -3116,10 +3396,14 @@
           "System.Xml.XmlDocument": "4.3.0"
         },
         "compile": {
-          "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+          "lib/netstandard1.3/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+          "lib/netstandard1.3/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "RabbitMQ.Client/4.1.0": {
@@ -3254,10 +3538,14 @@
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
         },
         "compile": {
-          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Diagnostics.Tools/4.3.0": {
@@ -3485,10 +3773,14 @@
       "System.Runtime.CompilerServices.Unsafe/5.0.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.Extensions/4.3.0": {
@@ -3683,12 +3975,20 @@
       "Xam.Plugins.Settings/3.1.1": {
         "type": "package",
         "compile": {
-          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {
+            "related": ".Abstractions.pdb;.Abstractions.xml;.xml"
+          }
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {
+            "related": ".Abstractions.pdb;.Abstractions.xml;.xml"
+          }
         }
       },
       "Xamarin.Essentials/1.7.0": {
@@ -3702,25 +4002,45 @@
           "System.Numerics"
         ],
         "compile": {
-          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Xamarin.Forms/5.0.0.2196": {
         "type": "package",
         "compile": {
-          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {
+            "related": ".iOS.pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {
+            "related": ".iOS.pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "resource": {
           "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll": {
@@ -7641,20 +7961,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\50kos\\.nuget\\packages\\": {}
+    "C:\\Users\\50kos\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline.iOS\\TestBDonline.iOS.csproj",
+      "projectUniqueName": "F:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline.iOS\\TestBDonline.iOS.csproj",
       "projectName": "TestBDonline.iOS",
-      "projectPath": "G:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline.iOS\\TestBDonline.iOS.csproj",
+      "projectPath": "F:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline.iOS\\TestBDonline.iOS.csproj",
       "packagesPath": "C:\\Users\\50kos\\.nuget\\packages\\",
-      "outputPath": "G:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline.iOS\\obj\\",
+      "outputPath": "F:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\50kos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7667,8 +7992,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "G:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj": {
-              "projectPath": "G:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj"
+            "F:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj": {
+              "projectPath": "F:\\XamarinApps\\XamarinApps\\TestBDonline\\TestBDonline\\TestBDonline\\TestBDonline.csproj"
             }
           }
         }

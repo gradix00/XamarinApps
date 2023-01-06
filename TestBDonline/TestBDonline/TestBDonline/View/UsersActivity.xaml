@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestBDonline.View.UsersActivity"
+             Title="Użytkownicy online">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackLayout HorizontalOptions="CenterAndExpand"
+                     VerticalOptions="CenterAndExpand"
+                     IsVisible="false"
+                     x:Name="indicator">
+            <ActivityIndicator IsRunning="True"/>
+            <Label Text="ładowanie kontentu..."
+                   TextColor="CornflowerBlue"
+                   TextTransform="Uppercase"/>
+        </StackLayout>
+        <StackLayout HorizontalOptions="CenterAndExpand"
+                     VerticalOptions="CenterAndExpand">
+            <Label Text="Aktywni użytkownicy (jesteś on-line)"
+                   FontSize="13"
+                   FontAttributes="Bold"
+                   TextColor="CornflowerBlue"/>
+        </StackLayout>
+        <RefreshView Refreshing="Load"
+                     Grid.Row="1"
+                     x:Name="refreshView">
+            <ScrollView HorizontalOptions="FillAndExpand"
+                              VerticalOptions="FillAndExpand">
+                <StackLayout VerticalOptions="StartAndExpand"
+                                     HorizontalOptions="FillAndExpand"
+                                     x:Name="list"
+                                     Grid.Column="1">
+                    <Label Text="przeciągnij w dół, aby sprawdzić kto jest aktywny"
+                           TextColor="CornflowerBlue"
+                           TextTransform="Uppercase"/>
+                </StackLayout>
+            </ScrollView>
+        </RefreshView>
+    </Grid>
+</ContentPage>

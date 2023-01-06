@@ -53,9 +53,9 @@
     <BundleAssemblies>false</BundleAssemblies>
     <AndroidLinkMode>None</AndroidLinkMode>
     <AndroidKeyStore>true</AndroidKeyStore>
-    <AndroidSigningKeyStore>C:\Users\50kos\AppData\Local\Xamarin\Mono for Android\Keystore\testDB\testDB.keystore</AndroidSigningKeyStore>
+    <AndroidSigningKeyStore>C:\Users\50kos\AppData\Local\Xamarin\Mono for Android\Keystore\ewads\ewads.keystore</AndroidSigningKeyStore>
     <AndroidSigningStorePass>adiomi</AndroidSigningStorePass>
-    <AndroidSigningKeyAlias>testdb</AndroidSigningKeyAlias>
+    <AndroidSigningKeyAlias>ewads</AndroidSigningKeyAlias>
     <AndroidSigningKeyPass>adiomi</AndroidSigningKeyPass>
   </PropertyGroup>
   <ItemGroup>

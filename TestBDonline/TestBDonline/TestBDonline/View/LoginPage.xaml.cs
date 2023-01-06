@@ -23,7 +23,7 @@ namespace TestBDonline.View
             }
         }
 
-        private void Login(object sender, EventArgs e)
+        private async void Login(object sender, EventArgs e)
         {
             string log = login.Text;
             string pass = pwd.Text;
@@ -37,12 +37,16 @@ namespace TestBDonline.View
             }
 
             var authentication = new Authentication();
-            if (authentication.InitiateLogin(log, pass))
+
+            indicator.IsVisible = true;
+            controls.IsEnabled = false;
+            bool res = await Task.Run(()=> authentication.InitiateLogin(log, pass));
+            if (res)
             {
                 if(authentication.UserData.RequirePasswordReset)
-                    Navigation.PushAsync(new ResetPasswordPage(authentication));
+                    await Navigation.PushAsync(new ResetPasswordPage(authentication));
                 else
-                    Navigation.PushAsync(new Main(authentication));
+                    await Navigation.PushAsync(new Main(authentication));
 
                 authentication.CreateNewLog(new Scripts.Structs.EventData
                 {
@@ -50,10 +54,16 @@ namespace TestBDonline.View
                     Details = $"Zalogowano się na konto. Email: {login.Text}",
                     Date = DateTime.Now
                 });
+
+                var user = authentication.UserData;
+                user.IsActive = true;
+                await Task.Run(()=> authentication.UpdateUserData(user));
                 this.Navigation.RemovePage(this);    
             }
             else
-                DisplayAlert("Nie można się zalogować!", "Przyczyny:\n-Login lub hasło jest poprawne\n-Brak połączenia z internetem\n-Nasz serwer bazy nie działa :(", "Ok");
+                await DisplayAlert("Nie można się zalogować!", "Przyczyny:\n-Login lub hasło jest poprawne\n-Brak połączenia z internetem\n-Nasz serwer bazy nie działa :(", "Ok");
+            indicator.IsVisible = false;
+            controls.IsEnabled = true;
         }
 
         private void OpenRegisterPage(object sender, EventArgs e)

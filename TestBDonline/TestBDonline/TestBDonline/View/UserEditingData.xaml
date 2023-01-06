@@ -6,7 +6,7 @@
         <ToolbarItem Text="Edycja użytkownika"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout BackgroundColor="DimGray">
+        <StackLayout BackgroundColor="White">
             <Label x:Name="id"
                    Text="ID"
                        VerticalOptions="StartAndExpand"
